@@ -1,0 +1,53 @@
+<section id="contact" class="col-6 col-12-narrower">
+    <header>
+        <h2></h2>
+        <h2><%=appAudit.plugins.pageTitle %></h2>
+        <p></p>
+    </header>
+    <% if(msg != ''){ %>
+        <div class="col-12" id="save_auditreference">
+            <p>
+                <span class="successformtext"><%= msg %></span><br/>
+            </p>
+        </div>
+    <% } %>    
+   <form method="POST" action="/toolaudit/toolauditplugins">
+        <div class="row gtr-50">
+            <p>
+                <% if(catalog.length > 0) { %>
+                    <table id='tablecatalog'>
+                        <thead>
+                            <%- include('./auditpluginheader'); %>
+                        </thead>    
+                        <tbody>
+                            <%- include('./auditpluginrow'); %>
+                        </tbody>
+                    </table>
+                    <input type="hidden" name="rows_count" id="rows_count" value="<%= catalog.length %>"/> 
+                <% } else { %>
+                    <p><%=appAudit.plugins.nopluginsMsg %></p>
+                <% } %>
+            </p>
+            <div class="col-12">
+                    <ul class="actions">
+                        <li><a href="/toolaudit/toolauditplugins" class="button"><%=appButtons.reloadList.name %></a></li>
+                        <% if(catalog.length > 0) { %>
+                            <li><input type="submit" class="button alt" value="<%=appButtons.save.name %>" /></li>
+                        <% } %>
+                    </ul>
+                </div>
+            </div>
+    </form>
+</section>
+<!-- javascript is placed in the body sction -->
+<script>
+    //it takes two parameters: the select control id as well the image control id associated in order to to change display
+    function showInclude(elem, ctrlImg){
+        if(elem.value == 'Yes') {
+            //try: "inline-block"
+            document.getElementById(ctrlImg).style.display = "inline-block"; //opposite: "none"
+        } else {
+            document.getElementById(ctrlImg).style.display = "none"; //opposite: "none"
+        }
+    }
+</script>

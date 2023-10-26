@@ -1,0 +1,37 @@
+    <% catalog.forEach(function(item) { %>
+        <tr>
+            <td>
+                <%= item.Reference %>
+                <input type="hidden" id="<%= item.RowId %>Reference" name="<%= item.RowId %>Reference" value="<%= item.Reference %>"/>
+            </td>
+            <td>
+                <select class="custom-select" name="<%= item.RowId %>Include" id="<%= item.RowId %>Include" size="1" autofocus onchange="showInclude(this, '<%= item.RowId %>Image')">
+                    <% if (item.Selected == "Yes") { %>
+                        <option value="Yes" selected>Yes</option>
+                        <option value="No">No</option>
+                    <% } else { %>
+                        <option value="Yes">Yes</option>
+                        <option value="No" selected>No</option>
+                    <% } %>                
+                </select>
+                <% if (item.Selected == "Yes") { %>
+                    <img id="<%= item.RowId %>Image" src="../images/include-16b.png" alt="" style="vertical-align: text-bottom; display: inline-block;"/>
+                <% } else { %>
+                    <img id="<%= item.RowId %>Image" src="../images/include-16b.png" alt="" style="vertical-align: text-bottom; display: none;"/>
+                <% } %>                
+            </td>
+            <td>
+                <%= item.Description %>
+                <input type="hidden" id="<%= item.RowId %>Description" name="<%= item.RowId %>Description" value="<%= item.Description %>"/>
+            </td>
+            <td>
+                <%= item.Version %>
+                <input type="hidden" id="<%= item.RowId %>Version" name="<%= item.RowId %>Version" value="<%= item.Version %>"/>
+            </td>
+            <td>
+                <%= item.File %>
+                <input type="hidden" id="<%= item.RowId %>RefereFilence" name="<%= item.RowId %>File" value="<%= item.File %>"/>
+            </td>
+        </tr>
+    <% }) %>
+        

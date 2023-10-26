@@ -1,0 +1,21 @@
+<% Matrix.forEach(function(item) { %>
+    <tr style="display: table-row;">
+        <td style="text-align:left">
+            <span><%= item.RowId %></span>
+        </td>
+        <td style="text-align:left">
+            <span><%= item.Sentence %></span>
+        </td>    
+        <td
+        <% if (item.Score > 0.25 ) { %>
+            style="background-color:green; color:white; text-align:center"
+        <% } else if (item.Score < -0.25 ) { %>
+            style="background-color:red; color:white; text-align:center"
+        <% } else  { %>
+            style="background-color:yellow; color:black; text-align:center"
+        <% } %>
+        >
+            <span><%= item.Score %></span>
+        </td>
+    </tr>
+<% }) %>

@@ -1,0 +1,58 @@
+<!DOCTYPE HTML>
+<!--
+	Arcana by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+    <!-- based on no-side bar template -->
+    <%- include('../partials/head'); %>
+    <body class="is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+			<%- include('../partials/header'); %>
+
+			<!-- Main -->
+				<section class="wrapper style1">
+					<div class="container">
+						<div id="content">
+							<!-- Content -->
+                            <article>
+                                <header>
+                                    <h2>Recommendations tracking system</h2>
+                                    <%- include('../partials/pluginstats'); %>
+                                    <p>
+                                        Portfolios of audits, aggregated by type, subject, chronological milestones and their recommendations,
+                                        along with related findings can be tracked and monitored here .
+                                    </p>
+                                    <p>
+                                        <b>Note:</b> Only the portfolios published and authorized by the SAIs are available in the web version.
+                                    </p>
+                                </header>
+                                <p>
+                                    <% if(catalog.length > 0) { %>
+                                    <section class="wrapper style1">
+                                        <div class="container">
+                                            <%- include('../partials/portfolios'); -%>
+                                        </div>
+                                    </section>
+                                    <% } else { %>
+                                    <p>No Portfolios available!</p>
+                                    <% } %>
+                                </p>
+                            </article>
+						</div>
+					</div>
+				</section>
+
+			<!-- Footer -->
+			<%- include('../partials/footer'); %>
+
+		</div>
+
+		<!-- Scripts -->
+		<%- include('../partials/scripts'); -%>
+
+	</body>
+</html>

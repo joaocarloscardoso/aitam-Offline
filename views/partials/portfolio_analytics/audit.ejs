@@ -1,0 +1,65 @@
+<script src="/assets/js/Chart.js"></script>
+<section id="Statistics" class="col-6 col-12-narrower">
+    <header>
+        <h2></h2>
+        <h2><%= data.AuditTitle %></h2>
+        <p></p>
+    </header>
+    <div class="container">
+        <div id="content">
+            <article>
+                <p><span style="white-space: pre-line"><%= data.AuditBackground %></span></p>
+                <p><span style="white-space: pre-line"><%= data.AuditScope %></span></p>
+            </article>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row gtr-200">
+            <div class="col-4 col-12-narrower" style="width: 600px; height: 400px;">
+                <%- include('../audit_statistics/AuditRecPriority'); %>
+            </div>    
+            <div class="col-4 col-12-narrower" style="width: 600px; height: 400px;">
+                <%- include('../audit_statistics/AuditRecCharacterization'); %>
+            </div>    
+        </div>
+        <p>&nbsp;</p>
+        <div class="row gtr-200">
+            <div class="col-4 col-12-narrower" style="width: 600px; height: 400px;">
+                <%- include('../audit_statistics/AuditRecTypes'); %>
+            </div>    
+            <div class="col-4 col-12-narrower" style="width: 600px; height: 400px;">
+                <%- include('../audit_statistics/AuditRecImportance'); %>
+            </div>    
+            <p>&nbsp;</p>
+        </div>
+        <div class="row gtr-200">
+            <div class="col-4 col-12-narrower" style="width: 600px; height: 400px;">
+                <%- include('../audit_statistics/AuditRecStatus'); %>
+            </div>    
+            <div class="col-4 col-12-narrower" style="width: 600px; height: 400px;">
+                <%- include('../audit_statistics/AuditRecRepeated'); %>
+            </div>    
+            <p>&nbsp;</p>
+        </div>
+        <hr/>
+        <div id="content">
+            <!-- Content -->
+            <article>
+                <section id="contact" class="col-6 col-12-narrower">
+                    <% if(data.NumberOfRecommendations > 0) { %>
+                        Progress of recommendations
+                        <table id='tablecatalog'>
+                            <thead>
+                                <%- include('../audit_statistics/auditrecstatsheader'); %>
+                            </thead>    
+                            <tbody>
+                                <%- include('./auditrecstatsrow'); %>
+                            </tbody>
+                        </table>
+                    <% } %>
+                </section>    
+            </article>
+        </div>
+    </div>
+    <p></p>
+</section>

@@ -1,0 +1,69 @@
+<!DOCTYPE HTML>
+<!--
+	Arcana by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+    <!-- based on no-side bar template -->
+    <%- include('../partials/head'); %>
+    <body class="is-preload">
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.9.3/dropzone.min.js" integrity="sha512-U2WE1ktpMTuRBPoCFDzomoIorbOyUv0sP8B+INA3EzNAhehbzED1rOJg6bCqPf/Tuposxb5ja/MAUnC8THSbLQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>  		<div id="page-wrapper">
+
+			<!-- Header -->
+			<%- include('../partials/header'); %>
+
+			<!-- Main -->
+            <div class="container">
+                <section class="col-6 col-12-narrower">
+					<div class="container">
+						<div id="content">
+							<!-- Content -->
+                            <article>
+                                <header>
+                                    <h2></h2>
+                                    <h2>Start here</h2>
+                                    <p>Choose action to take</p>
+                                </header>
+                                <div class="row gtr-50">
+                                    <form method="POST"  action="/toolaudit/toolnewaudit">
+                                        <div class="col-12">
+                                            <ul class="actions">
+                                                <li><input type="submit" class="button alt" value="Create New Audit...   " /></li>
+                                            </ul>
+                                        </div>
+                                    </form>
+                                </div>
+                                <hr>
+                                <br/>
+                                <div class="row gtr-50">
+                                    <div class="col-12">
+                                        <form id="upload-widget" style="width: 50%; border: 3px dashed rgba(7, 124, 173, 0.8);" method="post" action="/toolaudit/tooleditaudit" class="dropzone">
+                                        </form>
+                                        <br/>
+                                        <ul class="actions">
+                                            <li><a href="/toolaudit/toolauditline" class="button">Load and Edit Audit...</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </article>
+						</div>
+					</div>
+				</section>
+            </div>
+			<!-- Footer -->
+			<%- include('../partials/footer'); %>
+
+		</div>
+
+		<!-- Scripts -->
+		<%- include('../partials/scripts'); -%>
+        <script>
+            Dropzone.options.uploadWidget = {
+                maxFiles: 1,
+                acceptedFiles: '.xml',
+                addRemoveLinks: true
+            };
+        </script>
+	</body>
+</html>

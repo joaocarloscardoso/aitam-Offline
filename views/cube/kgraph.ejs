@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <title>CUBE graph discovery</title>
+      
+        <!-- External resources -->
+        <!-- Add default CSS reference -->
+        <link rel="stylesheet" href="https://unpkg.com/popoto/dist/popoto.min.css">
+        <!-- Add Popoto script reference, will default to popoto.min.js -->
+        <script src="https://unpkg.com/popoto"></script>
+
+        <style>
+            #popoto-graph:fullscreen {
+                width: 100%;
+                height: 100%;
+            }
+    
+            #popoto-graph:-webkit-full-screen {
+                width: 100%;
+                height: 100%;
+            }
+    
+            #popoto-graph:-moz-full-screen {
+                width: 100%;
+                height: 100%;
+            }
+    
+            #popoto-graph:-ms-fullscreen {
+                width: 100%;
+                height: 100%;
+            }
+        </style>
+    </head>
+    <body class="ppt-body"  style="background-color:white;">
+        <div id="head">
+            <span ><a href="http://egov-eu.tcontas.pt/solr/reports/browse"><img src="http://egov-eu.tcontas.pt/solr/img/egov-banner.jpg" id="logo"/></a></span>
+        </div>
+
+        <div id="tabs">
+            <div class="tabs-bar" >
+                <span></span>
+                    <a class="a_white" href="http://egov-eu.tcontas.pt/solr/reports/browse">
+                    Reports Search</a>
+                </span>
+                <span class="tab">
+                    <a class="a_white" href="http://egov-eu.tcontas.pt/solr/georeports/browse?&queryOpts=group&group=true&rows=250&group.limit=6&group.field=author_geo">
+                    Reports Spatial Search</a>
+                </span>
+                <span class="tab">
+                    <a class="a_white" href="http://egov-eu.tcontas.pt/solr/riskreports/browse?">
+                    Risk-cases Search</a>
+                </span>
+                <span class="tab selected">
+                        Risk-cases Graph Traversal
+                </span>
+            </div>
+        </div>
+         <p></p>   
+
+        <section class="ppt-section-main" style="height: 900px">
+            <div class="notice-bar">
+            <!--<div class="ppt-section-header">-->
+                <span class="ppt-header-span" style="color: rgb(40, 169, 229);;"><b>CUBE visual (graph) discovery</b></span>
+            </div>
+            <div class="code-bar" style="color:black;">
+                Tips: Right click on a node to retrieve the relations. Use left click to expand and select a value. Right click
+                can also be used to remove a selection.
+            </div>
+            <div class="ppt-section-header">
+                <p>
+                    <button id="reset" style="height: 25px" value="Reset">Reset search</button>
+                    <button id="randomize" style="height: 25px">Get matrix link</button>
+                    <a id="urlreport" target="_blank" href="#"> </a>
+                </p>
+            </div>    
+            <nav class="ppt-taxo-nav">
+                <div id="popoto-taxonomy">
+                    <span class="ppt-header-span">Taxonomies:</span><br><br>
+                </div>
+            </nav>            
+            <!-- By default the graph is generated on the HTML element with ID "popoto-graph" -->
+            <div id="popoto-graph" class="ppt-div-graph" style="background-color:white;">
+                <!-- Graph is generated here -->
+            </div>            
+            <!--<div id="popoto-cypher" class="ppt-container-cypher center-align">
+            </div>-->
+            <!--<div id="popoto-results" class="ppt-container-results">-->
+                <!-- Results are generated here -->
+            <!--</div>-->
+        </section>
+        
+        <!-- Required scripts -->
+        <script src="https://unpkg.com/jquery" charset="utf-8"></script>
+        <script src="https://unpkg.com/d3" charset="utf-8"></script>
+        <script src="https://unpkg.com/popoto/dist/popoto.js"></script>
+        <script src="https://unpkg.com/popoto/dist/popoto.min.js" charset="utf-8"></script>
+        <script>
+
+            // Demo Neo4j database settings hosted on GrapheneDb
+            popoto.rest.CYPHER_URL = "http://localhost:7474/db/data/transaction/commit";
+            //popoto.rest.AUTHORIZATION = "Basic " + btoa("neo4j:e-gov");
+            popoto.graph.USE_FIT_TEXT = true;
+
+            // Define the list of label provider to customize the graph behavior:
+            popoto.provider.node.Provider = {
+                "Audit": {
+                    "isSearchable": false,
+                    "returnAttributes": ["Title", "Author", "Year","URL"],
+                    "constraintAttribute": "Title",
+                    // Customize result display for Person nodes:
+                    "displayResults": function (pResultElmt) {
+
+                        pResultElmt
+                            .on("click", function (r) {
+                                window.alert(r.attributes.URL);
+                            });
+
+                        pResultElmt
+                            .append("a")
+                            .attr("href", function (d) {
+                                return d.attributes.URL;
+                            })
+                            .text(function (d) {
+                                return "Get Matrix on " + d.attributes.Title;
+                            });
+
+                        // Here D3.js mechanisms is used to generate HTML code.
+                        // By default Popoto.js generates a <p> element for each result.
+                        // pResultElmt parameter is the <p> element selected with D3.js
+                        // So for "Audit" result nodes two elements are generated:
+
+                        // An <h3> element containing the person name
+                        //pResultElmt.append("h3")
+                        //.text(function (result) {
+                        //    return result.attributes.Title;
+                        //})
+
+                        // A <span> element with the computed age from born attribute
+                        //pResultElmt.append("span")
+                        //.text(function (result) {
+                        //    return "Author: " + result.attributes.Author;
+                        //});
+                    }
+                },
+                "Country": {
+                    "returnAttributes": ["Name"],
+                    "constraintAttribute": "Name"
+                },
+                "Topics": {
+                    "returnAttributes": ["Definition"],
+                    "constraintAttribute": "Definition"
+                },
+                "Function": {
+                    "returnAttributes": ["Definition"],
+                    "constraintAttribute": "Definition"
+                },
+                "ActivityDomain": {
+                    "returnAttributes": ["Definition"],
+                    "constraintAttribute": "Definition"
+                },
+                "Goal": {
+                    "isSearchable": false,
+                    "returnAttributes": ["Definition"],
+                    "constraintAttribute": "Definition"
+                },
+                "Process": {
+                    "returnAttributes": ["Definition"],
+                    "constraintAttribute": "Definition"
+                },
+                "Requirement": {
+                    "isSearchable": false,
+                    "returnAttributes": ["Definition"],
+                    "constraintAttribute": "Definition"
+                },
+                "Impact": {
+                    "isSearchable": false,
+                    "returnAttributes": ["Definition"],
+                    "constraintAttribute": "Definition"
+                },
+                "Risk_Case": {
+                    "isSearchable": false,
+                    "returnAttributes": ["Definition"],
+                    "constraintAttribute": "Definition"
+                },
+                "Observation": {
+                    "isSearchable": false,
+                    "returnAttributes": ["Definition", "Risk"],
+                    "constraintAttribute": "Definition"
+                }
+            };
+
+            function changeQueryRoot() {
+
+                // Get current graph schema
+                var graph = popoto.graph.getSchema();
+
+                // Change graph root to a random relation around actual root node
+                if (graph.hasOwnProperty("rel") && graph.rel.length > 0) {
+
+                    // Remove a random branch from actual root node in graph
+                    var removedRandomBranch = graph.rel.splice(Math.floor(Math.random() * graph.rel.length), 1)[0];
+
+                    // Set the first target of thi branch as newRoot
+                    var newRoot = removedRandomBranch.target;
+
+                    // Add previously pruned graph as a branch and change the isReverse property if crossed in reverse order
+                    if (newRoot.rel === undefined) {
+                        newRoot.rel = []
+                    }
+                    newRoot.rel.push(
+                        {
+                            label: removedRandomBranch.label,
+                            isReverse: removedRandomBranch.isReverse !== true,
+                            target: graph
+                        }
+                    );
+
+                    // Reset graph
+                    popoto.graph.mainLabel = newRoot;
+                    popoto.tools.reset();
+                }
+            }
+            function ReloadPage(){
+                window.location.reload();
+            }
+
+            d3.select("#randomize").on("click", changeQueryRoot);
+            d3.select("#reset").on("click", ReloadPage);
+ 
+            // Start the generation using parameter as root label of the query.
+            popoto.start("ActivityDomain");
+
+            popoto.result.onResultReceived(
+                function (resultObjects) {
+                    for (var i = 0; i < resultObjects.length; i++) {
+                        if (resultObjects[i].attributes.Title !== undefined) {
+                            document.getElementById('urlreport').innerText=" on: " + resultObjects[i].attributes.Title;
+                            document.getElementById('urlreport').href= resultObjects[i].attributes.URL;
+                        } else {
+                            document.getElementById('urlreport').innerText="" //"Audit Report";
+                            document.getElementById('urlreport').href="#";
+                        }
+                    }
+                }
+            );
+        </script>
+    </body>
+</html>

@@ -1,0 +1,153 @@
+<!DOCTYPE HTML>
+<!--
+	Arcana by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+    <!-- based on no-side bar template -->
+    <%- include('../partials/head'); %>
+
+    <style type="text/css">
+        #viz {
+            width: 900px;
+            height: 700px;
+        }
+    </style>
+    <!--
+    https://cdn.rawgit.com/neo4j-contrib/neovis.js/master/dist/neovis.js
+    -->
+    <script src="https://cdn.neo4jlabs.com/neovis.js/master/neovis.js"></script>
+    <script>
+        function draw() {
+            var config = {
+                container_id: "viz",
+                server_url: "<%= ServerUrl %>",
+                server_user: "<%= ServerUser %>",
+                server_password: "<%= ServerPassword %>",
+                labels: {
+                    "Audit": {
+                        
+                    },
+                    "Country": {
+                        "caption": "Name"
+                    },
+                    "Function": {
+                        "caption": "Definition"
+                    },
+                    "Goal": {
+                        "caption": "Definition"
+                    },
+                    "Impact": {
+                        "caption": "Definition"
+                    },
+                    "Observation": {
+                        "caption": "Definition"
+                    },
+                    "Process": {
+                        "caption": "Definition"
+                    },
+                    "Requirement": {
+                        "caption": "Definition"
+                    },
+                    "Topics": {
+                        "caption": "Definition"
+                    },
+                    "ActivityDomain": {
+                        "caption": "Definition"
+                    },
+                    "Risk_Case": {
+                        "caption": "Definition"
+                    }
+                },
+                relationships: {
+                    "PRODUCED": {
+                        "thickness": "1",
+                        "caption": true
+                    },
+                    "PERFORM": {
+                        "thickness": "1",
+                        "caption": true
+                    },
+                    "ACHIEVE": {
+                        "thickness": "1",
+                        "caption": true
+                    },
+                    "DETERMINE": {
+                        "thickness": "1",
+                        "caption": true
+                    },
+                    "EVALUATE": {
+                        "thickness": "1",
+                        "caption": true
+                    },
+                    "COVER": {
+                        "thickness": "1",
+                        "caption": true,
+                    },
+                    "ADDRESS": {
+                        "thickness": "1",
+                        "caption": true
+                    },
+                    "IDENTIFIED": {
+                        "thickness": "1",
+                        "caption": true
+                    }
+                },
+                initial_cypher: "<%- InitialCypher %>"
+            }
+            var viz = new NeoVis.default(config);
+            viz.render();
+        }
+    </script>      
+
+	<body class="is-preload" onload="draw()">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+			<%- include('../partials/header'); %>
+
+			<!-- Main -->
+            <div class="container">
+                <section class="col-6 col-12-narrower">
+					<div class="container">
+						<div id="content">
+							<!-- Content -->
+                            <article>
+                                <section id="contact" class="col-6 col-12-narrower">
+                                    <header>
+                                        <h2></h2>
+                                        <h2>Hints for the audit (graph)</h2>
+                                        <p></p>
+                                    </header>
+                                    <div class="container">
+                                        <div id="viz"></div>
+                                    </div>
+                                    <p></p>
+                                    <% if(DataTable.length > 0) { %>
+                                        Hits for the audit (text)
+                                        <table id='tablecatalog'>
+                                            <thead>
+                                                <%- include('../partials/audit_analytics/recauditheader'); %>
+                                            </thead>    
+                                            <tbody>
+                                                <%- include('../partials/audit_analytics/recauditrow'); %>
+                                            </tbody>
+                                        </table>
+                                    <% } %>
+                                    </section>
+                            </article>
+						</div>
+					</div>
+				</section>
+            </div>
+			<!-- Footer -->
+			<%- include('../partials/footer'); %>
+
+		</div>
+
+		<!-- Scripts -->
+		<%- include('../partials/scripts'); -%>
+
+	</body>
+</html>

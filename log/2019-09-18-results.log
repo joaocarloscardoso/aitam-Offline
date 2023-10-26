@@ -1,0 +1,251 @@
+{"message":"garbage collector started on path: C:\\develop\\nodejs\\projects\\aitam\\work\\","level":"\u001b[34minfo\u001b[39m","timestamp":"2019-09-18 16:14:17"}
+{"message":"Session created received the id:29d734f0-5e02-45ae-b693-5ca559135761","level":"\u001b[34minfo\u001b[39m","timestamp":"2019-09-18 16:14:26"}
+{"message":"req.user: undefined","level":"\u001b[34minfo\u001b[39m","timestamp":"2019-09-18 16:14:31"}
+{"message":"Session id started: {\"user\":\"2f24vvg\"}","level":"\u001b[34minfo\u001b[39m","timestamp":"2019-09-18 16:14:31"}
+{"message":"User logged in: {\"id\":\"2f24vvg\",\"email\":\"test@test.com\",\"password\":\"$2a$10$A2g6pbxxhLA9MNYRJ0rnzOf/7Ara76B0KcRdjzUcsIBIclRuas/fG\"}","level":"\u001b[34minfo\u001b[39m","timestamp":"2019-09-18 16:14:31"}
+{"message":"New audit file created:C:\\develop\\nodejs\\projects\\aitam\\work\\29d734f0-5e02-45ae-b693-5ca559135761.xml","level":"\u001b[34minfo\u001b[39m","timestamp":"2019-09-18 16:14:33"}
+{"message":"garbage collector deleted  05c09f47-f3b2-45a8-ace0-dd3d3da8131a.src on folder: C:\\develop\\nodejs\\projects\\aitam\\work\\, path: C:\\develop\\nodejs\\projects\\aitam\\work\\05c09f47-f3b2-45a8-ace0-dd3d3da8131a.src","level":"\u001b[34minfo\u001b[39m","timestamp":"2019-09-18 16:15:00"}
+{"message":"garbage collector deleted  05c09f47-f3b2-45a8-ace0-dd3d3da8131a.tkn on folder: C:\\develop\\nodejs\\projects\\aitam\\work\\, path: C:\\develop\\nodejs\\projects\\aitam\\work\\05c09f47-f3b2-45a8-ace0-dd3d3da8131a.tkn","level":"\u001b[34minfo\u001b[39m","timestamp":"2019-09-18 16:15:00"}
+{"message":"garbage collector deleted  05c09f47-f3b2-45a8-ace0-dd3d3da8131a.vec on folder: C:\\develop\\nodejs\\projects\\aitam\\work\\, path: C:\\develop\\nodejs\\projects\\aitam\\work\\05c09f47-f3b2-45a8-ace0-dd3d3da8131a.vec","level":"\u001b[34minfo\u001b[39m","timestamp":"2019-09-18 16:15:00"}
+{"message":"garbage collector deleted  05c09f47-f3b2-45a8-ace0-dd3d3da8131a.xml on folder: C:\\develop\\nodejs\\projects\\aitam\\work\\, path: C:\\develop\\nodejs\\projects\\aitam\\work\\05c09f47-f3b2-45a8-ace0-dd3d3da8131a.xml","level":"\u001b[34minfo\u001b[39m","timestamp":"2019-09-18 16:15:00"}
+{"message":"garbage collector deleted  d3df4e0e-6e99-4703-899d-74dafc2ab867.xml on folder: C:\\develop\\nodejs\\projects\\aitam\\work\\, path: C:\\develop\\nodejs\\projects\\aitam\\work\\d3df4e0e-6e99-4703-899d-74dafc2ab867.xml","level":"\u001b[34minfo\u001b[39m","timestamp":"2019-09-18 16:15:00"}
+{"message":"garbage collector error:  Error: Can't delete C:\\develop\\nodejs\\projects\\aitam\\work\\05c09f47-f3b2-45a8-ace0-dd3d3da8131a.tkn","level":"\u001b[34minfo\u001b[39m","timestamp":"2019-09-18 16:15:00"}
+{"message":"garbage collector deleted  gazetteer.dic on folder: C:\\develop\\nodejs\\projects\\aitam\\work\\, path: C:\\develop\\nodejs\\projects\\aitam\\work\\gazetteer.dic","level":"\u001b[34minfo\u001b[39m","timestamp":"2019-09-18 16:15:00"}
+{"message":"garbage collector error:  Error: Can't delete C:\\develop\\nodejs\\projects\\aitam\\work\\05c09f47-f3b2-45a8-ace0-dd3d3da8131a.src","level":"\u001b[34minfo\u001b[39m","timestamp":"2019-09-18 16:15:00"}
+{"message":"garbage collector error:  Error: Can't delete C:\\develop\\nodejs\\projects\\aitam\\work\\05c09f47-f3b2-45a8-ace0-dd3d3da8131a.vec","level":"\u001b[34minfo\u001b[39m","timestamp":"2019-09-18 16:15:00"}
+{"message":"garbage collector error:  Error: Can't delete C:\\develop\\nodejs\\projects\\aitam\\work\\05c09f47-f3b2-45a8-ace0-dd3d3da8131a.xml","level":"\u001b[34minfo\u001b[39m","timestamp":"2019-09-18 16:15:00"}
+{"message":"garbage collector error:  Error: Can't delete C:\\develop\\nodejs\\projects\\aitam\\work\\d3df4e0e-6e99-4703-899d-74dafc2ab867.xml","level":"\u001b[34minfo\u001b[39m","timestamp":"2019-09-18 16:15:00"}
+{"message":"garbage collector error:  Error: Can't delete C:\\develop\\nodejs\\projects\\aitam\\work\\gazetteer.dic","level":"\u001b[34minfo\u001b[39m","timestamp":"2019-09-18 16:15:00"}
+{"message":"garbage collector started on path: C:\\develop\\nodejs\\projects\\aitam\\work\\","level":"\u001b[34minfo\u001b[39m","timestamp":"2019-09-18 16:29:41"}
+{"message":"Graph db error: Neo4jError: connect ECONNREFUSED 127.0.0.1:7687","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-09-18 16:29:44"}
+{"message":"Graph db error: Neo4jError: connect ECONNREFUSED 127.0.0.1:7687","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-09-18 16:29:44"}
+{"message":"Graph db error: Neo4jError: connect ECONNREFUSED 127.0.0.1:7687","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-09-18 16:29:44"}
+{"message":"Graph db error: Neo4jError: connect ECONNREFUSED 127.0.0.1:7687","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-09-18 16:29:44"}
+{"message":"Graph db error: Neo4jError: connect ECONNREFUSED 127.0.0.1:7687","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-09-18 16:29:44"}
+{"message":"Graph db error: Neo4jError: connect ECONNREFUSED 127.0.0.1:7687","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-09-18 16:29:44"}
+{"message":"req.user: undefined","level":"\u001b[34minfo\u001b[39m","timestamp":"2019-09-18 16:29:49"}
+{"message":"Session id started: {\"user\":\"2f24vvg\"}","level":"\u001b[34minfo\u001b[39m","timestamp":"2019-09-18 16:29:49"}
+{"message":"User logged in: {\"id\":\"2f24vvg\",\"email\":\"test@test.com\",\"password\":\"$2a$10$A2g6pbxxhLA9MNYRJ0rnzOf/7Ara76B0KcRdjzUcsIBIclRuas/fG\"}","level":"\u001b[34minfo\u001b[39m","timestamp":"2019-09-18 16:29:49"}
+{"message":"New audit file created:C:\\develop\\nodejs\\projects\\aitam\\work\\e2cee905-2314-4f89-bb24-4266b07a966a.xml","level":"\u001b[34minfo\u001b[39m","timestamp":"2019-09-18 16:29:52"}
+{"message":"garbage collector started on path: C:\\develop\\nodejs\\projects\\aitam\\work\\","level":"\u001b[34minfo\u001b[39m","timestamp":"2019-09-18 16:31:09"}
+{"message":"Graph db error: Neo4jError: connect ECONNREFUSED 127.0.0.1:7687","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-09-18 16:31:12"}
+{"message":"Graph db error: Neo4jError: connect ECONNREFUSED 127.0.0.1:7687","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-09-18 16:31:12"}
+{"message":"Graph db error: Neo4jError: connect ECONNREFUSED 127.0.0.1:7687","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-09-18 16:31:12"}
+{"message":"Graph db error: Neo4jError: connect ECONNREFUSED 127.0.0.1:7687","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-09-18 16:31:12"}
+{"message":"Graph db error: Neo4jError: connect ECONNREFUSED 127.0.0.1:7687","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-09-18 16:31:12"}
+{"message":"Graph db error: Neo4jError: connect ECONNREFUSED 127.0.0.1:7687","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-09-18 16:31:12"}
+{"message":"garbage collector started on path: C:\\develop\\nodejs\\projects\\aitam\\work\\","level":"\u001b[34minfo\u001b[39m","timestamp":"2019-09-18 16:32:34"}
+{"message":"Graph db error: Neo4jError: connect ECONNREFUSED 127.0.0.1:7687","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-09-18 16:32:36"}
+{"message":"Graph db error: Neo4jError: connect ECONNREFUSED 127.0.0.1:7687","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-09-18 16:32:36"}
+{"message":"Graph db error: Neo4jError: connect ECONNREFUSED 127.0.0.1:7687","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-09-18 16:32:36"}
+{"message":"Graph db error: Neo4jError: connect ECONNREFUSED 127.0.0.1:7687","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-09-18 16:32:36"}
+{"message":"Graph db error: Neo4jError: connect ECONNREFUSED 127.0.0.1:7687","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-09-18 16:32:36"}
+{"message":"Graph db error: Neo4jError: connect ECONNREFUSED 127.0.0.1:7687","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-09-18 16:32:36"}
+{"message":"req.user: undefined","level":"\u001b[34minfo\u001b[39m","timestamp":"2019-09-18 16:32:42"}
+{"message":"Session id started: {\"user\":\"2f24vvg\"}","level":"\u001b[34minfo\u001b[39m","timestamp":"2019-09-18 16:32:42"}
+{"message":"User logged in: {\"id\":\"2f24vvg\",\"email\":\"test@test.com\",\"password\":\"$2a$10$A2g6pbxxhLA9MNYRJ0rnzOf/7Ara76B0KcRdjzUcsIBIclRuas/fG\"}","level":"\u001b[34minfo\u001b[39m","timestamp":"2019-09-18 16:32:42"}
+{"message":"New audit file created:C:\\develop\\nodejs\\projects\\aitam\\work\\0dd742bd-4b0a-4b10-b95c-38516e15ae95.xml","level":"\u001b[34minfo\u001b[39m","timestamp":"2019-09-18 16:32:47"}
+{"message":"garbage collector started on path: C:\\develop\\nodejs\\projects\\aitam\\work\\","level":"\u001b[34minfo\u001b[39m","timestamp":"2019-09-18 16:33:29"}
+{"message":"Graph db error: Neo4jError: connect ECONNREFUSED 127.0.0.1:7687","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-09-18 16:33:32"}
+{"message":"Graph db error: Neo4jError: connect ECONNREFUSED 127.0.0.1:7687","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-09-18 16:33:32"}
+{"message":"Graph db error: Neo4jError: connect ECONNREFUSED 127.0.0.1:7687","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-09-18 16:33:32"}
+{"message":"Graph db error: Neo4jError: connect ECONNREFUSED 127.0.0.1:7687","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-09-18 16:33:32"}
+{"message":"Graph db error: Neo4jError: connect ECONNREFUSED 127.0.0.1:7687","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-09-18 16:33:32"}
+{"message":"Graph db error: Neo4jError: connect ECONNREFUSED 127.0.0.1:7687","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-09-18 16:33:32"}
+{"message":"req.user: undefined","level":"\u001b[34minfo\u001b[39m","timestamp":"2019-09-18 16:33:35"}
+{"message":"Session id started: {\"user\":\"2f24vvg\"}","level":"\u001b[34minfo\u001b[39m","timestamp":"2019-09-18 16:33:35"}
+{"message":"User logged in: {\"id\":\"2f24vvg\",\"email\":\"test@test.com\",\"password\":\"$2a$10$A2g6pbxxhLA9MNYRJ0rnzOf/7Ara76B0KcRdjzUcsIBIclRuas/fG\"}","level":"\u001b[34minfo\u001b[39m","timestamp":"2019-09-18 16:33:35"}
+{"message":"New audit file created:C:\\develop\\nodejs\\projects\\aitam\\work\\d7ffc5d1-9800-4c52-9dbe-a7d033b84fb1.xml","level":"\u001b[34minfo\u001b[39m","timestamp":"2019-09-18 16:33:37"}
+{"message":"garbage collector started on path: C:\\develop\\nodejs\\projects\\aitam\\work\\","level":"\u001b[34minfo\u001b[39m","timestamp":"2019-09-18 16:36:16"}
+{"message":"Graph db error: Neo4jError: connect ECONNREFUSED 127.0.0.1:7687","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-09-18 16:36:19"}
+{"message":"Graph db error: Neo4jError: connect ECONNREFUSED 127.0.0.1:7687","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-09-18 16:36:19"}
+{"message":"Graph db error: Neo4jError: connect ECONNREFUSED 127.0.0.1:7687","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-09-18 16:36:19"}
+{"message":"Graph db error: Neo4jError: connect ECONNREFUSED 127.0.0.1:7687","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-09-18 16:36:19"}
+{"message":"Graph db error: Neo4jError: connect ECONNREFUSED 127.0.0.1:7687","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-09-18 16:36:19"}
+{"message":"Graph db error: Neo4jError: connect ECONNREFUSED 127.0.0.1:7687","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-09-18 16:36:19"}
+{"message":"req.user: undefined","level":"\u001b[34minfo\u001b[39m","timestamp":"2019-09-18 16:36:23"}
+{"message":"Session id started: {\"user\":\"2f24vvg\"}","level":"\u001b[34minfo\u001b[39m","timestamp":"2019-09-18 16:36:23"}
+{"message":"User logged in: {\"id\":\"2f24vvg\",\"email\":\"test@test.com\",\"password\":\"$2a$10$A2g6pbxxhLA9MNYRJ0rnzOf/7Ara76B0KcRdjzUcsIBIclRuas/fG\"}","level":"\u001b[34minfo\u001b[39m","timestamp":"2019-09-18 16:36:23"}
+{"message":"New audit file created:C:\\develop\\nodejs\\projects\\aitam\\work\\3d9cdd55-bef2-43b8-bdbe-e92067703da1.xml","level":"\u001b[34minfo\u001b[39m","timestamp":"2019-09-18 16:36:24"}
+{"message":"garbage collector started on path: C:\\develop\\nodejs\\projects\\aitam\\work\\","level":"\u001b[34minfo\u001b[39m","timestamp":"2019-09-18 16:37:32"}
+{"message":"Graph db error: Neo4jError: connect ECONNREFUSED 127.0.0.1:7687","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-09-18 16:37:35"}
+{"message":"Graph db error: Neo4jError: connect ECONNREFUSED 127.0.0.1:7687","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-09-18 16:37:35"}
+{"message":"Graph db error: Neo4jError: connect ECONNREFUSED 127.0.0.1:7687","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-09-18 16:37:35"}
+{"message":"Graph db error: Neo4jError: connect ECONNREFUSED 127.0.0.1:7687","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-09-18 16:37:35"}
+{"message":"Graph db error: Neo4jError: connect ECONNREFUSED 127.0.0.1:7687","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-09-18 16:37:35"}
+{"message":"Graph db error: Neo4jError: connect ECONNREFUSED 127.0.0.1:7687","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-09-18 16:37:35"}
+{"message":"garbage collector started on path: C:\\develop\\nodejs\\projects\\aitam\\work\\","level":"\u001b[34minfo\u001b[39m","timestamp":"2019-09-18 16:39:03"}
+{"message":"Graph db error: Neo4jError: connect ECONNREFUSED 127.0.0.1:7687","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-09-18 16:39:06"}
+{"message":"Graph db error: Neo4jError: connect ECONNREFUSED 127.0.0.1:7687","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-09-18 16:39:06"}
+{"message":"Graph db error: Neo4jError: connect ECONNREFUSED 127.0.0.1:7687","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-09-18 16:39:06"}
+{"message":"Graph db error: Neo4jError: connect ECONNREFUSED 127.0.0.1:7687","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-09-18 16:39:06"}
+{"message":"Graph db error: Neo4jError: connect ECONNREFUSED 127.0.0.1:7687","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-09-18 16:39:06"}
+{"message":"Graph db error: Neo4jError: connect ECONNREFUSED 127.0.0.1:7687","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-09-18 16:39:06"}
+{"message":"req.user: undefined","level":"\u001b[34minfo\u001b[39m","timestamp":"2019-09-18 16:39:08"}
+{"message":"Session id started: {\"user\":\"2f24vvg\"}","level":"\u001b[34minfo\u001b[39m","timestamp":"2019-09-18 16:39:08"}
+{"message":"User logged in: {\"id\":\"2f24vvg\",\"email\":\"test@test.com\",\"password\":\"$2a$10$A2g6pbxxhLA9MNYRJ0rnzOf/7Ara76B0KcRdjzUcsIBIclRuas/fG\"}","level":"\u001b[34minfo\u001b[39m","timestamp":"2019-09-18 16:39:08"}
+{"message":"New audit file created:C:\\develop\\nodejs\\projects\\aitam\\work\\57da67a4-48a7-4a24-8e28-a9d8124af2c0.xml","level":"\u001b[34minfo\u001b[39m","timestamp":"2019-09-18 16:39:10"}
+{"message":"garbage collector started on path: C:\\develop\\nodejs\\projects\\aitam\\work\\","level":"\u001b[34minfo\u001b[39m","timestamp":"2019-09-18 16:40:41"}
+{"message":"Graph db error: Neo4jError: connect ECONNREFUSED 127.0.0.1:7687","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-09-18 16:40:44"}
+{"message":"Graph db error: Neo4jError: connect ECONNREFUSED 127.0.0.1:7687","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-09-18 16:40:44"}
+{"message":"Graph db error: Neo4jError: connect ECONNREFUSED 127.0.0.1:7687","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-09-18 16:40:44"}
+{"message":"Graph db error: Neo4jError: connect ECONNREFUSED 127.0.0.1:7687","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-09-18 16:40:44"}
+{"message":"Graph db error: Neo4jError: connect ECONNREFUSED 127.0.0.1:7687","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-09-18 16:40:44"}
+{"message":"Graph db error: Neo4jError: connect ECONNREFUSED 127.0.0.1:7687","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-09-18 16:40:44"}
+{"message":"req.user: undefined","level":"\u001b[34minfo\u001b[39m","timestamp":"2019-09-18 16:41:03"}
+{"message":"Session id started: {\"user\":\"2f24vvg\"}","level":"\u001b[34minfo\u001b[39m","timestamp":"2019-09-18 16:41:03"}
+{"message":"User logged in: {\"id\":\"2f24vvg\",\"email\":\"test@test.com\",\"password\":\"$2a$10$A2g6pbxxhLA9MNYRJ0rnzOf/7Ara76B0KcRdjzUcsIBIclRuas/fG\"}","level":"\u001b[34minfo\u001b[39m","timestamp":"2019-09-18 16:41:03"}
+{"message":"New audit file created:C:\\develop\\nodejs\\projects\\aitam\\work\\61159110-951c-40fc-b863-d0dba5415561.xml","level":"\u001b[34minfo\u001b[39m","timestamp":"2019-09-18 16:41:04"}
+{"message":"garbage collector started on path: C:\\develop\\nodejs\\projects\\aitam\\work\\","level":"\u001b[34minfo\u001b[39m","timestamp":"2019-09-18 16:43:45"}
+{"message":"Graph db error: Neo4jError: connect ECONNREFUSED 127.0.0.1:7687","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-09-18 16:43:48"}
+{"message":"Graph db error: Neo4jError: connect ECONNREFUSED 127.0.0.1:7687","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-09-18 16:43:48"}
+{"message":"Graph db error: Neo4jError: connect ECONNREFUSED 127.0.0.1:7687","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-09-18 16:43:48"}
+{"message":"Graph db error: Neo4jError: connect ECONNREFUSED 127.0.0.1:7687","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-09-18 16:43:48"}
+{"message":"Graph db error: Neo4jError: connect ECONNREFUSED 127.0.0.1:7687","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-09-18 16:43:48"}
+{"message":"Graph db error: Neo4jError: connect ECONNREFUSED 127.0.0.1:7687","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-09-18 16:43:48"}
+{"message":"req.user: undefined","level":"\u001b[34minfo\u001b[39m","timestamp":"2019-09-18 16:43:51"}
+{"message":"Session id started: {\"user\":\"2f24vvg\"}","level":"\u001b[34minfo\u001b[39m","timestamp":"2019-09-18 16:43:51"}
+{"message":"User logged in: {\"id\":\"2f24vvg\",\"email\":\"test@test.com\",\"password\":\"$2a$10$A2g6pbxxhLA9MNYRJ0rnzOf/7Ara76B0KcRdjzUcsIBIclRuas/fG\"}","level":"\u001b[34minfo\u001b[39m","timestamp":"2019-09-18 16:43:51"}
+{"message":"New audit file created:C:\\develop\\nodejs\\projects\\aitam\\work\\da1e4b8d-8cf5-4e06-adf9-3db4c27cb76a.xml","level":"\u001b[34minfo\u001b[39m","timestamp":"2019-09-18 16:43:53"}
+{"message":"garbage collector started on path: C:\\develop\\nodejs\\projects\\aitam\\work\\","level":"\u001b[34minfo\u001b[39m","timestamp":"2019-09-18 16:45:30"}
+{"message":"Graph db error: Neo4jError: connect ECONNREFUSED 127.0.0.1:7687","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-09-18 16:45:32"}
+{"message":"Graph db error: Neo4jError: connect ECONNREFUSED 127.0.0.1:7687","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-09-18 16:45:32"}
+{"message":"Graph db error: Neo4jError: connect ECONNREFUSED 127.0.0.1:7687","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-09-18 16:45:32"}
+{"message":"Graph db error: Neo4jError: connect ECONNREFUSED 127.0.0.1:7687","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-09-18 16:45:32"}
+{"message":"Graph db error: Neo4jError: connect ECONNREFUSED 127.0.0.1:7687","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-09-18 16:45:32"}
+{"message":"Graph db error: Neo4jError: connect ECONNREFUSED 127.0.0.1:7687","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-09-18 16:45:32"}
+{"message":"garbage collector started on path: C:\\develop\\nodejs\\projects\\aitam\\work\\","level":"\u001b[34minfo\u001b[39m","timestamp":"2019-09-18 16:46:08"}
+{"message":"Graph db error: Neo4jError: connect ECONNREFUSED 127.0.0.1:7687","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-09-18 16:46:10"}
+{"message":"Graph db error: Neo4jError: connect ECONNREFUSED 127.0.0.1:7687","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-09-18 16:46:10"}
+{"message":"Graph db error: Neo4jError: connect ECONNREFUSED 127.0.0.1:7687","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-09-18 16:46:10"}
+{"message":"Graph db error: Neo4jError: connect ECONNREFUSED 127.0.0.1:7687","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-09-18 16:46:10"}
+{"message":"Graph db error: Neo4jError: connect ECONNREFUSED 127.0.0.1:7687","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-09-18 16:46:10"}
+{"message":"Graph db error: Neo4jError: connect ECONNREFUSED 127.0.0.1:7687","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-09-18 16:46:10"}
+{"message":"req.user: undefined","level":"\u001b[34minfo\u001b[39m","timestamp":"2019-09-18 16:46:13"}
+{"message":"Session id started: {\"user\":\"2f24vvg\"}","level":"\u001b[34minfo\u001b[39m","timestamp":"2019-09-18 16:46:13"}
+{"message":"User logged in: {\"id\":\"2f24vvg\",\"email\":\"test@test.com\",\"password\":\"$2a$10$A2g6pbxxhLA9MNYRJ0rnzOf/7Ara76B0KcRdjzUcsIBIclRuas/fG\"}","level":"\u001b[34minfo\u001b[39m","timestamp":"2019-09-18 16:46:13"}
+{"message":"New audit file created:C:\\develop\\nodejs\\projects\\aitam\\work\\a9158bd2-3797-4d5d-b5ae-4c78c41f8909.xml","level":"\u001b[34minfo\u001b[39m","timestamp":"2019-09-18 16:46:16"}
+{"message":"garbage collector started on path: C:\\develop\\nodejs\\projects\\aitam\\work\\","level":"\u001b[34minfo\u001b[39m","timestamp":"2019-09-18 16:47:26"}
+{"message":"Graph db error: Neo4jError: connect ECONNREFUSED 127.0.0.1:7687","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-09-18 16:47:29"}
+{"message":"Graph db error: Neo4jError: connect ECONNREFUSED 127.0.0.1:7687","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-09-18 16:47:29"}
+{"message":"Graph db error: Neo4jError: connect ECONNREFUSED 127.0.0.1:7687","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-09-18 16:47:29"}
+{"message":"Graph db error: Neo4jError: connect ECONNREFUSED 127.0.0.1:7687","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-09-18 16:47:29"}
+{"message":"Graph db error: Neo4jError: connect ECONNREFUSED 127.0.0.1:7687","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-09-18 16:47:29"}
+{"message":"Graph db error: Neo4jError: connect ECONNREFUSED 127.0.0.1:7687","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-09-18 16:47:29"}
+{"message":"garbage collector started on path: C:\\develop\\nodejs\\projects\\aitam\\work\\","level":"\u001b[34minfo\u001b[39m","timestamp":"2019-09-18 16:47:38"}
+{"message":"Session created received the id:fabbf5e5-a3b9-4aec-a239-39753308d15e","level":"\u001b[34minfo\u001b[39m","timestamp":"2019-09-18 16:47:40"}
+{"message":"Graph db error: Neo4jError: connect ECONNREFUSED 127.0.0.1:7687","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-09-18 16:47:41"}
+{"message":"Graph db error: Neo4jError: connect ECONNREFUSED 127.0.0.1:7687","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-09-18 16:47:41"}
+{"message":"Graph db error: Neo4jError: connect ECONNREFUSED 127.0.0.1:7687","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-09-18 16:47:41"}
+{"message":"Graph db error: Neo4jError: connect ECONNREFUSED 127.0.0.1:7687","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-09-18 16:47:41"}
+{"message":"Graph db error: Neo4jError: connect ECONNREFUSED 127.0.0.1:7687","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-09-18 16:47:41"}
+{"message":"Graph db error: Neo4jError: connect ECONNREFUSED 127.0.0.1:7687","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-09-18 16:47:41"}
+{"message":"Graph db error: Neo4jError: connect ECONNREFUSED 127.0.0.1:7687","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-09-18 16:47:42"}
+{"message":"Graph db error: Neo4jError: connect ECONNREFUSED 127.0.0.1:7687","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-09-18 16:47:42"}
+{"message":"Graph db error: Neo4jError: connect ECONNREFUSED 127.0.0.1:7687","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-09-18 16:47:42"}
+{"message":"Graph db error: Neo4jError: connect ECONNREFUSED 127.0.0.1:7687","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-09-18 16:47:42"}
+{"message":"Graph db error: Neo4jError: connect ECONNREFUSED 127.0.0.1:7687","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-09-18 16:47:42"}
+{"message":"Graph db error: Neo4jError: connect ECONNREFUSED 127.0.0.1:7687","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-09-18 16:47:42"}
+{"message":"req.user: undefined","level":"\u001b[34minfo\u001b[39m","timestamp":"2019-09-18 16:47:44"}
+{"message":"Session id started: {\"user\":\"2f24vvg\"}","level":"\u001b[34minfo\u001b[39m","timestamp":"2019-09-18 16:47:44"}
+{"message":"User logged in: {\"id\":\"2f24vvg\",\"email\":\"test@test.com\",\"password\":\"$2a$10$A2g6pbxxhLA9MNYRJ0rnzOf/7Ara76B0KcRdjzUcsIBIclRuas/fG\"}","level":"\u001b[34minfo\u001b[39m","timestamp":"2019-09-18 16:47:44"}
+{"message":"New audit file created:C:\\develop\\nodejs\\projects\\aitam\\work\\fabbf5e5-a3b9-4aec-a239-39753308d15e.xml","level":"\u001b[34minfo\u001b[39m","timestamp":"2019-09-18 16:47:45"}
+{"message":"garbage collector started on path: C:\\develop\\nodejs\\projects\\aitam\\work\\","level":"\u001b[34minfo\u001b[39m","timestamp":"2019-09-18 16:48:54"}
+{"message":"Graph db error: Neo4jError: connect ECONNREFUSED 127.0.0.1:7687","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-09-18 16:48:57"}
+{"message":"Graph db error: Neo4jError: connect ECONNREFUSED 127.0.0.1:7687","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-09-18 16:48:57"}
+{"message":"Graph db error: Neo4jError: connect ECONNREFUSED 127.0.0.1:7687","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-09-18 16:48:57"}
+{"message":"Graph db error: Neo4jError: connect ECONNREFUSED 127.0.0.1:7687","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-09-18 16:48:57"}
+{"message":"Graph db error: Neo4jError: connect ECONNREFUSED 127.0.0.1:7687","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-09-18 16:48:57"}
+{"message":"Graph db error: Neo4jError: connect ECONNREFUSED 127.0.0.1:7687","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-09-18 16:48:57"}
+{"message":"garbage collector started on path: C:\\develop\\nodejs\\projects\\aitam\\work\\","level":"\u001b[34minfo\u001b[39m","timestamp":"2019-09-18 16:51:49"}
+{"message":"Graph db error: Neo4jError: connect ECONNREFUSED 127.0.0.1:7687","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-09-18 16:51:52"}
+{"message":"Graph db error: Neo4jError: connect ECONNREFUSED 127.0.0.1:7687","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-09-18 16:51:52"}
+{"message":"Graph db error: Neo4jError: connect ECONNREFUSED 127.0.0.1:7687","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-09-18 16:51:52"}
+{"message":"Graph db error: Neo4jError: connect ECONNREFUSED 127.0.0.1:7687","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-09-18 16:51:52"}
+{"message":"Graph db error: Neo4jError: connect ECONNREFUSED 127.0.0.1:7687","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-09-18 16:51:52"}
+{"message":"Graph db error: Neo4jError: connect ECONNREFUSED 127.0.0.1:7687","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-09-18 16:51:52"}
+{"message":"req.user: undefined","level":"\u001b[34minfo\u001b[39m","timestamp":"2019-09-18 16:52:04"}
+{"message":"Session id started: {\"user\":\"2f24vvg\"}","level":"\u001b[34minfo\u001b[39m","timestamp":"2019-09-18 16:52:04"}
+{"message":"User logged in: {\"id\":\"2f24vvg\",\"email\":\"test@test.com\",\"password\":\"$2a$10$A2g6pbxxhLA9MNYRJ0rnzOf/7Ara76B0KcRdjzUcsIBIclRuas/fG\"}","level":"\u001b[34minfo\u001b[39m","timestamp":"2019-09-18 16:52:04"}
+{"message":"User (2f24vvg) uploaded a file: {\"file-upload\":{\"size\":570796,\"path\":\"C:\\\\develop\\\\nodejs\\\\projects\\\\aitam\\\\work\\\\e3177528-7f60-49a1-a307-debd4d0bd6dd.xml\",\"name\":\"fabbf5e5-a3b9-4aec-a239-39753308d15e.xml\",\"type\":\"text/xml\",\"mtime\":\"2019-09-18T15:52:10.526Z\"}}","level":"\u001b[34minfo\u001b[39m","timestamp":"2019-09-18 16:52:10"}
+{"message":"garbage collector started on path: C:\\develop\\nodejs\\projects\\aitam\\work\\","level":"\u001b[34minfo\u001b[39m","timestamp":"2019-09-18 16:54:57"}
+{"message":"Graph db error: Neo4jError: connect ECONNREFUSED 127.0.0.1:7687","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-09-18 16:55:00"}
+{"message":"Graph db error: Neo4jError: connect ECONNREFUSED 127.0.0.1:7687","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-09-18 16:55:00"}
+{"message":"Graph db error: Neo4jError: connect ECONNREFUSED 127.0.0.1:7687","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-09-18 16:55:00"}
+{"message":"Graph db error: Neo4jError: connect ECONNREFUSED 127.0.0.1:7687","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-09-18 16:55:00"}
+{"message":"Graph db error: Neo4jError: connect ECONNREFUSED 127.0.0.1:7687","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-09-18 16:55:00"}
+{"message":"Graph db error: Neo4jError: connect ECONNREFUSED 127.0.0.1:7687","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-09-18 16:55:00"}
+{"message":"req.user: undefined","level":"\u001b[34minfo\u001b[39m","timestamp":"2019-09-18 16:55:04"}
+{"message":"Session id started: {\"user\":\"2f24vvg\"}","level":"\u001b[34minfo\u001b[39m","timestamp":"2019-09-18 16:55:04"}
+{"message":"User logged in: {\"id\":\"2f24vvg\",\"email\":\"test@test.com\",\"password\":\"$2a$10$A2g6pbxxhLA9MNYRJ0rnzOf/7Ara76B0KcRdjzUcsIBIclRuas/fG\"}","level":"\u001b[34minfo\u001b[39m","timestamp":"2019-09-18 16:55:04"}
+{"message":"User (2f24vvg) uploaded a file: {\"file-upload\":{\"size\":570796,\"path\":\"C:\\\\develop\\\\nodejs\\\\projects\\\\aitam\\\\work\\\\a6aac531-5d77-4ede-97d9-ee0ef2acc9c9.xml\",\"name\":\"fabbf5e5-a3b9-4aec-a239-39753308d15e.xml\",\"type\":\"text/xml\",\"mtime\":\"2019-09-18T15:55:10.491Z\"}}","level":"\u001b[34minfo\u001b[39m","timestamp":"2019-09-18 16:55:10"}
+{"message":"Session created received the id:a6aac531-5d77-4ede-97d9-ee0ef2acc9c9","level":"\u001b[34minfo\u001b[39m","timestamp":"2019-09-18 17:02:35"}
+{"message":"Graph db error: Neo4jError: connect ECONNREFUSED 127.0.0.1:7687","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-09-18 17:02:37"}
+{"message":"Graph db error: Neo4jError: connect ECONNREFUSED 127.0.0.1:7687","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-09-18 17:02:37"}
+{"message":"Graph db error: Neo4jError: connect ECONNREFUSED 127.0.0.1:7687","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-09-18 17:02:37"}
+{"message":"Graph db error: Neo4jError: connect ECONNREFUSED 127.0.0.1:7687","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-09-18 17:02:37"}
+{"message":"Graph db error: Neo4jError: connect ECONNREFUSED 127.0.0.1:7687","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-09-18 17:02:37"}
+{"message":"Graph db error: Neo4jError: connect ECONNREFUSED 127.0.0.1:7687","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-09-18 17:02:37"}
+{"message":"New audit file created:C:\\develop\\nodejs\\projects\\aitam\\work\\a6aac531-5d77-4ede-97d9-ee0ef2acc9c9.xml","level":"\u001b[34minfo\u001b[39m","timestamp":"2019-09-18 17:02:46"}
+{"message":"garbage collector started on path: C:\\develop\\nodejs\\projects\\aitam\\work\\","level":"\u001b[34minfo\u001b[39m","timestamp":"2019-09-18 17:26:57"}
+{"message":"Graph db error: Neo4jError: connect ECONNREFUSED 127.0.0.1:7687","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-09-18 17:27:00"}
+{"message":"Graph db error: Neo4jError: connect ECONNREFUSED 127.0.0.1:7687","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-09-18 17:27:00"}
+{"message":"Graph db error: Neo4jError: connect ECONNREFUSED 127.0.0.1:7687","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-09-18 17:27:00"}
+{"message":"Graph db error: Neo4jError: connect ECONNREFUSED 127.0.0.1:7687","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-09-18 17:27:00"}
+{"message":"Graph db error: Neo4jError: connect ECONNREFUSED 127.0.0.1:7687","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-09-18 17:27:00"}
+{"message":"Graph db error: Neo4jError: connect ECONNREFUSED 127.0.0.1:7687","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-09-18 17:27:00"}
+{"message":"Session created received the id:6c21b7dc-acbf-49ce-9b2f-b64bcbb6f332","level":"\u001b[34minfo\u001b[39m","timestamp":"2019-09-18 17:27:20"}
+{"message":"Graph db error: Neo4jError: connect ECONNREFUSED 127.0.0.1:7687","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-09-18 17:27:23"}
+{"message":"Graph db error: Neo4jError: connect ECONNREFUSED 127.0.0.1:7687","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-09-18 17:27:23"}
+{"message":"Graph db error: Neo4jError: connect ECONNREFUSED 127.0.0.1:7687","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-09-18 17:27:23"}
+{"message":"Graph db error: Neo4jError: connect ECONNREFUSED 127.0.0.1:7687","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-09-18 17:27:23"}
+{"message":"Graph db error: Neo4jError: connect ECONNREFUSED 127.0.0.1:7687","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-09-18 17:27:23"}
+{"message":"Graph db error: Neo4jError: connect ECONNREFUSED 127.0.0.1:7687","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-09-18 17:27:23"}
+{"message":"req.user: undefined","level":"\u001b[34minfo\u001b[39m","timestamp":"2019-09-18 17:27:25"}
+{"message":"Session id started: {\"user\":\"2f24vvg\"}","level":"\u001b[34minfo\u001b[39m","timestamp":"2019-09-18 17:27:25"}
+{"message":"User logged in: {\"id\":\"2f24vvg\",\"email\":\"test@test.com\",\"password\":\"$2a$10$A2g6pbxxhLA9MNYRJ0rnzOf/7Ara76B0KcRdjzUcsIBIclRuas/fG\"}","level":"\u001b[34minfo\u001b[39m","timestamp":"2019-09-18 17:27:25"}
+{"message":"User (2f24vvg) uploaded a file: {\"file-upload\":{\"size\":527710,\"path\":\"C:\\\\develop\\\\nodejs\\\\projects\\\\aitam\\\\work\\\\6c21b7dc-acbf-49ce-9b2f-b64bcbb6f332.xml\",\"name\":\"5161285c-fcce-49a6-bf8a-695c37390dfd.xml\",\"type\":\"text/xml\",\"mtime\":\"2019-09-18T16:27:36.130Z\"}}","level":"\u001b[34minfo\u001b[39m","timestamp":"2019-09-18 17:27:36"}
+{"message":"garbage collector started on path: C:\\develop\\nodejs\\projects\\aitam\\work\\","level":"\u001b[34minfo\u001b[39m","timestamp":"2019-09-18 17:28:39"}
+{"message":"Graph db error: Neo4jError: connect ECONNREFUSED 127.0.0.1:7687","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-09-18 17:28:41"}
+{"message":"Graph db error: Neo4jError: connect ECONNREFUSED 127.0.0.1:7687","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-09-18 17:28:41"}
+{"message":"Graph db error: Neo4jError: connect ECONNREFUSED 127.0.0.1:7687","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-09-18 17:28:41"}
+{"message":"Graph db error: Neo4jError: connect ECONNREFUSED 127.0.0.1:7687","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-09-18 17:28:41"}
+{"message":"Graph db error: Neo4jError: connect ECONNREFUSED 127.0.0.1:7687","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-09-18 17:28:41"}
+{"message":"Graph db error: Neo4jError: connect ECONNREFUSED 127.0.0.1:7687","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-09-18 17:28:41"}
+{"message":"req.user: undefined","level":"\u001b[34minfo\u001b[39m","timestamp":"2019-09-18 17:28:43"}
+{"message":"Session id started: {\"user\":\"2f24vvg\"}","level":"\u001b[34minfo\u001b[39m","timestamp":"2019-09-18 17:28:43"}
+{"message":"User logged in: {\"id\":\"2f24vvg\",\"email\":\"test@test.com\",\"password\":\"$2a$10$A2g6pbxxhLA9MNYRJ0rnzOf/7Ara76B0KcRdjzUcsIBIclRuas/fG\"}","level":"\u001b[34minfo\u001b[39m","timestamp":"2019-09-18 17:28:43"}
+{"message":"User (2f24vvg) uploaded a file: {\"file-upload\":{\"size\":527710,\"path\":\"C:\\\\develop\\\\nodejs\\\\projects\\\\aitam\\\\work\\\\e45b1aea-0888-4062-9a8d-57ed0dd05930.xml\",\"name\":\"5161285c-fcce-49a6-bf8a-695c37390dfd.xml\",\"type\":\"text/xml\",\"mtime\":\"2019-09-18T16:28:49.112Z\"}}","level":"\u001b[34minfo\u001b[39m","timestamp":"2019-09-18 17:28:49"}
+{"message":"garbage collector started on path: C:\\develop\\nodejs\\projects\\aitam\\work\\","level":"\u001b[34minfo\u001b[39m","timestamp":"2019-09-18 17:29:10"}
+{"message":"Graph db error: Neo4jError: connect ECONNREFUSED 127.0.0.1:7687","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-09-18 17:29:13"}
+{"message":"Graph db error: Neo4jError: connect ECONNREFUSED 127.0.0.1:7687","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-09-18 17:29:13"}
+{"message":"Graph db error: Neo4jError: connect ECONNREFUSED 127.0.0.1:7687","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-09-18 17:29:13"}
+{"message":"Graph db error: Neo4jError: connect ECONNREFUSED 127.0.0.1:7687","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-09-18 17:29:13"}
+{"message":"Graph db error: Neo4jError: connect ECONNREFUSED 127.0.0.1:7687","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-09-18 17:29:13"}
+{"message":"Graph db error: Neo4jError: connect ECONNREFUSED 127.0.0.1:7687","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-09-18 17:29:13"}
+{"message":"req.user: undefined","level":"\u001b[34minfo\u001b[39m","timestamp":"2019-09-18 17:29:23"}
+{"message":"Session id started: {\"user\":\"2f24vvg\"}","level":"\u001b[34minfo\u001b[39m","timestamp":"2019-09-18 17:29:23"}
+{"message":"User logged in: {\"id\":\"2f24vvg\",\"email\":\"test@test.com\",\"password\":\"$2a$10$A2g6pbxxhLA9MNYRJ0rnzOf/7Ara76B0KcRdjzUcsIBIclRuas/fG\"}","level":"\u001b[34minfo\u001b[39m","timestamp":"2019-09-18 17:29:23"}
+{"message":"User (2f24vvg) uploaded a file: {\"file-upload\":{\"size\":527710,\"path\":\"C:\\\\develop\\\\nodejs\\\\projects\\\\aitam\\\\work\\\\285c18ea-18f4-4ee6-b4d3-019b489cc414.xml\",\"name\":\"5161285c-fcce-49a6-bf8a-695c37390dfd.xml\",\"type\":\"text/xml\",\"mtime\":\"2019-09-18T16:32:04.521Z\"}}","level":"\u001b[34minfo\u001b[39m","timestamp":"2019-09-18 17:32:04"}
+{"message":"garbage collector started on path: C:\\develop\\nodejs\\projects\\aitam\\work\\","level":"\u001b[34minfo\u001b[39m","timestamp":"2019-09-18 17:35:08"}
+{"message":"Graph db error: Neo4jError: connect ECONNREFUSED 127.0.0.1:7687","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-09-18 17:35:11"}
+{"message":"Graph db error: Neo4jError: connect ECONNREFUSED 127.0.0.1:7687","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-09-18 17:35:11"}
+{"message":"Graph db error: Neo4jError: connect ECONNREFUSED 127.0.0.1:7687","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-09-18 17:35:11"}
+{"message":"Graph db error: Neo4jError: connect ECONNREFUSED 127.0.0.1:7687","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-09-18 17:35:11"}
+{"message":"Graph db error: Neo4jError: connect ECONNREFUSED 127.0.0.1:7687","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-09-18 17:35:11"}
+{"message":"Graph db error: Neo4jError: connect ECONNREFUSED 127.0.0.1:7687","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-09-18 17:35:11"}
+{"message":"req.user: undefined","level":"\u001b[34minfo\u001b[39m","timestamp":"2019-09-18 17:35:15"}
+{"message":"Session id started: {\"user\":\"2f24vvg\"}","level":"\u001b[34minfo\u001b[39m","timestamp":"2019-09-18 17:35:15"}
+{"message":"User logged in: {\"id\":\"2f24vvg\",\"email\":\"test@test.com\",\"password\":\"$2a$10$A2g6pbxxhLA9MNYRJ0rnzOf/7Ara76B0KcRdjzUcsIBIclRuas/fG\"}","level":"\u001b[34minfo\u001b[39m","timestamp":"2019-09-18 17:35:15"}
+{"message":"User (2f24vvg) uploaded a file: {\"file-upload\":{\"size\":527710,\"path\":\"C:\\\\develop\\\\nodejs\\\\projects\\\\aitam\\\\work\\\\3996ab9f-43ca-496f-8109-efa5d191e709.xml\",\"name\":\"5161285c-fcce-49a6-bf8a-695c37390dfd.xml\",\"type\":\"text/xml\",\"mtime\":\"2019-09-18T16:35:48.793Z\"}}","level":"\u001b[34minfo\u001b[39m","timestamp":"2019-09-18 17:35:48"}
+{"message":"garbage collector started on path: C:\\develop\\nodejs\\projects\\aitam\\work\\","level":"\u001b[34minfo\u001b[39m","timestamp":"2019-09-18 17:36:53"}
+{"message":"Graph db error: Neo4jError: connect ECONNREFUSED 127.0.0.1:7687","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-09-18 17:36:56"}
+{"message":"Graph db error: Neo4jError: connect ECONNREFUSED 127.0.0.1:7687","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-09-18 17:36:56"}
+{"message":"Graph db error: Neo4jError: connect ECONNREFUSED 127.0.0.1:7687","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-09-18 17:36:56"}
+{"message":"Graph db error: Neo4jError: connect ECONNREFUSED 127.0.0.1:7687","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-09-18 17:36:56"}
+{"message":"Graph db error: Neo4jError: connect ECONNREFUSED 127.0.0.1:7687","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-09-18 17:36:56"}
+{"message":"Graph db error: Neo4jError: connect ECONNREFUSED 127.0.0.1:7687","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-09-18 17:36:56"}
+{"message":"req.user: undefined","level":"\u001b[34minfo\u001b[39m","timestamp":"2019-09-18 17:36:58"}
+{"message":"Session id started: {\"user\":\"2f24vvg\"}","level":"\u001b[34minfo\u001b[39m","timestamp":"2019-09-18 17:36:58"}
+{"message":"User logged in: {\"id\":\"2f24vvg\",\"email\":\"test@test.com\",\"password\":\"$2a$10$A2g6pbxxhLA9MNYRJ0rnzOf/7Ara76B0KcRdjzUcsIBIclRuas/fG\"}","level":"\u001b[34minfo\u001b[39m","timestamp":"2019-09-18 17:36:58"}
+{"message":"User (2f24vvg) uploaded a file: {\"file-upload\":{\"size\":527710,\"path\":\"C:\\\\develop\\\\nodejs\\\\projects\\\\aitam\\\\work\\\\95039d42-a9ee-4e9f-bccc-7f882b0962c7.xml\",\"name\":\"5161285c-fcce-49a6-bf8a-695c37390dfd.xml\",\"type\":\"text/xml\",\"mtime\":\"2019-09-18T16:37:03.832Z\"}}","level":"\u001b[34minfo\u001b[39m","timestamp":"2019-09-18 17:37:03"}

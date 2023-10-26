@@ -1,0 +1,39 @@
+<% let i=1 %>
+<% catalog.forEach(function(item) { %>
+    <% if (Math.abs(i % 2) == 1) { -%>
+        <div class="row">
+            <section class="col-6 col-12-narrower">
+                <div class="box post">
+                    <a href="/portanalytics/portfolio?id=<%= item._id %>" class="image left"><img src="/images/recktrack01.jpg" alt="" /></a>
+                    <div class="inner">
+                        <h3><a href="/portanalytics/portfolio?id=<%= item._id %>"><%= item.portfolioid %></a></h3>
+                        <p><%= item.description %>
+                        <br/>Covers : <%= item.coverage %>
+                        <br/>SAI: <%= item.org %>
+                        <% if (user === item.userid) { -%>
+                            <br/>(<a href="/auditMatrices/portfolio?id=<%= item._id %>">Manage</a>)
+                        <% } %>
+                        </p>
+                    </div>
+                </div>
+            </section>
+    <% } else { %>
+            <section class="col-6 col-12-narrower">
+                <div class="box post">
+                    <a href="/portanalytics/portfolio?id=<%= item._id %>" class="image left"><img src="/images/recktrack01.jpg" alt="" /></a>
+                    <div class="inner">
+                        <h3><a href="/portanalytics/portfolio?id=<%= item._id %>"><%= item.portfolioid %></a></h3>
+                        <p><%= item.description %>
+                        <br/>Covers : <%= item.coverage %>
+                        <br/>SAI: <%= item.org %>
+                        <% if (user === item.userid) { -%>
+                            <br/>(<a href="/auditMatrices/portfolio?id=<%= item._id %>">Manage</a>)
+                        <% } %>
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </div>    
+    <% } %>
+    <% i++ %>
+<% }) -%>

@@ -1,0 +1,72 @@
+<!DOCTYPE HTML>
+<!--
+	Arcana by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+    <!-- based on no-side bar template -->
+    <%- include('../partials/head'); %>
+    <body class="is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+			<%- include('../partials/header'); %>
+
+			<!-- Main -->
+
+			<section class="wrapper style1">
+				<div class="container">
+					<% if(catalog.length > 6) { %>
+						<div class="col-12">
+							<ul class="actions">
+								<li><a href="/portal/recmanagement" class="button">Reload List</a></li>
+								<li><a href="/auditMatrices/portfolio?id=New" class="button">Create Portfolio</a></li>
+							</ul>
+						</div>		
+					<% } %>
+					<div id="content">	
+						<!-- Content -->
+							<article>
+								<header>
+									<h2>Manage Portfolios</h2>
+									<p>
+										<b>Note:</b> The listed portfolios are stored in a database.
+									</p>
+								</header>
+
+								<p>
+									<% if(catalog.length > 0) { %>
+									<table id='tablecatalog'>
+										<thead>
+											<%- include('../partials/portfolioheader'); %>
+										</thead>    
+										<tbody>
+											<%- include('../partials/portfoliorow'); %>
+										</tbody>
+									</table>
+									<% } else { %>
+									<p>No Portfolios available!</p>
+									<% } %>
+								</p>
+							</article>
+					</div>
+					<div class="col-12">
+						<ul class="actions">
+							<li><a href="/portal/recmanagement" class="button">Reload List</a></li>
+							<li><a href="/auditMatrices/portfolio?id=New" class="button">Create Portfolio</a></li>
+						</ul>
+					</div>		
+				</div>
+			</section>
+
+			<!-- Footer -->
+			<%- include('../partials/footer'); %>
+
+		</div>
+
+		<!-- Scripts -->
+		<%- include('../partials/scripts'); -%>
+
+	</body>
+</html>

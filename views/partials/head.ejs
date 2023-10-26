@@ -1,0 +1,25 @@
+    <head>
+		<title>Active IT Audit Manual</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+
+		<%  if (sessionlang == "ara" || sessionlang == "heb") { %>
+			<link rel="stylesheet" href="/assets/css/rtl.main.css" />
+		<% } else { %>
+			<link rel="stylesheet" href="/assets/css/main.css" />
+		<% } %>
+
+			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.9.3/min/dropzone.min.css" integrity="sha512-WvVX1YO12zmsvTpUQV8s7ZU98DnkaAokcciMZJfnNWyNzm7//QRV61t4aEr0WdIa4pe854QHLTV302vH92FSMw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+		<!--<link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">-->
+		<link rel="stylesheet" href="/assets/timeline/style.css">
+
+		<!--custom pop-up modal-->
+		<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+		<% if(errors){ %>
+			<script type="text/javascript" language="javascript">
+				function moveWindow (){window.location.hash="contact";}
+			</script>
+		<% } %>
+	</head>

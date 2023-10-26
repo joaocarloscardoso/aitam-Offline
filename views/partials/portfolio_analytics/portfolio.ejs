@@ -1,0 +1,43 @@
+<script src="/assets/js/Chart.js"></script>
+<script type="text/javascript" src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
+
+<section id="Statistics" class="col-6 col-12-narrower">
+    <header>
+        <h2></h2>
+        <h2><%= catalog.portfolioid %></h2>
+        <p></p>
+        <p>
+            <%= catalog.description %>
+            <br/>Covers : <%= catalog.coverage %>
+            <br/>SAI: <%= catalog.org %>
+        </p>
+    </header>
+    <div class="container">
+        <div class="row gtr-200">
+            <div class="col-4 col-12-narrower" style="width: 600px; height: 400px;">
+                <%- include('./PortfolioStatus'); %>
+            </div>    
+            <div class="col-4 col-12-narrower" style="width: 600px; height: 400px;">
+                <%- include('./PortfolioNewIssues'); %>
+            </div>    
+        </div>
+        <p>&nbsp;</p>
+        <div class="row gtr-200">    
+            <div class="col-4 col-12-narrower" style="width: 600px; height: 400px;">
+                <%- include('./PortfolioRiskRating'); %>
+            </div>    
+            <div class="col-4 col-12-narrower" style="width: 600px; height: 400px;">
+            </div>    
+            <p>&nbsp;</p>
+        </div>
+    </div>
+    <hr/>
+    <div class="container">
+        <div id="content">
+            <article>
+                <%- include('./PortfolioAudits'); %>
+            </article>
+        </div>
+    </div>
+</section>
+

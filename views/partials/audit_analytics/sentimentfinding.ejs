@@ -1,0 +1,31 @@
+<section id="contact" class="col-6 col-12-narrower">
+        <header>
+            <h2></h2>
+            <h2>Sentiment analysis on finding #<%= FindingNumber -%></h2>
+            <p></p>
+        </header>
+        <% if(msg != ''){ %>
+            <div class="col-12" id="save_auditplan">
+                <p>
+                    <span class="successformtext"><%= msg %></span><br/>
+                </p>
+            </div>
+        <% } %>    
+        <% if(Matrix.length > 0) { %>
+            <div class="col-4 col-12-narrower" style="width: 600px; height: 100%;">
+                <table style=" border-collapse: separate; border-spacing: 8px;">
+                    <thead>
+                        <%- include('./sentimentfindingheader'); %>
+                    </thead>    
+                    <tbody>
+                        <%- include('./sentimentfindingrow'); %>
+                    </tbody>
+                </table>
+                <p></p>
+                <%- include('./sentimentrange'); %>
+            </div>
+        <% } else { %>
+            <p>No findings with descriptions filled were discovered yet for analysis!</p>
+        <% } %>
+    </section>
+    

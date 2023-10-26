@@ -1,0 +1,42 @@
+<h1 data-tooltip-bottom="<%= Domain01Catalog.name %>">Domain 01 Characterization</h1>
+<canvas id="chartjs-DC01" class="chartjs" width="undefined" height="undefined"></canvas>
+<script>new Chart(document.getElementById("chartjs-DC01"),
+    {"type":"radar",
+    "data":{"labels":[ 
+    <% let i = 0 %>
+    <% Domain01Catalog.labels.split("|").forEach(function(item) { -%>
+        <% if (i == 0 ) { %>
+            "<%= item %>"
+        <% } else { %>
+            ,"<%= item %>"
+        <% } %>
+        <% i++ %>
+    <% }) -%>
+    ],
+    "datasets":[
+        {
+            "label":"Weight Number",
+            "data":[<%= Domain01Catalog.wNumber %>],
+            "fill":true,
+            "backgroundColor":"rgba(255, 99, 132, 0.2)",
+            "borderColor":"rgb(255, 99, 132)",
+            "pointBackgroundColor":"rgb(255, 99, 132)",
+            "pointBorderColor":"#fff",
+            "pointHoverBackgroundColor":"#fff",
+            "pointHoverBorderColor":"rgb(255, 99, 132)"
+        },
+        {
+            "label":"Weight Importance",
+            "data":[<%= Domain01Catalog.wImportance %>],
+            "fill":true,
+            "backgroundColor":"rgba(54, 162, 235, 0.2)",
+            "borderColor":"rgb(54, 162, 235)",
+            "pointBackgroundColor":"rgb(54, 162, 235)",
+            "pointBorderColor":"#fff",
+            "pointHoverBackgroundColor":"#fff",
+            "pointHoverBorderColor":"rgb(54, 162, 235)"
+        }
+    ]},
+    "options":{"elements":{"line":{"tension":0,"borderWidth":3}}}}
+    );
+</script>

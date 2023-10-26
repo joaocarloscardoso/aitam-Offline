@@ -1,0 +1,50 @@
+<!DOCTYPE HTML>
+<!--
+	Arcana by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+    <!-- based on no-side bar template -->
+    <%- include('../partials/head'); %>
+
+	<body class="is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+			<%- include('../partials/header'); %>
+
+			<!-- Main -->
+            <div class="container">
+                <section class="col-6 col-12-narrower">
+					<div class="container">
+						<div id="content">
+							<!-- Content -->
+                            <article>
+                                <%  if (operation == 'plan_matrix') { %>
+                                    <%- include('../partials/audit_matrices/plan'); %>
+                                <% } else if (operation == 'preassess_matrix') { %>
+                                    <%- include('../partials/audit_matrices/preassessment'); %>
+                                <% } else if (operation == 'finding_matrix') { %>
+                                    <%- include('../partials/audit_matrices/finding'); %>
+                                <% } else if (operation == 'finding_data') { %>
+                                    <%- include('../partials/audit_matrices/findingdata'); %>
+                                <% } else if (operation == 'audit_recommendations') { %>
+                                    <%- include('../partials/audit_matrices/recommendation'); %>
+								<% } else if (operation == 'portfolio') { %>
+                                    <%- include('../partials/audit_matrices/portfolio'); %>
+								<% } %>
+						</article>
+						</div>
+					</div>
+				</section>
+            </div>
+			<!-- Footer -->
+			<%- include('../partials/footer'); %>
+
+		</div>
+
+		<!-- Scripts -->
+		<%- include('../partials/scripts'); -%>
+	</body>
+</html>

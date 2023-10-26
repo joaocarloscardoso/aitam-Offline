@@ -1,0 +1,9 @@
+{"message":"garbage collector started on path: C:\\develop\\nodejs\\projects\\aitam\\work\\","level":"\u001b[34minfo\u001b[39m","timestamp":"2019-11-06 22:37:09"}
+{"message":"Session created received the id:04febae4-268d-430c-acec-efec24c32b66","level":"\u001b[34minfo\u001b[39m","timestamp":"2019-11-06 22:37:32"}
+{"message":"req.user: undefined","level":"\u001b[34minfo\u001b[39m","timestamp":"2019-11-06 22:37:49"}
+{"message":"garbage collector started on path: C:\\develop\\nodejs\\projects\\aitam\\work\\","level":"\u001b[34minfo\u001b[39m","timestamp":"2019-11-06 22:38:42"}
+{"message":"Session created received the id:afda71d8-35d7-4eb3-a208-a389990682d0","level":"\u001b[34minfo\u001b[39m","timestamp":"2019-11-06 22:38:50"}
+{"message":"req.user: undefined","level":"\u001b[34minfo\u001b[39m","timestamp":"2019-11-06 22:39:09"}
+{"message":"Session id started: {\"user\":\"2f24vvg\"}","level":"\u001b[34minfo\u001b[39m","timestamp":"2019-11-06 22:39:09"}
+{"message":"User logged in: {\"id\":\"2f24vvg\",\"email\":\"test@test.com\",\"password\":\"$2a$10$A2g6pbxxhLA9MNYRJ0rnzOf/7Ara76B0KcRdjzUcsIBIclRuas/fG\"}","level":"\u001b[34minfo\u001b[39m","timestamp":"2019-11-06 22:39:09"}
+{"message":"User (2f24vvg) uploaded a file: {\"file-upload\":{\"size\":428603,\"path\":\"C:\\\\develop\\\\nodejs\\\\projects\\\\aitam\\\\work\\\\afda71d8-35d7-4eb3-a208-a389990682d0.xml\",\"name\":\"TemplateOnFinancialManagementSystemAudit.xml\",\"type\":\"text/xml\",\"mtime\":\"2019-11-06T22:39:18.686Z\"}}","level":"\u001b[34minfo\u001b[39m","timestamp":"2019-11-06 22:39:18"}

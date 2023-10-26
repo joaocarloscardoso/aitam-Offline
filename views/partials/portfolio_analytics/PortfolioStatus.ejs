@@ -1,0 +1,29 @@
+<div class="col-4 col-12-narrower" style="width: 600px; height: 400px;">
+    <h1>Global Recommendations Status</h1>
+<canvas id="chartjs-GRC" class="chartjs" width="undefined" height="undefined"></canvas>
+<script>new Chart(document.getElementById("chartjs-GRC"),
+{"type":"doughnut",
+"data":{"labels":[<%- '"' + catalog.status_label.split('|').join('","') + '"' %>],
+"datasets":[
+{
+"label":"My First Dataset",
+"data":[
+    <% colStatus =  catalog.status_label.split(" ").join("_").split("|") -%>
+    <% for (var i=0; i<colStatus.length; i++) { -%>
+        <% if (i == 0) { -%>
+            <%= catalog.status_data[colStatus[i]] %>
+        <% } else { %>
+            ,<%= catalog.status_data[colStatus[i]] %>
+        <% } %>
+    <% } -%>  
+],
+"backgroundColor":["rgb(54, 162, 235)","rgb(255, 205, 86)", "rgb(255, 99, 132)", "rgb(144,238,144)",
+    "rgb(135,206,250)","rgb(210,180,140)", "rgb(147,112,219)", "rgb(211,211,211)"
+    ]
+}
+]}
+}
+);
+</script>
+
+</div> 

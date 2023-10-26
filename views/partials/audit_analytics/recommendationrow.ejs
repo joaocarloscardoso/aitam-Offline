@@ -1,0 +1,21 @@
+<% i=1 %>
+<% Matrix.forEach(function(item) { %>
+    <% if (item.Weight > 0 && !(i > 10)) { %> 
+        <tr id="<%= item.RowId %>Row" style="display: table-row;">
+            <td>
+                <span><%= i %></span>
+            </td>
+            <td>
+                <span><%= item.Name %></span>
+            </td>
+            <td>
+                <span><%= item.Label %></span>
+            </td>
+            <td>
+                <span><%= item.Weight %></span>
+            </td>
+        </tr>
+    <% } %>
+    <% i++ %>
+<% }) %>
+    

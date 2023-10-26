@@ -1,0 +1,45 @@
+<h1>New Issues</h1>
+<canvas id="chartjs-Rrepetead" class="chartjs" width="undefined" height="undefined"></canvas>
+<script>
+    new Chart(document.getElementById("chartjs-Rrepetead"),
+    {
+    "type":"horizontalBar",
+    "data":{
+        "labels":[
+            'Total','New', 'Repeated', 'Partially Rep.'
+        ],
+        "datasets":
+            [
+                {
+                    "label":"Number",
+                    "data":[
+                        <%= catalog.repeated_data.No + catalog.repeated_data.Yes + catalog.repeated_data.Partially %>,
+                        <%= catalog.repeated_data.No %>,
+                        <%= catalog.repeated_data.Yes %>,
+                        <%= catalog.repeated_data.Partially %>
+                    ],
+                    "fill":false,
+                    "backgroundColor":[
+                        "rgba(255, 99, 132, 0.2)",
+                        "rgba(54, 162, 235, 0.2)",
+                        "rgba(255, 159, 64, 1)",
+                        "rgba(25, 159, 64, 1)"
+                    ],
+                    "borderColor":[
+                        "rgba(255, 99, 132, 0.2)",
+                        "rgba(54, 162, 235, 0.2)",
+                        "rgba(255, 159, 64, 1)",
+                        "rgba(25, 159, 64, 1)"
+                    ],
+                    "borderWidth":1
+                }
+            ]
+        },
+        "options":{
+            "scales":
+                {
+                    "xAxes":[{"ticks":{"beginAtZero":true}}]
+                }
+        }
+    });
+</script>

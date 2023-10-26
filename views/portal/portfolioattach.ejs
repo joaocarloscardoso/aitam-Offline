@@ -1,0 +1,52 @@
+<%- include('../partials/head'); %>
+<body class="is-preload">
+    <div id="page-wrapper">
+
+        <!-- Header -->
+        <%- include('../partials/header'); %>
+
+        <!-- Main -->
+        <div class="container">
+            <section class="col-6 col-12-narrower">
+                <div class="container">
+                    <div id="content">
+                        <!-- Content -->
+                        <article>
+                            <header>
+                                <h2></h2>
+                                <h2>Attach an audit to portofolio #<%= catalog.portfolioid %></h2>
+                                <p><%= catalog.description %></p>
+                                <p><%= catalog.org %></p>
+                            </header>
+                            <div class="row gtr-50">
+                                <form method="POST" enctype="multipart/form-data" action="/auditMatrices/toolAttachaudit">
+                                    <div class="col-6 col-12-mobilep">
+                                        <label for="file-upload" class="custom-file-upload">
+                                            <i class="fa fa-cloud-upload"></i> Search File
+                                        </label>
+                                        <input name="file-upload" id="file-upload" type="file" required accept=".xml"/>
+                                    </div>
+                                    <div class="col-12">
+                                        <ul class="actions">
+                                            <li><input type="submit" class="button alt" value="Attach selected audit..." /></li>
+                                            <li><a href="/auditMatrices/portfolio?id=<%= catalog._id %>" class="button">Close</a></li>
+                                        </ul>
+                                    </div>
+                                    <input type="hidden" id="portfolioid" name="portfolioid" value="<%= catalog._id %>"/>
+                                </form>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <!-- Footer -->
+        <%- include('../partials/footer'); %>
+
+    </div>
+
+    <!-- Scripts -->
+    <%- include('../partials/scripts'); -%>
+
+</body>
+</html>

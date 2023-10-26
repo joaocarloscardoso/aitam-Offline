@@ -1,0 +1,75 @@
+<canvas id="chartjs-2" class="chartjs" width="undefined" height="undefined"></canvas>
+<script>
+    new Chart(document.getElementById("chartjs-2"),
+    {
+    "type":"horizontalBar",
+    "data":{
+        "labels":[
+            <% let i=1 %>
+            <% Matrix.forEach(function(item) { -%>
+                <% if (item.Weight > 0 && !(i > 10)) { %> 
+                    <% if (i == 1) { -%>
+                        "<%= item.Name %> (<%= item.Label %>)"
+                    <% } else { %>
+                        ,"<%= item.Name %> (<%= item.Label %>)"
+                    <% } %>
+                <% } %>
+                <% i++ %>
+            <% }) -%>
+        ],
+        "datasets":
+            [
+                {
+                    "label":"Weight",
+                    "data":[
+                        <%  i=1 %>
+                        <% Matrix.forEach(function(item) { -%>
+                            <% if (item.Weight > 0 && !(i > 10)) { %> 
+                                <% if (i == 1) { -%>
+                                    <%= item.Weight %>
+                                <% } else { %>
+                                    ,<%= item.Weight %>
+                                <% } %>
+                            <% } %>
+                            <% i++ %>
+                        <% }) -%>
+                   ],
+                    "fill":false,
+                    "backgroundColor":[
+                        <%  i=1 %>
+                        <% Matrix.forEach(function(item) { -%>
+                            <% if (item.Weight > 0 && !(i > 10)) { %> 
+                                <% if (i == 1) { -%>
+                                    "rgba(75, 192, 192, 0.2)"
+                                <% } else { %>
+                                    ,"rgba(75, 192, 192, 0.2)"
+                                <% } %>
+                            <% } %>
+                            <% i++ %>
+                        <% }) -%>
+                    ],
+                    "borderColor":[
+                        <%  i=1 %>
+                        <% Matrix.forEach(function(item) { -%>
+                            <% if (item.Weight > 0 && !(i > 10)) { %> 
+                                <% if (i == 1) { -%>
+                                    "rgb(75, 192, 192)"
+                                <% } else { %>
+                                    ,"rgb(75, 192, 192)"
+                                <% } %>
+                            <% } %>
+                            <% i++ %>
+                        <% }) -%>
+                    ],
+                    "borderWidth":1
+                }
+            ]
+        },
+        "options":{
+            "scales":
+                {
+                    "xAxes":[{"ticks":{"beginAtZero":true}}]
+                }
+        }
+    });
+</script>

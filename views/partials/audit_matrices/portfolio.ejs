@@ -1,0 +1,87 @@
+<section id="contact" class="col-6 col-12-narrower">
+    <header>
+        <h2></h2>
+        <h2>Manage portfolio</h2>
+    </header>
+    <% if(msg != ''){ %>
+        <div class="col-12" id="save_auditmatrix">
+            <p>
+                <span class="successformtext"><%= msg %></span><br/>
+            </p>
+        </div>
+    <% } %>    
+    <% if(AuditErrors){ %>
+    <div class="col-12" id="err_auditmatrix">
+        <p>
+            <% AuditErrors.forEach(function(error){ %>
+                <span class="errformtext">* <%= error.msg %></span><br/>
+            <% }) %>    
+        </p>
+    </div>
+    <% } %>
+    <form id="myForm" method="POST" action="/auditMatrices/portfolio">
+        <div class="row gtr-50">
+            <div class="col-12">
+                <ul class="actions">
+                    <li><a href="/portal/recmanagement" class="button">Close</a></li>
+                    <li><input type="submit" class="button alt" value="Save" /></li>
+                </ul>
+            </div>
+            <div class="col-12">
+                Portfolio reference<span class="errformtext"> *</span><br/>
+                <textarea name="portfolioid" id="portfolioid" autofocus placeholder="Portfolio reference" rows="1" ><%= catalog.portfolioid %></textarea>
+            </div>
+            <div class="col-12">
+                Description<br/>
+                <textarea name="description" id="description" placeholder="Portfolio description" rows="6"><%= catalog.description %></textarea>
+                <input type="hidden" id="portid" name="portid" value="<%= catalog._id %>"/>
+                <input type="hidden" id="action" name="action" value="update"/>
+            </div>
+            <div class="col-12">
+                Coverage<br/>
+                <textarea name="coverage" id="coverage" placeholder="Portfolio coverage" rows="4"><%= catalog.coverage %></textarea>
+            </div>
+            <div class="col-12">
+                SAI<br/>
+                <textarea name="sai" id="sai" placeholder="SAI" rows="1" ><%= catalog.org %></textarea>
+            </div>
+            <div class="col-12">
+                Published?<br/>
+                <select name="published" id="published" size="1" data-tooltip-right="Portfolio published (and available to everyone)">
+                    <% if (catalog.publish == '1') { %>
+                        <option value="Yes" selected>Yes</option>
+                        <option value="No" >No</option>
+                    <% } else { %>
+                        <option value="Yes">Yes</option>
+                        <option value="No" selected>No</option>
+                    <% } %>
+                </select>
+            </div>
+            <div class="col-12">
+                Audit(s) managed<br/>
+                <a href="/auditMatrices/portfolioattach?id=<%= catalog._id %>">
+                    <img id="insert_audit" src="../../images/plus_blue.png" alt="" style="vertical-align: baseline;height: 16px;"/>
+                    &nbsp; Attach new audit...
+                </a>
+                <table id='tableaudits'>
+                    <thead>
+                        <%- include('./submatrices/portauditsheader'); %>
+                    </thead>    
+                    <tbody>
+                        <% if(catalog.audits.length > 0) { %>
+                            <%- include('./submatrices/portauditsrow'); %>
+                        <% } %>
+                    </tbody>
+                </table>
+                <input type="hidden" name="mrows_count" id="mrows_count" value="<%= catalog.audits.length %>"/>
+            </div>
+            <div class="col-12">
+                <ul class="actions">
+                    <li><a href="/portal/recmanagement" class="button">Close</a></li>
+                    <li><input type="submit" class="button alt" value="Save" /></li>
+                </ul>
+            </div>
+        </div>
+    </form>
+</section>
+<!-- javascript is placed in the body section -->

@@ -1,0 +1,8 @@
+{"message":"garbage collector started on path: C:\\develop\\nodejs\\projects\\aitam\\work\\","level":"\u001b[34minfo\u001b[39m","timestamp":"2020-03-05 19:08:36"}
+{"message":"Session created received the id:c76aa9b6-9315-42a9-822f-98f6cede90e0","level":"\u001b[34minfo\u001b[39m","timestamp":"2020-03-05 19:09:26"}
+{"message":"404 - Not Found","level":"\u001b[33mwarn\u001b[39m","timestamp":"2020-03-05 19:09:26"}
+{"message":"req.user: undefined","level":"\u001b[34minfo\u001b[39m","timestamp":"2020-03-05 19:09:32"}
+{"message":"Session id started: {\"user\":\"2f24vvg\"}","level":"\u001b[34minfo\u001b[39m","timestamp":"2020-03-05 19:09:32"}
+{"message":"User logged in: {\"id\":\"2f24vvg\",\"email\":\"test@test.com\",\"password\":\"$2a$10$A2g6pbxxhLA9MNYRJ0rnzOf/7Ara76B0KcRdjzUcsIBIclRuas/fG\"}","level":"\u001b[34minfo\u001b[39m","timestamp":"2020-03-05 19:09:32"}
+{"message":"User (2f24vvg) uploaded a file: {\"file-upload\":{\"size\":439256,\"path\":\"C:\\\\develop\\\\nodejs\\\\projects\\\\aitam\\\\work\\\\c76aa9b6-9315-42a9-822f-98f6cede90e0.xml\",\"name\":\"test_site3.xml\",\"type\":\"text/xml\",\"mtime\":\"2020-03-05T19:09:38.311Z\"}}","level":"\u001b[34minfo\u001b[39m","timestamp":"2020-03-05 19:09:38"}
+{"message":"Session created received the id:c76aa9b6-9315-42a9-822f-98f6cede90e0","level":"\u001b[34minfo\u001b[39m","timestamp":"2020-03-05 19:55:36"}

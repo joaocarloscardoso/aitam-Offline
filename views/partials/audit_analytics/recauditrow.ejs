@@ -1,0 +1,16 @@
+<% DataTable.forEach(function(item) { %>
+    <tr id="<%= item.Id %>Row" style="display: table-row;">
+        <td>
+            <a target="_blank" href="<%= item.Url %>""><%= item.Name %></a>
+        </td>
+        <td>
+            <span><%= item.Author %></span>
+        </td>
+        <td>
+            <span><%= item.Year %></span>
+        </td>
+        <td>
+            <span><%= item.Relation %></span>
+        </td>
+    </tr>
+<% }) %>

@@ -1,0 +1,24 @@
+<% let i=1 %>
+<% Matrix.Monitoring.forEach(function(item) { %>
+    <tr id="M_<%= i %>Row" style="display: table-row;">
+        <td>
+            <a id="a<%= i %>Row" href="#" onclick="deleteMonitoringRow(this);return false;"><%=appButtons.recommendationsDeleteFinding.name %></a>
+        </td>
+        <td><input type="date" name="MD_<%= i %>" id="MD_<%= i %>" value="<%= item.Date %>" />
+        </td>
+        <td>
+            <select name="MS_<%= i %>" id="MS_<%= i %>" size="1" autofocus>
+                <% Matrix.MonStatus.split("|").forEach(function(colitem) { -%>
+                    <% if (item.Status === colitem) { %>
+                        <option value="<%= colitem %>" selected><%= colitem %></option>
+                    <% } else { %>
+                        <option value="<%= colitem %>"><%= colitem %></option>
+                    <% } %>       
+                <% }) -%>         
+            </select>
+        </td>
+        <td><textarea name="MT_<%= i %>" id="MT_<%= i %>" placeholder="<%=appAudit.recommendations.matrix.trackNotes %>" rows="3"><%= item.Note %></textarea> 
+        </td>
+    </tr>
+    <% i++ %>
+<% }) %>

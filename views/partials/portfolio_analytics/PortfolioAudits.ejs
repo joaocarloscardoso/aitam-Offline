@@ -1,0 +1,5 @@
+<% catalog.audits.forEach(function(item) { -%>
+    <h3><a href="audit?id=<%= item.PortfolioId %>&auditid=<%= item.AuditId %>"><%= item.Title %></a></h3>
+    <p><%= item.Background %></p>
+<% }) -%>  
+

@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<!--
+	Arcana by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<%- include('partials/head'); %>
+
+	<% if(errors){ %>
+	<body class="is-preload" onload="moveWindow()">
+	<% } else { %>
+	<body class="is-preload">
+	<% } %> 
+		<div id="page-wrapper">
+
+			<!-- Header -->
+			<%- include('partials/header'); %>
+
+			<!-- Banner -->
+			<%- include('partials/banner'); %>
+
+			<!-- Highlights -->
+			<%- include('partials/highlights'); %>
+
+			<!-- Gigantic Heading -->
+			<%- include('partials/giganticheader'); %>
+
+			<!-- Posts -->
+			<%- include('partials/posts'); %>
+
+			<!-- CTA -->
+			<%- include('partials/cta'); %>
+
+			<!-- Footer -->
+			<%- include('partials/footer'); %>
+		</div>
+
+		<!-- Scripts -->
+		<%- include('partials/scripts'); -%>
+
+	</body>
+</html>

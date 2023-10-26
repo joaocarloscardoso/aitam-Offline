@@ -1,0 +1,30 @@
+<section id="contact" class="col-6 col-12-narrower">
+    <header>
+        <h2></h2>
+        <h2><%=appAudit.preliminaryActivities.pageTitle %></h2>
+        <p></p>
+    </header>
+   <form>
+        <div class="row gtr-50">
+            <p>
+                <% if(preassesscatalog.length > 0) { %>
+                    <table id='tablecatalog'>
+                        <thead>
+                            <%- include('./auditpreassessheader'); %>
+                        </thead>    
+                        <tbody>
+                            <%- include('./auditpreassessrow'); %>
+                        </tbody>
+                    </table>
+                <% } else { %>
+                    <p><%=appAudit.preliminaryActivities.noPreliminaryActivitiesMsg %></p>
+                <% } %>
+            </p>
+            <div class="col-12">
+                    <ul class="actions">
+                        <li><a href="/preassessaudit/auditpreassessment" class="button"><%=appButtons.reloadList.name %></a></li>
+                   </ul>
+                </div>
+            </div>
+    </form>
+</section>

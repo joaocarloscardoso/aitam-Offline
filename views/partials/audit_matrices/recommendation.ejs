@@ -1,0 +1,320 @@
+
+<section id="contact" class="col-6 col-12-narrower">
+    <header>
+        <h2></h2>
+        <h2><%= Matrix.RecId %></h2>
+    </header>
+    <% if(msg != ''){ %>
+        <div class="col-12" id="save_auditmatrix">
+            <p>
+                <span class="successformtext"><%= msg %></span><br/>
+            </p>
+        </div>
+    <% } %>    
+    <% if(AuditErrors){ %>
+    <div class="col-12" id="err_auditmatrix">
+        <p>
+            <% AuditErrors.forEach(function(error){ %>
+                <span class="errformtext">* <%= error.msg %></span><br/>
+            <% }) %>    
+        </p>
+    </div>
+    <% } %>
+    <form method="POST" action="/auditMatrices/recMatrix">
+        <div class="row gtr-50">
+            <div class="col-12">
+                <ul class="actions">
+                    <% if (Matrix.RecId != "(New)") { %>
+                        <li><a href="/generatedocs/docrecMatrix?id=<%= Matrix.RecId %>" class="button"><%=appButtons.generateDocument.name %></a></li>
+                    <% } %>
+                    <% if (source === "map") { %>
+                        <li><a href="/analytics/AuditMap" class="button"><%=appButtons.close.name %></a></li>
+                    <% } else { %>
+                        <li><a href="/auditrec/auditrecs" class="button"><%=appButtons.close.name %></a></li>
+                    <% } %>
+                    <li><a href="/auditMatrices/recMatrix?id=New&number=<%=Matrix.Number %>" class="button"><%=appButtons.recommendationCloseCreateRecommendation.name %></a></li>
+                    <li><input type="submit" class="button alt" value="<%=appButtons.save.name %>" /></li>
+                </ul>
+            </div>
+            <div class="col-12">
+                <%=appAudit.recommendations.matrix.recommendationDescription %><br/>
+                <textarea name="description" id="description" autofocus placeholder="<%=appAudit.recommendations.matrix.recommendationDescription %>" rows="10"><%= Matrix.Description %></textarea>
+                <input type="hidden" id="recid" name="recid" value="<%= Matrix.RecId %>"/>
+            </div>
+            <div class="col-12">
+                <%=appAudit.recommendations.matrix.recommendationNumber %><br/>
+                <textarea name="number" id="number" placeholder="<%=appAudit.recommendations.matrix.numberTooltip %>" rows="1" style="width: 150px;"><%= Matrix.Number %></textarea>
+            </div>
+            <div class="col-12">
+                <%=appAudit.recommendations.matrix.priority %><br/>
+                <select name="priority" id="priority" size="1">
+                    <% Matrix.Priorities.split("|").forEach(function(item) { -%>
+                        <% if (Matrix.Priority === item) { %>
+                            <option value="<%= item %>" selected><%= item %></option>
+                        <% } else { %>
+                            <option value="<%= item %>"><%= item %></option>
+                        <% } %>       
+                    <% }) -%>         
+                </select>
+            </div>
+            <div class="col-12">
+                <%=appAudit.recommendations.matrix.riskCharacterization %><br/>
+                <select name="risk" id="risk" size="1" data-tooltip-right="<%=appAudit.recommendations.matrix.riskCharacterizationTooltip %>">
+                    <% Matrix.Risks.split("|").forEach(function(item) { -%>
+                        <% if (Matrix.Risk === item) { %>
+                            <option value="<%= item %>" selected><%= item %></option>
+                        <% } else { %>
+                            <option value="<%= item %>"><%= item %></option>
+                        <% } %>       
+                    <% }) -%>         
+                </select>
+            </div>
+            <div class="col-12">
+                <%=appAudit.recommendations.matrix.riskLevel %><br/>
+                <select name="riskevaluation" id="riskevaluation" size="1">
+                    <% Matrix.RisksEvaluation.split("|").forEach(function(item) { -%>
+                        <% if (Matrix.Riskevaluation === item) { %>
+                            <option value="<%= item %>" selected><%= item %></option>
+                        <% } else { %>
+                            <option value="<%= item %>"><%= item %></option>
+                        <% } %>       
+                    <% }) -%>         
+                </select>
+            </div>
+            <div class="col-12">
+                <%=appAudit.recommendations.matrix.importance %><br/>
+                <select name="importance" id="importance" size="1">
+                    <% Matrix.ICategories.split("|").forEach(function(item) { -%>
+                        <% if (Matrix.Importance === item) { %>
+                            <option value="<%= item %>" selected><%= item %></option>
+                        <% } else { %>
+                            <option value="<%= item %>"><%= item %></option>
+                        <% } %>       
+                    <% }) -%>         
+                </select>
+            </div>
+            <div class="col-12">
+                <%=appAudit.recommendations.matrix.accepted %><br/>
+                <select name="accepted" id="accepted" size="1" data-tooltip-right="<%=appAudit.recommendations.matrix.acceptedTooltip %>">
+                    <% if (Matrix.Accepted == "Yes") { %>
+                        <option value="Yes" selected>Yes</option>
+                        <option value="No" >No</option>
+                    <% } else { %>
+                        <option value="Yes">Yes</option>
+                        <option value="No" selected>No</option>
+                    <% } %>
+                </select>
+            </div>
+            <div class="col-12">
+                <%=appAudit.recommendations.matrix.categorizing %><br/>
+                <input type="text" name="category" id="category" maxlength="100" placeholder="<%=appAudit.recommendations.matrix.categorizingTooltip %>" value="<%= Matrix.Category %>" />
+            </div>
+            <div class="col-12">
+                <%=appAudit.recommendations.matrix.repeated %><br/>
+                <select name="reapeated" id="reapeated" size="1" data-tooltip-right="<%=appAudit.recommendations.matrix.repeatedTooltip %>">
+                    <% if (Matrix.Repeated == "Yes") { %>
+                        <option value="Yes" selected>Yes</option>
+                        <option value="Partially" >Partially</option>
+                        <option value="No" >No</option>
+                    <% } if (Matrix.Repeated == "Partially") { %>
+                        <option value="Yes">Yes</option>
+                        <option value="Partially" selected>Partially</option>
+                        <option value="No" >No</option>
+                    <% } if (Matrix.Repeated == "No") { %>
+                        <option value="Yes">Yes</option>
+                        <option value="Partially">Partially</option>
+                        <option value="No" selected>No</option>
+                    <% } %>
+                </select>
+            </div>
+            <div class="col-12">
+                <%=appAudit.recommendations.matrix.actionPlan %><br/>
+                <textarea name="actionplan" id="actionplan" placeholder="<%=appAudit.recommendations.matrix.actionPlanTooltip %>" rows="4"><%= Matrix.Actionplan %></textarea>
+            </div>
+            <div class="col-12">
+                <%=appAudit.recommendations.matrix.timeline %><br/>
+                <textarea name="timeline" id="timeline" placeholder="<%=appAudit.recommendations.matrix.timelineTooltip %>" rows="1"><%= Matrix.Timeline %></textarea>
+            </div>
+            <div class="col-12">
+                <%=appAudit.recommendations.matrix.outcome %><br/>
+                <textarea name="outcome" id="outcome" placeholder="<%=appAudit.recommendations.matrix.outcomeTooltip %>" rows="2"><%= Matrix.Outcome %></textarea>
+            </div>
+            <div class="col-12">
+                <%=appAudit.recommendations.matrix.responsible %><br/>
+                <textarea name="responsible" id="responsible" placeholder="<%=appAudit.recommendations.matrix.responsibleTooltip %>" rows="1"><%= Matrix.Responsible %></textarea>
+            </div>
+            <div class="col-12">
+                <%=appAudit.recommendations.matrix.remarks %><br/>
+                <textarea name="remarks" id="remarks" placeholder="<%=appAudit.recommendations.matrix.remarksTooltip %>" rows="2"><%= Matrix.Remarks %></textarea>
+            </div>
+            <div class="col-12">
+                <%=appAudit.recommendations.matrix.relatedFindings %><br/>
+                    <a href="#" onclick="InsertFindingRow();return false;">
+                        <img id="insert_finding" src="../../images/plus_blue.png" alt="" style="vertical-align: baseline;height: 16px;" />
+                        &nbsp; <%=appButtons.recommendationsAddFinding.name %>
+                    </a>
+                    <table id='tablerelfindings'>
+                        <thead>
+                            <%- include('./submatrices/recrelfindingsheader'); %>
+                        </thead>    
+                        <tbody>
+                            <% if(Matrix.RelFindings.length > 0) { %>
+                                <%- include('./submatrices/recrelfindingsrow'); %> 
+                            <% } %>
+                        </tbody>
+                    </table>
+                    <input type="hidden" name="frows_count" id="frows_count" value="<%= Matrix.RelFindings.length %>"/>                
+            </div>
+            <div class="col-12">
+                <%=appAudit.recommendations.matrix.monitoring %><br/>
+                (Please refer on <b>ISSAI 100/51, GUID 5100/8</b> as methodology basis)<br/>
+                <a href="#" onclick="InsertMonitoringRow();return false;">
+                        <img id="insert_monitoring" src="../../images/plus_blue.png" alt="" style="vertical-align: baseline;height: 16px;"/>
+                        &nbsp; <%=appButtons.recommendationsAddFinding.name %>
+                    </a>
+                    <table id='tablemonitoring'>
+                        <thead>
+                            <%- include('./submatrices/recmonitoringheader'); %>
+                        </thead>    
+                        <tbody>
+                            <% if(Matrix.Monitoring.length > 0) { %>
+                                <%- include('./submatrices/recmonitoringrow'); %>
+                            <% } %>
+                        </tbody>
+                    </table>
+                    <input type="hidden" name="mrows_count" id="mrows_count" value="<%= Matrix.Monitoring.length %>"/>
+            </div>
+            <div class="col-12">
+                <ul class="actions">
+                    <% if (Matrix.RecId != "(New)") { %>
+                        <li><a href="/generatedocs/docrecMatrix?id=<%= Matrix.RecId %>" class="button"><%=appButtons.generateDocument.name %></a></li>
+                    <% } %>
+                    <% if (source === "map") { %>
+                        <li><a href="/analytics/AuditMap" class="button"><%=appButtons.close.name %></a></li>
+                    <% } else { %>
+                        <li><a href="/auditrec/auditrecs" class="button"><%=appButtons.close.name %></a></li>
+                    <% } %>
+                    <li><a href="/auditMatrices/recMatrix?id=New&number=<%=Matrix.Number %>" class="button"><%=appButtons.recommendationCloseCreateRecommendation.name %></a></li>
+                    <li><input type="submit" class="button alt" value="<%=appButtons.save.name %>" /></li>
+                </ul>
+            </div>
+        </div>
+    </form>
+</section>
+<!-- javascript is placed in the body section -->
+<script>
+    var ColFindings=[
+        <% Matrix.Findings.forEach(function(colitem) { -%>
+            {
+                FindingId: "<%= colitem.FindingId -%>",
+                Number: "<%= colitem.Number -%>",
+                Name: "<%= colitem.Name -%>",
+                Description: "<%= colitem.Description -%>", 
+                Source: "<%= colitem.Source -%>",
+                Relevant: "<%= colitem.Relevant -%>"
+            },
+        <% }) -%>    
+    ];
+
+    function GetFindingInfo(r){
+
+        var vPos = r.replace("RF_","");
+        var e = document.getElementById(r);
+        var selFindingId = e.options[e.selectedIndex].value;        
+        var result = $.grep(ColFindings, function(e){ return e.FindingId == selFindingId; });
+        var temSource = "";
+        var temDescription = "";
+
+        if (result.length > 0) {
+            if (result[0].Name == '') {
+                document.getElementById("RD_" + vPos).textContent=result[0].Description;
+            } else {
+                temDescription= "<b>" + result[0].Name + "</b><br/>" + result[0].Description;
+                $("#RD_" + vPos).html(temDescription);
+            }
+            document.getElementById("RS_" + vPos).textContent="";
+            result[0].Source.split("|").forEach(function(CascadeItem) {
+                temSource=temSource + CascadeItem + "<br/>";
+            });
+            $("#RS_" + vPos).html(temSource);
+            document.getElementById("RR_" + vPos).textContent=result[0].Relevant;
+        };
+    }
+    function deleteFindingRow(r) {
+        var i = r.parentNode.parentNode.rowIndex;
+        document.getElementById("tablerelfindings").deleteRow(i);
+    }    
+    function deleteMonitoringRow(r) {
+        var i = r.parentNode.parentNode.rowIndex;
+        document.getElementById("tablemonitoring").deleteRow(i);
+    }
+
+    function InsertFindingRow() {
+        var Total = $('#frows_count').val();
+        Total=Number(Total) + 1;
+	    // First check if a <tbody> tag exists, add one if not
+        if ($("#tablerelfindings tbody").length == 0) {
+	        $("#tablerelfindings").append("<tbody></tbody>");
+	    }
+
+        // Append product to the table
+        $("#tablerelfindings tbody").append(
+        "<tr>" +
+        "<td>" +
+            "<a href='#' onclick='deleteFindingRow(this);return false;'><%=appButtons.recommendationsDeleteFinding.name %></a>" +
+        "</td>" +
+        "<td>" +
+            "<select name='RF_" + Total +"' id='RF_" + Total +"' size='1' autofocus onchange='GetFindingInfo(this.id);'>" +
+                "<option value='0' selected>(Select Option)</option>" +
+                <% Matrix.Findings.forEach(function(colitem) { -%>
+                "<option value='<%= colitem.FindingId %>''><%= colitem.Number %></option>" +
+                <% }) -%>         
+            "</select>" +
+        "</td>" +
+        "<td><span name='RD_" + Total +"' id='RD_" + Total +"'><%=appAudit.recommendations.matrix.selectFinding %></span></td>" +
+        "<td><span name='RS_" + Total +"' id='RS_" + Total +"'><span></td>" +
+        "<td><span name='RR_" + Total +"' id='RR_" + Total +"'><span></td>" +
+        "</tr>"
+        );
+        $('#frows_count').val(Total);
+    }    
+
+    function InsertMonitoringRow() {
+        var Total = $('#mrows_count').val();
+        Total=Number(Total) + 1;
+	    // First check if a <tbody> tag exists, add one if not
+        if ($("#tablemonitoring tbody").length == 0) {
+	        $("#tablemonitoring").append("<tbody></tbody>");
+	    }
+
+        // Append product to the table
+        $("#tablemonitoring tbody").append(
+        <% let today = new Date();
+        let dd = today.getDate();
+        dd= '0' + dd;
+        let mm = (today.getMonth()+1);
+        mm= '0' + mm;
+        let yyyy = today.getFullYear();
+
+        today = yyyy + "-" + mm.slice(-2) + "-" + dd.slice(-2);
+        %>
+        "<tr id='M_" + Total +"Row' style='display: table-row;'>" + 
+            "<td>" +
+                "<a id='a" + Total +"Row' href='#' onclick='deleteMonitoringRow(this);return false;'><%=appButtons.recommendationsDeleteFinding.name %></a>" +
+            "</td>" +
+            "<td><input type='date' name='MD_" + Total +"' id='MD_" + Total +"' value='<%= today %>' />" +
+            "</td>" +
+            "<td>" +
+                "<select name='MS_" + Total +"' id='MS_" + Total +"' size='1' autofocus>" +
+                    <% Matrix.MonStatus.split("|").forEach(function(colitem) { -%>
+                        "<option value='<%= colitem %>'><%= colitem %></option>" +
+                    <% }) -%>         
+                "</select>" +
+            "</td>" +
+            "<td><textarea name='MT_" + Total +"' id='MT_" + Total +"' placeholder='<%=appAudit.recommendations.matrix.trackNotes %>' rows='3'></textarea>" + 
+            "</td>" +
+        "</tr>"
+        );
+        $('#mrows_count').val(Total);
+    }    
+</script>    

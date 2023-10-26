@@ -1,0 +1,79 @@
+<section id="contact" class="col-6 col-12-narrower">
+        <header>
+            <h2></h2>
+            <h2><%=appAudit.findings.pageTitle %></h2>
+            <p>Please refer on <b>ISSAI 100/28.49-50, GUID 5100/6</b> as methodology basis.</p>
+        </header>
+        <% if(msg != ''){ %>
+            <div class="col-12" id="save_auditfindings">
+                <p>
+                    <span class="successformtext"><%= msg %></span><br/>
+                </p>
+            </div>
+        <% } %>    
+        <form method="POST" action="/findingaudit/auditfindings">
+            <div class="row gtr-50">
+                <% if(findingcatalog.length > 6) { %>
+                    <div class="col-12">
+                        <ul class="actions">
+                            <li><a href="/findingaudit/auditfindings" class="button"><%=appButtons.reloadList.name %></a></li>
+                            <li><a href="/auditMatrices/findingMatrix?id=New&number=<%=findingcatalog.length %>" class="button"><%=appButtons.findingCreateFinding.name %></a></li>
+                            <% if(findingcatalog.length > 0) { %>
+                                <li><input type="submit" class="button alt" value="<%=appButtons.save.name %>" /></li>
+                            <% } %>
+                        </ul>
+                    </div>        
+                <% } %>
+                <p>
+                    <% if(findingcatalog.length > 0) { %>
+                        <p><%=appAudit.findings.findingFilter %>
+                            <% if(findingcatalog.length > 6) { %>
+                                <br/>&nbsp;<br/>
+                                <a style="border-style: none;" href="/generatedocs/docexecutivesummary" data-tooltip="<%=appButtons.findingExecutiveSummary.tooltip %>"><img src="../images/export32t.png" alt="" style="vertical-align: text-bottom; display: inline-block;"/>&nbsp; <%=appButtons.findingExecutiveSummary.name %></a>    
+                                &nbsp;
+                                <a style="border-style: none;" href="/generatedocs/docexecutivesummarywrecs" data-tooltip="<%=appButtons.findingExecutiveSummaryRecommendations.tooltip %>"><img src="../images/export32t.png" alt="" style="vertical-align: text-bottom; display: inline-block;"/>&nbsp; <%=appButtons.findingExecutiveSummaryRecommendations.name %></a>    
+                            <% } %>
+                        </p>
+                        <table id='tablecatalog'>
+                            <thead>
+                                <%- include('./auditfindingsheader'); %>
+                            </thead>    
+                            <tbody>
+                                <%- include('./auditfindingsrow'); %>
+                            </tbody>
+                        </table>
+                        <input type="hidden" name="rows_count" id="rows_count" value="<%= findingcatalog.length %>"/> 
+                        <p>
+                            <a style="border-style: none;" href="/generatedocs/docexecutivesummary" data-tooltip="<%=appButtons.findingExecutiveSummary.tooltip %>"><img src="../images/export32t.png" alt="" style="vertical-align: text-bottom; display: inline-block;"/>&nbsp; <%=appButtons.findingExecutiveSummary.name %></a>    
+                            &nbsp;
+                            <a style="border-style: none;" href="/generatedocs/docexecutivesummarywrecs" data-tooltip="<%=appButtons.findingExecutiveSummaryRecommendations.tooltip %>"><img src="../images/export32t.png" alt="" style="vertical-align: text-bottom; display: inline-block;"/>&nbsp; <%=appButtons.findingExecutiveSummaryRecommendations.name %></a>    
+                    </p>
+                    <% } else { %>
+                        <p><%=appAudit.findings.noFindings %></p>
+                    <% } %>
+                </p> 
+                <div class="col-12">
+                    <ul class="actions">
+                        <li><a href="/findingaudit/auditfindings" class="button"><%=appButtons.reloadList.name %></a></li>
+                        <li><a href="/auditMatrices/findingMatrix?id=New&number=<%=findingcatalog.length %>" class="button"><%=appButtons.findingCreateFinding.name %></a></li>
+                        <% if(findingcatalog.length > 0) { %>
+                            <li><input type="submit" class="button alt" value="<%=appButtons.save.name %>" /></li>
+                        <% } %>
+                    </ul>
+                </div>
+            </div>
+        </form>
+    </section>
+    <!-- javascript is placed in the body section -->
+    <script>
+        //it takes two parameters: the select control id as well the image control id associated in order to to change display
+        function showInclude(elem, ctrlImg){
+            if(elem.value == 'Yes') {
+                //try: "inline-block"
+                document.getElementById(ctrlImg).style.display = "inline-block"; //opposite: "none"
+            } else {
+                document.getElementById(ctrlImg).style.display = "none"; //opposite: "none"
+            }
+        }
+    </script>
+    

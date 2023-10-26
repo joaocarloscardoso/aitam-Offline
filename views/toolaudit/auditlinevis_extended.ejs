@@ -1,0 +1,193 @@
+<!doctype html> 
+<html>
+    <%- include('../partials/head'); %>
+    <script type="text/javascript" src="https://unpkg.com/vis-timeline@latest/standalone/umd/vis-timeline-graph2d.min.js"></script>
+    <link href="https://unpkg.com/vis-timeline@latest/styles/vis-timeline-graph2d.min.css" rel="stylesheet" type="text/css" />
+
+    <style type="text/css">
+        body {
+            font-family:  sans-serif, 'Source Sans Pro', cursive;
+        }
+
+        .vis-timeline {
+            border: 2px solid black;
+            font-family:  sans-serif, 'Source Sans Pro', cursive;
+            font-size: 11pt;
+            background: #f7f7f7;
+        }
+
+        .vis-item {
+            border-color: #9ea2a3;
+            background-color: #f2f8fa;
+            font-size: 11pt;
+            color: #000000;
+            box-shadow: 5px 5px 20px rgba(128,128,128, 0.5);
+        }
+
+        .vis-item,
+        .vis-item.vis-line {
+            border-width: 1px;
+        }
+
+        .vis-item.vis-dot {
+            border-width: 10px;
+            border-radius: 10px;
+        }
+
+        .vis-item.vis-selected {
+            border-color: #ff6384;
+            background-color: #d8cadc;
+        }
+
+        .vis-time-axis .vis-text {
+            color: black;
+            padding-top: 10px;
+            padding-left: 10px;
+        }
+
+        .vis-time-axis .vis-text.vis-major {
+            font-weight: bold;
+        }
+
+        .vis-time-axis .vis-grid.vis-minor {
+            border-width: 2px;
+            border-color: #36bdf7;
+        }
+
+        .vis-time-axis .vis-grid.vis-major {
+            border-width: 2px;
+            border-color: #36bdf7;
+        }
+    </style>
+    <script src="/assets/js/Chart.js"></script>
+    <body>
+		<div id="page-wrapper">
+
+			<!-- Header -->
+			<%- include('../partials/header'); %>
+
+			<!-- Main -->
+            <div class="container">
+                <h1><%=appAudit.timeline.pageTitle %></h1>
+                <h2>Time line</h2>
+
+                <div id="visualization"></div>
+
+                <script type="text/javascript">
+                    var container = document.getElementById('visualization');
+                    const d = new Date();
+                    let year = d.getFullYear();
+                    let month = d.getMonth();
+            
+                    // note that months are zero-based in the JavaScript Date object
+                    var items = new vis.DataSet([
+                        <% if (catalog.reference == "notFilled") { %>
+                            {start: new Date(year,month,1), content: '<div><b><a href="/toolaudit/toolauditreference?src=tbl"><%=appAudit.timeline.reference %></a></b></div><img src="../images/high-16.png" style="vertical-align: text-bottom; display: inline-block;"/>&nbsp;<%=appAudit.timeline.referenceNotFilled %><br/><hr/>ISSAI 100/1-34 GUID 5100/1-4'},
+                        <% } %>
+                        <% if (catalog.reference == "partial") { %>
+                            {start: new Date(year,month,1), content: '<div><b><a href="/toolaudit/toolauditreference?src=tbl"><%=appAudit.timeline.reference %></a></b></div><img src="../images/medium-16.png" style="vertical-align: text-bottom; display: inline-block;"/>&nbsp;<%=appAudit.timeline.referencePartialFilled %><br/><hr/>ISSAI 100/1-34 GUID 5100/1-4'},
+                        <% } %>
+                        <% if (catalog.reference == "filled") { %>
+                            {start: new Date(year,month,1), content: '<div><b><a href="/toolaudit/toolauditreference?src=tbl"><%=appAudit.timeline.reference %></a></b></div><img src="../images/include-16b.png" style="vertical-align: text-bottom; display: inline-block;"/>&nbsp;<%=appAudit.timeline.referenceFilled %><br/><hr/>ISSAI 100/1-34 GUID 5100/1-4'},
+                        <% } %>
+                        <% if (catalog.plugins == "0") { %>
+                            {start: new Date(year,month,2), content: '<div><b><a href="/toolaudit/toolauditplugins"><%=appAudit.timeline.plugins %></a></b></div><img src="../images/info-16.png" style="vertical-align: text-bottom; display: inline-block;">&nbsp;<%=appAudit.timeline.pluginsNotSelected %>'},
+                        <% } else { %>
+                            {start: new Date(year,month,2), content: '<div><b><a href="/toolaudit/toolauditplugins"><%=appAudit.timeline.plugins %></a></b></div><img src="../images/info-16.png" style="vertical-align: text-bottom; display: inline-block;">&nbsp;<%=catalog.plugins %>&nbsp;<%=appAudit.timeline.pluginsSelected %>'},                                
+                        <% } %>
+                        <% if (catalog.preassement == "notFilled") { %>
+                            {start: new Date(year,month,3), content: '<div><b><a href="/preassessaudit/auditpreassessment"><%=appAudit.timeline.preassessment %></a></b></div><img src="../images/high-16.png" style="vertical-align: text-bottom; display: inline-block;">&nbsp;<%=appAudit.timeline.preassessmentNotFilled %><br/><hr/>ISSAI 100/35-45 GUID 5100/5.5-10'},
+                        <% } else { %>
+                            {start: new Date(year,month,3), content: '<div><b><a href="/preassessaudit/auditpreassessment"><%=appAudit.timeline.preassessment %></a></b></div><img src="../images/include-16b.png" style="vertical-align: text-bottom; display: inline-block;">&nbsp;<%=appAudit.timeline.preassessmentFilled %><br/><hr/>ISSAI 100/35-45 GUID 5100/5.5-10'},
+                        <% } %>
+                        <% if (catalog.plan == "notFilled") { %>
+                            {start: new Date(year,month,4), content: '<div><b><a href="/planaudit/auditplanning"><%=appAudit.timeline.plan %></a></b></div><img src="../images/high-16.png" style="vertical-align: text-bottom; display: inline-block;">&nbsp;<%=appAudit.timeline.planNotFilled %><br/><hr/>ISSAI 100/46-48 – GUID 5100/5.1-4, 5.11-13'},
+                        <% } else { %>
+                            {start: new Date(year,month,4), content: '<div><b><a href="/planaudit/auditplanning"><%=appAudit.timeline.plan %></a></b></div><img src="../images/include-16b.png" style="vertical-align: text-bottom; display: inline-block;">&nbsp;<%=appAudit.timeline.planFilled %><br/><hr/>ISSAI 100/46-48 – GUID 5100/5.1-4, 5.11-13'},
+                        <% } %>
+                        <% if (catalog.findings == "0") { %>
+                            {start: new Date(year,month,5), content: '<div><b><a href="/findingaudit/auditfindings"><%=appAudit.timeline.findings %></a></b></div><img src="../images/high-16.png" style="vertical-align: text-bottom; display: inline-block;">&nbsp;<%=catalog.findings %>&nbsp;<%=appAudit.timeline.findingsRegistered %><br/><hr/>ISSAI 100/28.49-50 GUID 5100/6'},
+                        <% } else { %>
+                            {start: new Date(year,month,5), content: '<div><b><a href="/findingaudit/auditfindings"><%=appAudit.timeline.findings %></a></b></div><img src="../images/include-16b.png" style="vertical-align: text-bottom; display: inline-block;">&nbsp;<%=catalog.findings %>&nbsp;<%=appAudit.timeline.findingsRegistered %><br/><hr/>ISSAI 100/28.49-50 GUID 5100/6'},
+                        <% } %>
+                        <% if (catalog.recommendations == "0") { %>
+                            {start: new Date(year,month,6), content: '<div><b><a href="/auditrec/auditrecs"><%=appAudit.timeline.recommendations %></a></b></div><img src="../images/high-16.png" style="vertical-align: text-bottom; display: inline-block;">&nbsp;<%=catalog.recommendations %>&nbsp;<%=appAudit.timeline.recommendationsRegistered %><br/><hr/>ISSAI 100/51 GUID 5100/7'}
+                        <% } else { %>
+                            {start: new Date(year,month,6), content: '<div><b><a href="/auditrec/auditrecs"><%=appAudit.timeline.recommendations %></a></b></div><img src="../images/include-16b.png" style="vertical-align: text-bottom; display: inline-block;">&nbsp;<%=catalog.recommendations %>&nbsp;<%=appAudit.timeline.recommendationsRegistered %><br/><hr/>ISSAI 100/51 GUID 5100/7'}
+                        <% } %>
+                    ]);
+            
+                    var options = {
+                        editable: false,
+                        margin: {
+                            item: 20,
+                            axis: 40
+                        },
+                        horizontalScroll: false,
+                        showMajorLabels: true,
+                        showMinorLabels: false,
+                        showWeekScale: false,
+                        zoomable: false
+                    };
+            
+                    var timeline = new vis.Timeline(container, items, options);
+                </script>
+            
+            </div>
+            <div class="container">
+                <hr/>
+                <h2>Plug-ins</h2>
+                <div class="col-4 col-12-narrower" style="width: 600px; ">
+                    <%- include('../partials/audit_statistics/PluginsDash'); %>
+                </div>    
+                <p>&nbsp;</p> 
+                <hr/>
+                <h2>Planning</h2>
+                <div class="row gtr-200">
+                    <div class="col-4 col-12-narrower" style="width: 600px; height: 400px;">
+                        <%- include('../partials/audit_statistics/DomainImportance'); %>
+                    </div>    
+                    <div class="col-4 col-12-narrower" style="width: 600px; height: 400px;">
+                        <%- include('../partials/audit_statistics/RiskCharacterization'); %>
+                    </div>    
+                </div>
+                <p>&nbsp;</p> 
+                <div class="row gtr-200">
+                    <div class="col-4 col-12-narrower" style="width: 600px; height: 400px;">
+                        <%- include('../partials/audit_statistics/DomainRisky'); %>
+                        <p style="text-align:center;">  
+                            <%=appButtons.planRiskHeatMatrix.introduction %>&nbsp;<a target="_blank" style="border-style: none;" href="/generatedocs/heatmatrix" data-tooltip="<%=appButtons.planRiskHeatMatrix.tooltip %>"><%=appButtons.planRiskHeatMatrix.name %></a>
+                        </p>
+        
+                    </div>    
+                    <div class="col-4 col-12-narrower" style="width: 600px; height: 400px;">
+                    </div>    
+                </div>
+                <p>&nbsp;</p> 
+                <hr/>
+                <h2>Findings</h2>
+                <div class="col-4 col-12-narrower" style="width: 600px; height: 400px;">
+                    <%- include('../partials/audit_analytics/FindingsGeneralDash'); %>
+                </div>    
+                <p>&nbsp;</p>
+                <hr/>
+                <h2>Recommendations</h2>
+                <div class="row gtr-200">
+                    <div class="col-4 col-12-narrower" style="width: 600px; height: 400px;">
+                        <%- include('../partials/audit_statistics/AuditRecTypes'); %>
+                    </div>    
+                    <div class="col-4 col-12-narrower" style="width: 600px; height: 400px;">
+                        <%- include('../partials/audit_statistics/AuditRecCharacterization'); %>
+                    </div>    
+                </div>
+                <p>&nbsp;</p>
+            </div>
+			<!-- Footer -->
+			<%- include('../partials/footer'); %>
+
+		</div>
+
+		<!-- Scripts -->
+		<%- include('../partials/scripts'); -%>
+    </body>
+</html>

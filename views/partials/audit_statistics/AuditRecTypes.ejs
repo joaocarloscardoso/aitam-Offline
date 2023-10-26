@@ -1,0 +1,37 @@
+<h1>Recommendations by type</h1>
+<canvas id="chartjs-TE" class="chartjs" width="undefined" height="undefined"></canvas>
+<script>new Chart(document.getElementById("chartjs-TE"),
+    {"type":"doughnut",
+        "data":{"labels":[
+            <% let i=1 %>
+            <% data.StatLevel.forEach(function(item) { -%>
+                <% if (i == 1) { -%>
+                    "<%= item.Level %>"
+                <% } else { %>
+                    ,"<%= item.Level %>"
+                <% } %>
+                <% i++ %>
+            <% }) -%>
+        ],
+        "datasets":[
+        {
+            "label":"My First Dataset",
+            "data":[
+                <%  i=1 %>
+                <% data.StatLevel.forEach(function(item) { -%>
+                    <% if (i == 1) { -%>
+                        "<%= item.Number %>"
+                    <% } else { %>
+                        ,"<%= item.Number %>"
+                    <% } %>
+                    <% i++ %>
+                <% }) -%>  
+            ],
+            "backgroundColor":["rgb(54, 162, 235)","rgb(255, 205, 86)", "rgb(255, 99, 132)",
+                "rgb(34, 177, 76)","rgb(255, 128, 0)" 
+            ]
+        }
+        ]}
+    }
+);
+</script>

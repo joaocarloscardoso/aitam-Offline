@@ -1,0 +1,371 @@
+{ 
+	"messages":{
+		"mail_adress":"Invalid email address!",
+		"mail_name":"Name must be at least 3 chars long!",
+		"mail_message":"Message must be at least 3 chars long!",
+		"audit_file_version":"The audit file loaded belongs to an early version of AITAM. To ensure compatibility, working language will switch automatically to english!",
+		"audit_edit_save":"Audit saved successfuly! Use Download command under Audit menu to get the file.",
+		"audit_sync_preassessment":"Sync with A2.02 matrix (02 Understanding the IT-systems) completed!",
+		"audit_portfolio_dettach":"Selected audit was successfully dettached!",
+		"audit_portfolio_attach":"Selected audit was attached to portfolio!",
+		"finding_deleted":"Selected finding deleted!",
+		"recommendation_deleted":"Selected audit recommendation deleted!"
+	},
+	"pageNavigation":{
+		"home": "Home",
+		"audit": {
+			"menu_title":"Overview",
+			"menu_plan":"Plan",
+			"menu_findings":"Findings",
+			"menu_recommendations":"Recommendations",
+			"menu_download":"Download",
+			"timeline": "Audit control dashboard",
+			"WorkingAreas":{
+				"menu_title":"Working areas",
+				"reference": "Reference",
+				"plug_ins":"Plug-ins",
+				"preliminary": "Preliminary activities",
+				"plan":"Risk table",
+				"findings":"Findings table",
+				"recommendations":"Recommendations table"	
+			},
+			"analytics":{
+				"menu_title":"Analytics",
+				"treemap": "Audit tree map",
+				"dommain_characterization": "Domain characterization",
+				"hints": "Hints",
+				"findings_analysis": "Analysis",
+				"sentiment_analysis_findings":"Sentiment analysis",
+				"recommendations_tracking":"Tracking",
+				"raw_data":"Export analytics data",
+				"procedure_data":"Export TM procedures"
+			},
+			"download":"Download Audit File (XML)",
+			"close":"Close Audit File"
+		},
+		"tool":"Tool",
+		"recommendations":{
+			"menu_title":"Recommendations",
+			"browse":"Browse",
+			"manage":"Manage portfolios"
+		},
+		"project":"Project",
+		"get_in_touch":"Get In Touch",
+		"change_language":"Change language"
+	},
+	"buttons":{
+		"save": {
+			"name": "Save", 
+			"tooltip":""
+		},
+		"close": {
+			"name": "Close", 
+			"tooltip":""
+		},
+		"reloadList": {
+			"name": "Reload List", 
+			"tooltip":""
+		},
+		"generateDocument": {
+			"name": "Generate document", 
+			"tooltip":""
+		},
+		"planSyncPreassessment": {
+			"name": "Sync with pre-assessment", 
+			"tooltip":"This functionality relies on the previous use of A2.02 matrix (02 Understanding the IT-systems)"
+		},
+		"planExportList": {
+			"name": "Export list", 
+			"tooltip":"Generates a Word document containing the planning list"
+		},
+		"planAuditProgramme": {
+			"name": "Audit programme", 
+			"tooltip":"Word document containing the audit programme"
+		},
+		"planAuditMatrix": {
+			"name": "Audit matrix", 
+			"tooltip":"Generates the methodological audit matrix"
+		},
+		"planRiskHeatMatrix": {
+			"name": "Risk heat matrix", 
+			"tooltip":"Creates the risk heat matrix",
+			"introduction": "For a complete picture please use the "
+		},
+		"planCollectionMatrices": {
+			"name": "Collection of matrices", 
+			"tooltip":"Word document containing all matrices included in the audit"
+		},
+		"findingCreateFinding": {
+			"name": "Create finding", 
+			"tooltip":"Opens form of a new finding"
+		},
+		"findingCloseCreateFinding": {
+			"name": "Close this and create new", 
+			"tooltip":"Save first!"
+		},
+		"findingExecutiveSummary": {
+			"name": "Executive summary", 
+			"tooltip":"Generates a Word document containing the Executive Summary"
+		},
+		"findingExecutiveSummaryRecommendations": {
+			"name": "Executive summary (include recommendations)", 
+			"tooltip":"Generates a word processing document containing the Executive Summary with recommendations"
+		},
+		"recommendationCreateRecommendation":{
+			"name":"Create Recommendation",
+			"tooltip":"Opens form of a new recommendation"
+		},
+		"recommendationCloseCreateRecommendation":{
+			"name":"Close this and create new",
+			"tooltip":"Save first!"
+		},
+		"recommendationTrackReport":{
+			"name":"Track report",
+			"tooltip":"Word document containing the audit recommendations track report"
+		},
+		"recommendationsAddFinding":{
+			"name":"add new item...",
+			"tooltip":"Select connected recommendation(s)"
+		},
+		"recommendationsDeleteFinding":{
+			"name":"Delete...",
+			"tooltip":""
+		}
+	},
+	"audit" : {
+		"newUpload":{},
+		"reference" : {
+			"pageTitle": "Audit Reference",
+			"auditID": "Audit ID",
+			"auditTitle": "Audit title",
+			"auditBackground":"Audit background",
+			"auditScope":"Audit objectives (ISSAI 100/30, GUID 5100/5.2) and scope (ISSAI 100/48, GUID 5100/5.4)",
+			"scope": "Audit scope",
+			"approach": "Audit approach"
+		},
+		"timeline" : {
+			"pageTitle": "Audit control dashboard",
+			"referenceFilled":"Audit reference information filled!",
+			"referencePartialFilled":"Audit reference information partially filled!",
+			"referenceNotFilled":"Audit reference information not filled!",
+			"pluginsSelected":" plugins selected!",
+			"pluginsNotSelected":"No plugins selected!",
+			"preassessmentFilled":"Pre-assessment information filled!",
+			"preassessmentNotFilled":"Pre-assessment information not filled!",
+			"planFilled":"Planning information filled!",
+			"planNotFilled":"Planning information not filled!",
+			"findingsRegistered":" findings registered!",
+			"recommendationsRegistered":" recommendations registered!",
+			"reference": "Audit Reference",
+			"plugins": "Plug-ins available",
+			"preassessment": "Preliminary activities",
+			"plan": "Planning the audit",
+			"findings": "Findings in audit",
+			"recommendations": "Audit recommendations"
+		},
+		"plugins" : {
+			"pageTitle": "Plug-ins available to use in audit",
+			"nopluginsMsg": "No Plug-Ins available!",
+			"referenceHeader": "Reference",
+			"selectedHeader": "Selected",
+			"selectedValues": {
+				"Yes":"Yes",
+				"No": "No"
+			},
+			"descriptionHeader": "Description",
+			"versionHeader": "Version",
+			"fileHeader": "File"
+		},
+		"preliminaryActivities" : {
+			"pageTitle": "Preliminary Activities and planning (start) the audit",
+			"noPreliminaryActivitiesMsg": "No pre-assessment issues available!",
+			"areaHeader": "Area",
+			"itemHeader": "Item (and related support matrix)"
+		},
+		"plan" : {
+			"pageTitle": "Domains, areas and issues",
+			"noPlan": "No Domains, areas and issues available!",
+			"riskFilter": {
+				"description": "Filter by",
+				"criteria1": "high risk",
+				"criteria2": "medium/high risk",
+				"criteria3": "include in audit",
+				"criteria4": "all issues"
+			},
+			"domainHeader": "Domain",
+			"areaHeader": "Area",
+			"issueHeader": "Issue",
+			"risksHeader": "Risks (weight)",
+			"includeHeader": "Include in audit",
+			"reasonsHeader": "Reasons, risks and remarks",
+			"matrix": {
+				"objectives": "Objectives",
+				"criteria":"Criteria",
+				"informationRequired":"Information required",
+				"methodOfAnalysis":"Method of analysis",
+				"foundPreviously":"Found previously",
+				"conclusion":"Remarks"
+			}
+		},
+		"findings" : {
+			"pageTitle": "Findings in audit",
+			"noFindings": "No findings available!",
+			"findingFilter":"Use hyperlink on ID to visualize/edit the finding",
+			"NumberHeader": "Number & Name",
+			"sourceHeader": "Source > Domain > Area > Issue",
+			"causeHeader": "Cause & Result",
+			"descriptionHeader": "Description",
+			"relevantHeader": "Relevant",
+			"operationHeader": "Operation",
+			"delete": "Delete...",
+			"matrix": {
+				"source": "Source",
+				"domain":"Domain",
+				"area":"Area",
+				"issue":"Issue",
+				"findingName":"Finding Name",
+				"cause":"Cause",
+				"result":"Result",
+				"findingNumber":"Finding number",
+				"findingDescription":"Description of the finding",
+				"recommendation":"Internal comments / Remarks",
+				"referenceLegalAct":"Reference to Legal Act",
+				"referenceReport":"Reference to the report",
+				"domainsAreasIssuesMap": "Domains, areas and issues map",
+				"noplan": "No risk assessment done or included in audit! (Save button is disabled)"
+			}
+		},
+		"recommendations": {
+			"pageTitle": "Audit Recommendations",
+			"noRecommendations": "No recommendations available!",
+			"recommendationFilter":"Use hyperlink on ID to visualize/edit the audit recommendation",
+			"NumberHeader":"Number",
+			"RecommendationHeader":"Recommendation",
+			"PriorityHeader":"Priority",
+			"RiskHeader":"Risk",
+			"TimelineHeader":"Timeline",
+			"StatusHeader":"Status",
+			"OperationHeader":"Operation",
+			"delete": "Delete...",
+			"relatedFindings":"Related findings:",
+			"norelatedFindings":"(none so far)",
+			"selFindingTooltip":"Use hyperlink on finding #number to visualize it",
+			"currentStatus":"Current status is collected from last assessment, otherwise the value (not yet accessed) is displayed!",
+			"matrix": {
+				"recommendationDescription": "Recommendation description",
+				"recommendationNumber":"Recommendation number",
+				"numberTooltip":"Number",
+				"priority":"Priority",
+				"riskCharacterization":"Risk characterization",
+				"riskCharacterizationTooltip":"(Most relevant category of) Risk faced by organizations directly and indirectly as a result of non-implementation of audit recommendations",
+				"riskLevel":"Risk level",
+				"importance":"Importance",
+				"accepted":"Accepted (by the auditee)",
+				"acceptedTooltip":"Recommendation accepted by the auditee",
+				"categorizing":"Categorizing the audit recommendation",
+				"categorizingTooltip":"Categorizing the audit recommendation (max 100 characters)",
+				"repeated":"Repeated in previous audit(s)? (register in remarks field the history)",
+				"repeteadTooltip":"Recommendation repeated in previous audit(s)",
+				"actionPlan":"Action plan",
+				"actionPlanTooltip":"Action/remedial plan proposed",
+				"timeline":"Timeline",
+				"timelineTooltip":"Timeline planned to implement the action/remedial plan proposed",
+				"outcome":"Desired outcome",
+				"outcomeTooltip":"Description of the outcome desired by the implementation of the recommendation",
+				"responsible":"Responsible",
+				"responsibleTooltip":"Identify and direct recommendation to those who have responsibility and authority to act on them",
+				"remarks":"Remarks",
+				"remarksTooltip":"(Unstructured) Notes and remarks about recommendation registered by the auditor",
+				"relatedFindings":"Related reported findings",
+				"selectFinding":"(Select finding in dropdown to get related information!)",
+				"trackNotes":"Track note(s)",
+				"relatedFindingsMatrix":{
+					"operation":"Operation",
+					"number":"Number",
+					"description":"Description",
+					"source":"Source > Domain > Area > Issue",
+					"relevant":"Relevant"
+				},
+				"monitoring":"Monitoring and follow-up activities",
+				"monitoringMatrix":{
+					"operation":"Operation",
+					"assessment":"Assessment date",
+					"status":"Status",
+					"trackNote":"Track note"
+				}
+			}
+		},
+		"analytics" : {
+			"treemap" : {
+				"title" : "Audit Tree Map",
+				"noteTitle" : "Note:",
+				"noteDescription" : "Please consider several elements, such as the images type (act as visual signifiers), branches, colors and keywords, in order to make it easier to structure and recall information:",
+				"legendAudit" : "The audit and the starting point of an audit tree map",
+				"legendPlanDomain" : "The selected IT domains in risk table (plan)",
+				"legendPlanArea" : "The selected IT areas in risk table (plan)",
+				"legendPlanIssue" : "The selected IT issues in risk table (plan)",
+				"legendFinding" : "The relevant findings found",
+				"legendRec" : "The recommendations formulated, in relation with findings",
+				"actionNote" : "Click on a node to obtain more information."
+			}
+		},
+		"donwload" : {},
+		"close" : {}
+	},
+	"portfolios": {
+		"browse" : {},
+		"managePortfolios" : {}
+	},
+	"ListsOfValues":{
+		"Generic":{
+			"YesNo":{
+				"Yes":{ "name":"Yes","value":"0" },
+				"No":{ "name":"No", "value":"0" }
+			}
+		},
+		"Plan":{
+			"Risk":{
+				"High":{ "name":"High","value":"3" },
+				"Medium":{ "name":"Medium","value":"2" },
+				"Low":{ "name":"Low", "value":"1" }
+			}
+		},
+		"Recommendation": {
+			"Priority": {
+				" ":{ "name":" ", "value":"0" },
+				"Regular":{ "name":"Regular", "value":"0" },
+				"Urgent":{ "name":"Urgent","value":"0" }
+			},
+			"RiskCharacterization": {
+				"Governance":{ "name":"Governance", "value":"0" },
+				"Operational":{ "name":"Operational", "value":"0" },
+				"Reputational":{ "name":"Reputational", "value":"0" },
+				"Financial":{ "name":"Financial", "value":"0" },
+				"Compliance":{ "name":"Compliance", "value":"0" },
+				"MisappropriationOfAssets":{ "name":"Misappropriation of assets", "value":"0" }
+			},
+			"RiskEvaluation": {
+				"State":{ "name":"State", "value":"0" },
+				"Region":{ "name":"Region", "value":"0" },
+				"Municipality":{ "name":"Municipality", "value":"0" },
+				"ActivityArea":{ "name":"Activity Area", "value":"0" },
+				"Entity":{ "name":"Entity", "value":"0" }
+			},
+			"Importance": {
+				" ":{ "name":" ", "value":"0" },
+				"Important":{ "name":"Operational", "value":"0" },
+				"Strategic":{ "name":"Strategic", "value":"0" }
+
+			},
+			"ImplementationStatus": {
+				"Implemented":{ "name":"Implemented", "value":"0" },
+				"StartedImplementation":{ "name":"Started Implementation", "value":"0" },
+				"PartiallyImplemented":{ "name":"Partially implemented", "value":"0" },
+				"FinalStageImplementation":{ "name":"Final Stage Implementation", "value":"0" },
+				"NotStartedImplementation":{ "name":"Not started Implementation", "value":"0" },
+				"NotAddressed":{ "name":"Not addressed", "value":"0" },
+				"NoLongerApplicable":{ "name":"No longer applicable", "value":"0" }
+			}
+		}
+	}
+}

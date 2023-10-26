@@ -1,0 +1,177 @@
+<section id="contact" class="col-6 col-12-narrower">
+        <header>
+            <h2></h2>
+            <h2><%=appAudit.plan.pageTitle %></h2>
+            <p></p>
+        </header>
+        <% if(msg != ''){ %>
+            <div class="col-12" id="save_auditplan">
+                <p>
+                    <span class="successformtext"><%= msg %></span><br/>
+                </p>
+            </div>
+        <% } %>    
+        <form method="POST" action="/planaudit/auditplanning">
+            <div class="row gtr-50">
+                <div class="col-12">
+                    <ul class="actions">
+                        <li><a href="/planaudit/auditplanning" class="button"><%=appButtons.reloadList.name %></a></li>
+                        <% if(plancatalog.length > 0) { %>
+                            <li><a href="/planaudit/syncauditplanning" class="button" data-tooltip="<%=appButtons.planSyncPreassessment.tooltip %>"><%=appButtons.planSyncPreassessment.name %></a></li>
+                            <li><a style="border-style: none;" target="_blank" href="../support/sync-preassessment.html"><img src="../images/info-32a.png" alt="" style="vertical-align: text-bottom; display: inline-block;"/></a></li>
+                            <li><input type="submit" class="button alt" value="<%=appButtons.save.name %>" /></li>
+                        <% } %>
+                    </ul>
+                </div>
+                <p>
+                    <% if(plancatalog.length > 0) { %>
+                        <p><%=appAudit.plan.riskFilter.description %> <a href="#" onclick="filterRisk('3'); return false;"><%=appAudit.plan.riskFilter.criteria1 %></a>, <a href="#" onclick="filterRisk('2'); return false;"><%=appAudit.plan.riskFilter.criteria2 %></a>, <a href="#" onclick="filterInclude(); return false;"><%=appAudit.plan.riskFilter.criteria3 %></a>, <a href="#" onclick="showAllRows(); return false;"><%=appAudit.plan.riskFilter.criteria4 %></a>
+                        <p><div class="row gtr-50">
+                        <a style="border-style: none;" href="javascript:GetListOptions();" data-tooltip="<%=appButtons.planExportList.tooltip %>"><img src="../images/export32t.png" alt="" style="vertical-align: text-bottom; display: inline-block;"/>&nbsp; <%=appButtons.planExportList.name %></a>
+                        &nbsp;
+                        <a style="border-style: none;" href="/generatedocs/docauditprogramme" data-tooltip="<%=appButtons.planAuditProgramme.tooltip %>"><img src="../images/export32t.png" alt="" style="vertical-align: text-bottom; display: inline-block;"/>&nbsp; <%=appButtons.planAuditProgramme.name %></a>
+                        &nbsp;
+                        <a style="border-style: none;" href="/generatedocs/docmethodmatrix" data-tooltip="<%=appButtons.planAuditMatrix.tooltip %>"><img src="../images/export32t.png" alt="" style="vertical-align: text-bottom; display: inline-block;"/>&nbsp; <%=appButtons.planAuditMatrix.name %></a>
+                        &nbsp;
+                        <a target="_blank" style="border-style: none;" href="/generatedocs/heatmatrix" data-tooltip="<%=appButtons.planRiskHeatMatrix.tooltip %>"><img src="../images/export32t.png" alt="" style="vertical-align: text-bottom; display: inline-block;"/>&nbsp; <%=appButtons.planRiskHeatMatrix.name %></a>
+                        &nbsp;
+                        <a style="border-style: none;" href="/generatedocs/docmatricesList" data-tooltip="<%=appButtons.planCollectionMatrices.tooltip %>"><img src="../images/export32t.png" alt="" style="vertical-align: text-bottom; display: inline-block;"/>&nbsp; <%=appButtons.planCollectionMatrices.name %></a></p>
+                        &nbsp;</div></p>
+                        <table id='tablecatalog'>
+                            <thead>
+                                <%- include('./auditplanheader'); %>
+                            </thead>    
+                            <tbody>
+                                <%- include('./auditplanrow'); %>
+                            </tbody>
+                        </table>
+                        <input type="hidden" name="rows_count" id="rows_count" value="<%= plancatalog.length %>"/> 
+                        <p>
+                        <a style="border-style: none;" href="javascript:GetListOptions();" data-tooltip="<%=appButtons.planExportList.tooltip %>"><img src="../images/export32t.png" alt="" style="vertical-align: text-bottom; display: inline-block;"/>&nbsp; <%=appButtons.planExportList.name %></a>
+                        &nbsp;
+                        <a style="border-style: none;" href="/generatedocs/docauditprogramme" data-tooltip="<%=appButtons.planAuditProgramme.tooltip %>"><img src="../images/export32t.png" alt="" style="vertical-align: text-bottom; display: inline-block;"/>&nbsp; <%=appButtons.planAuditProgramme.name %></a>
+                        &nbsp;
+                        <a style="border-style: none;" href="/generatedocs/docmethodmatrix" data-tooltip="<%=appButtons.planAuditMatrix.tooltip %>"><img src="../images/export32t.png" alt="" style="vertical-align: text-bottom; display: inline-block;"/>&nbsp; <%=appButtons.planAuditMatrix.name %></a>
+                        &nbsp;
+                        <a target="_blank" style="border-style: none;" href="/generatedocs/heatmatrix" data-tooltip="<%=appButtons.planRiskHeatMatrix.tooltip %>"><img src="../images/export32t.png" alt="" style="vertical-align: text-bottom; display: inline-block;"/>&nbsp; <%=appButtons.planRiskHeatMatrix.name %></a>
+                        &nbsp;
+                        <a style="border-style: none;" href="/generatedocs/docmatricesList" data-tooltip="<%=appButtons.planCollectionMatrices.tooltip %>"><img src="../images/export32t.png" alt="" style="vertical-align: text-bottom; display: inline-block;"/>&nbsp; <%=appButtons.planCollectionMatrices.name %></a></p>
+                    <% } else { %>
+                        <p><%=appAudit.plan.noPlan %></p>
+                    <% } %>
+                </p>
+                <div class="col-12">
+                    <ul class="actions">
+                        <li><a href="/planaudit/auditplanning" class="button"><%=appButtons.reloadList.name %></a></li>
+                        <% if(plancatalog.length > 0) { %>
+                            <li><a href="/planaudit/syncauditplanning" class="button" data-tooltip="<%=appButtons.planSyncPreassessment.tooltip %>"><%=appButtons.planSyncPreassessment.name %></a></li>
+                            <li><a style="border-style: none;" target="_blank" href="../support/sync-preassessment.html"><img src="../images/info-32a.png" alt="" style="vertical-align: text-bottom; display: inline-block;"/></a></li>
+                            <li><input type="submit" class="button alt" value="<%=appButtons.save.name %>" /></li>
+                        <% } %>
+                    </ul>
+                </div>
+            </div>
+        </form>
+    </section>
+    <!-- javascript is placed in the body section -->
+    <script>
+        //it takes two parameters: the select control id as well the image control id associated in order to to change display
+        function showInclude(elem, ctrlImg){
+            if(elem.value == 'Yes') {
+                //try: "inline-block"
+                document.getElementById(ctrlImg).style.display = "inline-block"; //opposite: "none"
+            } else {
+                document.getElementById(ctrlImg).style.display = "none"; //opposite: "none"
+            }
+        }
+        //it takes two parameters: the select control id as well the image control id associated in order to to change display
+        function showRisk(elem, ctrlIndex){
+            var ctrlImgMedium='rmedium' + ctrlIndex.toString();
+            var ctrlImgHigh='rhigh' + ctrlIndex.toString();
+            if(elem.value == '3') {
+                document.getElementById(ctrlImgHigh).style.display = "inline-block"; 
+                document.getElementById(ctrlImgMedium).style.display = "none"; 
+    
+                document.getElementById(ctrlIndex.toString() + "Image").style.display = "inline-block"; 
+                document.getElementById(ctrlIndex.toString() + "Include").value = "Yes";             
+            } else if(elem.value == '2') {
+                document.getElementById(ctrlImgMedium).style.display = "inline-block"; 
+                document.getElementById(ctrlImgHigh).style.display = "none"; 
+            } else {
+                document.getElementById(ctrlImgMedium).style.display = "none"; 
+                document.getElementById(ctrlImgHigh).style.display = "none"; 
+            }
+        }
+        function filterRisk(Weight){
+            var TotalRows=<%= plancatalog.length %>;
+            for (var j=1; j<=TotalRows; j++) {
+                if (document.getElementById('#' + j.toString() +'Risk').value >= Weight) {
+                    document.getElementById('#' + j.toString() +'Row').style.display ="table-row";
+                } else {
+                    document.getElementById('#' + j.toString() +'Row').style.display ="none";
+                }
+            }
+        }
+        function filterInclude(){
+            var TotalRows=<%= plancatalog.length %>;
+            for (var j=1; j<=TotalRows; j++) {
+                if (document.getElementById('#' + j.toString() +'Include').value == 'Yes') {
+                    document.getElementById('#' + j.toString() +'Row').style.display ="table-row";
+                } else {
+                    document.getElementById('#' + j.toString() +'Row').style.display ="none";
+                }
+            }
+        }
+        function showAllRows(){
+            var TotalRows=<%= plancatalog.length %>;
+            for (var j=1; j<=TotalRows; j++) {
+                document.getElementById('#' + j.toString() +'Row').style.display ="table-row";
+            }
+        }
+        function GetListOptions(){
+            swal({
+                title: "Export plan list",
+                text: "available options",
+                icon: "info",
+                buttons: {
+                    All: {
+                        text: "All",
+                        value: "all",
+                        closeModal: true,
+                    },
+                    Medium: {
+                        text: "Medium/high risk",
+                        value: "risk",
+                        closeModal: true,
+                    },
+                    Included: {
+                        text: "Included",
+                        value: "included",
+                        closeModal: true,
+                    },
+                    Close: {
+                        text: "Close",
+                        value: true,
+                        closeModal: true,
+                    },
+                },
+            })
+            .then((value) => {
+                switch (value) {
+                
+                    case "all":
+                        window.location.href = '/generatedocs/docplanList?op=all';
+                    break;
+                
+                    case "risk":
+                        window.location.href = '/generatedocs/docplanList?op=risk';
+                    break;
+
+                    case "included":
+                        window.location.href = '/generatedocs/docplanList?op=included';
+                    break;
+                }
+            });            
+        }
+    </script>
+    

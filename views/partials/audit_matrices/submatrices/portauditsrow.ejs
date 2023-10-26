@@ -1,0 +1,11 @@
+<% let i=1 %>
+<% catalog.audits.forEach(function(item) { %>
+    <tr id="PA_<%= i %>Row" style="display: table-row;">
+        <td>
+            <a id="a<%= i %>Row" href="/auditMatrices/portfoliodetach?id=<%= catalog._id %>&auditid=<%= item.AuditId %>">Detach...</a>
+        </td>
+        <td><%= item.Title %></td>
+        <td><%= item.Background %></td>
+    </tr>
+    <% i++ %>
+<% }) -%>

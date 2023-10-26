@@ -1,0 +1,3 @@
+{"type":"Load/General", "operation":"Audit Created", "session":"1dbd139d-2f20-4115-9f0e-1dfa4414de44", "snapshot":"039452d07981ac6ab2a5b3823a0a60d3", "auditFile":"./work/1dbd139d-2f20-4115-9f0e-1dfa4414de44.xml", "event":"2023-10-25 19:50:59"},
+{"type":"Plan", "operation":"Plan > Risk table accessed", "session":"1dbd139d-2f20-4115-9f0e-1dfa4414de44", "snapshot":"", "auditFile":"./work/1dbd139d-2f20-4115-9f0e-1dfa4414de44.xml", "event":"2023-10-25 19:51:10"},
+{"type":"Plan", "operation":"Plan > Risk table modified", "session":"1dbd139d-2f20-4115-9f0e-1dfa4414de44", "snapshot":"154b94e100787b2311561bf348bc3642", "auditFile":"./work/1dbd139d-2f20-4115-9f0e-1dfa4414de44.xml", "event":"2023-10-25 19:51:16"},

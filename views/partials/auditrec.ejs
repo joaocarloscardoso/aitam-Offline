@@ -1,0 +1,66 @@
+<section id="contact" class="col-6 col-12-narrower">
+    <header>
+        <h2></h2>
+        <h2><%=appAudit.recommendations.pageTitle %></h2>
+        <p>Please refer on <b>ISSAI 100/51, GUID 5100/7</b> as methodology basis.</p>
+    </header>
+    <% if(msg != ''){ %>
+        <div class="col-12" id="save_auditrecs">
+            <p>
+                <span class="successformtext"><%= msg %></span><br/>
+            </p>
+        </div>
+    <% } %>    
+    <form method="POST" action="/auditrec/auditrecs">
+        <div class="row gtr-50">
+            <% if(reccatalog.length > 6) { %>
+                <div class="col-12">
+                    <ul class="actions">
+                        <li><a href="/auditrec/auditrecs" class="button"><%=appButtons.reloadList.name %></a></li>
+                        <li><a href="/auditMatrices/recMatrix?id=New&number=<%=reccatalog.length %>" class="button"><%=appButtons.recommendationCreateRecommendation.name %></a></li>
+                    </ul>
+                </div>
+                <p>
+                    <a style="border-style: none;" href="/generatedocs/rectrackreport" data-tooltip="<%=appButtons.recommendationTrackReport.tooltip %>"><img src="../images/export32t.png" alt="" style="vertical-align: text-bottom; display: inline-block;"/>&nbsp; <%=appButtons.recommendationTrackReport.name %></a>    
+                </p>
+        <% } %>
+            <p>
+                <% if(reccatalog.length > 0) { %>
+                    <p><%=appAudit.recommendations.recommendationFilter %></p>
+                    <table id='tablecatalog'>
+                        <thead>
+                            <%- include('./auditrecheader'); %>
+                        </thead>    
+                        <tbody>
+                            <%- include('./auditrecrow'); %>
+                        </tbody>
+                    </table>
+                    <input type="hidden" name="rows_count" id="rows_count" value="<%= reccatalog.length %>"/> 
+                    <p>
+                        <a style="border-style: none;" href="/generatedocs/rectrackreport" data-tooltip="<%=appButtons.recommendationTrackReport.tooltip %>"><img src="../images/export32t.png" alt="" style="vertical-align: text-bottom; display: inline-block;"/>&nbsp; <%=appButtons.recommendationTrackReport.name %></a>    
+                    </p>
+                <% } else { %>
+                    <p><%=appAudit.recommendations.noRecommendations %></p>
+                <% } %>
+            </p>
+            <div class="col-12">
+                <ul class="actions">
+                    <li><a href="/auditrec/auditrecs" class="button"><%=appButtons.reloadList.name %></a></li>
+                    <li><a href="/auditMatrices/recMatrix?id=New&number=<%=reccatalog.length %>" class="button"><%=appButtons.recommendationCreateRecommendation.name %></a></li>
+                </ul>
+            </div>
+        </div>
+    </form>
+</section>
+<!-- javascript is placed in the body section -->
+<script>
+    //it takes two parameters: the select control id as well the image control id associated in order to to change display
+    function showInclude(elem, ctrlImg){
+        if(elem.value == 'Yes') {
+            //try: "inline-block"
+            document.getElementById(ctrlImg).style.display = "inline-block"; //opposite: "none"
+        } else {
+            document.getElementById(ctrlImg).style.display = "none"; //opposite: "none"
+        }
+    }
+</script>

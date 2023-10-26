@@ -1,0 +1,96 @@
+<!DOCTYPE HTML>
+<!--
+	Arcana by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+    <!-- based on no-side bar template -->
+    <%- include('../partials/head'); %>
+    <body class="is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+			<%- include('../partials/header'); %>
+
+			<!-- Main -->
+				<section class="wrapper style1">
+					<div class="container">
+						<div id="content">
+
+							<!-- Content -->
+
+								<article>
+									<header>
+										<h2>From version 1.x to version 2.x. Much more than a new look…</h2>
+										<p>2018-10-19</p>
+									</header>
+
+									<p>(Main) Key ideas behind:</p>
+                                    <ul>
+                                        <li>Separation between information and presentation, object oriented.</li>
+                                        <li>Easy to update.</li>
+                                        <li>New support applications, founded on open-source and cross-platform software.</li>
+                                        <li>Plug-ins are now “true” plug-ins.</li>
+                                    </ul>
+    
+									<h3>Separation between information and presentation, object oriented</h3>
+                                    <p>The data and metadata are now stored and managed in XML structures:</p>
+                                    <ul>
+                                        <li>They can be presented by independent applications, autonomously developed.</li>
+                                        <li>They may move independently, without mandatory changes on the application responsible for the presentation.</li>
+                                        <li>They support natively multiple working languages.</li>
+                                        <li>Their internal structure can be described and standardized (through <i>XML schemas</i>).</li>
+                                    </ul>
+    
+                                    <p>The different components, already present, started to 
+                                    work under a concept close to OOP, supporting re-utilization and extensibility.</p>
+                                    
+                                    <p>They work like classes (data and behaviour definitions), from which we instantiate objects, 
+                                    which correspond “to things found in the real world” (not an audit, but the particular audit):</p>
+                                    <p><img src="../images/datamodelling.jpg" alt="Data modelling Of The Audit" /></p>
+
+                                    <p>The audit is stored  and maintained in a XML container. This document is the only 
+                                    one that the user needs to share.</p>
+ 
+                                    <h3>New support applications</h3>
+                                    <p>The applications just present the information to user, 
+                                    promote interactions, filling and customization, but they 
+                                    do not store it primarily under their  own proprietary formats.</p>
+                                    <p>Templates are extensively used to generate “secondary” 
+                                    documents (matrixes and reports).</p>
+                                    <p>Developed:</p>
+                                    <ul>
+                                        <li>Under stable, wide accepted and (even) open productivity software;</li>
+                                        <li>easy to updateTo support  the major desktop ecosystems;</li>
+                                        <li>Within the same “family” of macro scripting languages;</li>
+                                        <li>Less code to maintain (-20% when compared with version 1 and for 
+                                        the same functionalities);</li>
+                                        <li>No need of special permissions as local administrator.</li>
+                                    </ul>
+
+                                    <h3>Plug-ins are now “true” plug-ins</h3>
+                                    <p>A plug-in extends (doesn’t replace) the core IT Audit Manual, 
+                                    adding new functionalities or characteristics.</p>
+                                    <p>A plug-in is instantiated and executed inside the application and 
+                                    interacts with core through the same user interface.</p>
+                                    <p>The plug-ins depend on the core IT Audit Manual and preserve 
+                                    the global mechanics.</p>
+                                    <p><img src="../images/plugins.jpg" alt="The plug-ins depend on the core IT Audit Manual" /></p>
+                                    
+                                </article>
+
+						</div>
+					</div>
+				</section>
+
+			<!-- Footer -->
+			<%- include('../partials/footer'); %>
+
+		</div>
+
+		<!-- Scripts -->
+		<%- include('../partials/scripts'); -%>
+
+	</body>
+</html>

@@ -1,0 +1,7 @@
+{"message":"garbage collector started on path: C:\\develop\\nodejs\\projects\\aitam\\work\\","level":"\u001b[34minfo\u001b[39m","timestamp":"2020-04-30 23:07:18"}
+{"message":"Session created received the id:3cc6bbcc-4a7e-4c5f-af35-4a90d1e48068","level":"\u001b[34minfo\u001b[39m","timestamp":"2020-04-30 23:07:30"}
+{"message":"404 - Not Found","level":"\u001b[33mwarn\u001b[39m","timestamp":"2020-04-30 23:07:31"}
+{"message":"req.user: undefined","level":"\u001b[34minfo\u001b[39m","timestamp":"2020-04-30 23:07:34"}
+{"message":"Session id started: {\"user\":\"2f24vvg\"}","level":"\u001b[34minfo\u001b[39m","timestamp":"2020-04-30 23:07:34"}
+{"message":"User logged in: {\"id\":\"2f24vvg\",\"email\":\"test@test.com\",\"password\":\"$2a$10$A2g6pbxxhLA9MNYRJ0rnzOf/7Ara76B0KcRdjzUcsIBIclRuas/fG\"}","level":"\u001b[34minfo\u001b[39m","timestamp":"2020-04-30 23:07:34"}
+{"message":"User (2f24vvg) uploaded a file: {\"file-upload\":{\"size\":458931,\"path\":\"C:\\\\develop\\\\nodejs\\\\projects\\\\aitam\\\\work\\\\3cc6bbcc-4a7e-4c5f-af35-4a90d1e48068.xml\",\"name\":\"KAS.xml\",\"type\":\"text/xml\",\"mtime\":\"2020-04-30T22:07:42.443Z\"}}","level":"\u001b[34minfo\u001b[39m","timestamp":"2020-04-30 23:07:42"}

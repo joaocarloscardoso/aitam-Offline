@@ -1,0 +1,32 @@
+<% data.Recommendations.forEach(function(item) { %>
+    <tr id="<%= item.RowId %>Row" style="display: table-row;">
+        <td>
+            <span><%= item.Description %></span>
+            <p><span><b>Related findings:&nbsp;</b><br/>
+                <% if(item.Findings.length > 0) { %>
+                    <% item.Findings.forEach(function(subitem) { %>
+                            <div style="margin-left: 30px;"><b><%= subitem.Number %>&nbsp;<%= subitem.Name %></b><br/></div>
+                            <div style="margin-left: 30px;"><span style="white-space: pre-line"><%= subitem.Description %></span></div><br/>
+                    <% }) %>
+                <% } else { %>
+                    <span style="margin-left: 30px;">(none so far)</span>
+                <% } %>   
+            </span></p>
+        </td>
+        <td>
+            <span><b><%= item.Priority %></b></span>
+        </td>
+        <td>
+            <span><%= item.Risk %></span>
+        </td>
+        <td>
+            <span><%= item.Riskevaluation %></span>            
+        </td>
+        <td>
+            <span><%= item.Timeline %></span>
+        </td>
+        <td>
+            <span data-tooltip-right="Current status is collected from last assessment, otherwise the value (not yet accessed) is displayed!"><%= item.Status %></span>
+        </td>
+    </tr>
+<% }) %>

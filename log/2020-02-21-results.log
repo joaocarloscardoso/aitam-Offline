@@ -1,0 +1,14 @@
+{"message":"garbage collector started on path: C:\\develop\\nodejs\\projects\\aitam\\work\\","level":"\u001b[34minfo\u001b[39m","timestamp":"2020-02-21 09:07:10"}
+{"message":"Session created received the id:874e3d1b-1f49-484d-8263-31c51e396dfb","level":"\u001b[34minfo\u001b[39m","timestamp":"2020-02-21 09:07:18"}
+{"message":"404 - Not Found","level":"\u001b[33mwarn\u001b[39m","timestamp":"2020-02-21 09:07:19"}
+{"message":"req.user: undefined","level":"\u001b[34minfo\u001b[39m","timestamp":"2020-02-21 09:07:23"}
+{"message":"Session id started: {\"user\":\"2f24vvg\"}","level":"\u001b[34minfo\u001b[39m","timestamp":"2020-02-21 09:07:23"}
+{"message":"User logged in: {\"id\":\"2f24vvg\",\"email\":\"test@test.com\",\"password\":\"$2a$10$A2g6pbxxhLA9MNYRJ0rnzOf/7Ara76B0KcRdjzUcsIBIclRuas/fG\"}","level":"\u001b[34minfo\u001b[39m","timestamp":"2020-02-21 09:07:23"}
+{"message":"User (2f24vvg) uploaded a file: {\"file-upload\":{\"size\":439274,\"path\":\"C:\\\\develop\\\\nodejs\\\\projects\\\\aitam\\\\work\\\\874e3d1b-1f49-484d-8263-31c51e396dfb.xml\",\"name\":\"test_site3.xml\",\"type\":\"text/xml\",\"mtime\":\"2020-02-21T09:07:29.203Z\"}}","level":"\u001b[34minfo\u001b[39m","timestamp":"2020-02-21 09:07:29"}
+{"message":"audit file download: C:\\develop\\nodejs\\projects\\aitam\\work\\874e3d1b-1f49-484d-8263-31c51e396dfb.xml","level":"\u001b[34minfo\u001b[39m","timestamp":"2020-02-21 09:15:39"}
+{"message":"garbage collector started on path: C:\\develop\\nodejs\\projects\\aitam\\work\\","level":"\u001b[34minfo\u001b[39m","timestamp":"2020-02-21 09:24:08"}
+{"message":"garbage collector started on path: C:\\develop\\nodejs\\projects\\aitam\\work\\","level":"\u001b[34minfo\u001b[39m","timestamp":"2020-02-21 09:25:05"}
+{"message":"req.user: undefined","level":"\u001b[34minfo\u001b[39m","timestamp":"2020-02-21 09:25:21"}
+{"message":"Session id started: {\"user\":\"2f24vvg\"}","level":"\u001b[34minfo\u001b[39m","timestamp":"2020-02-21 09:25:21"}
+{"message":"User logged in: {\"id\":\"2f24vvg\",\"email\":\"test@test.com\",\"password\":\"$2a$10$A2g6pbxxhLA9MNYRJ0rnzOf/7Ara76B0KcRdjzUcsIBIclRuas/fG\"}","level":"\u001b[34minfo\u001b[39m","timestamp":"2020-02-21 09:25:21"}
+{"message":"User (2f24vvg) uploaded a file: {\"file-upload\":{\"size\":439256,\"path\":\"C:\\\\develop\\\\nodejs\\\\projects\\\\aitam\\\\work\\\\162ee5f1-ce8b-4e9d-8c0e-754d1da6675b.xml\",\"name\":\"test_site3.xml\",\"type\":\"text/xml\",\"mtime\":\"2020-02-21T09:25:28.266Z\"}}","level":"\u001b[34minfo\u001b[39m","timestamp":"2020-02-21 09:25:28"}

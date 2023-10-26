@@ -1,0 +1,26 @@
+<% let i=1 %>
+<% catalog.forEach(function(item) { %>
+    <tr id="<%= i %>Row" style="display: table-row;">
+        <td>
+            <a href="/auditMatrices/portfolio?id=<%= item._id %>">#<%= item.portfolioid %></a>
+            <input type="hidden" id="<%= i %>Id" name="<%= i %>Id" value="<%= item._id %>"/>
+        </td>
+        <td>
+            <span><%= item.description %></span>
+        </td>
+        <td>
+            <span><%= item.coverage %></span>
+        </td>
+        <td>
+            <% if (item.publish == '1') { -%>
+                Yes
+            <% } else { %>
+                No
+            <% } %>
+        </td>
+        <td>
+            <a href="/portanalytics/deleteportfolio?id=<%= item._id %>">Delete...</a>
+        </td>
+    </tr>
+    <% i++ %>
+<% }) %>

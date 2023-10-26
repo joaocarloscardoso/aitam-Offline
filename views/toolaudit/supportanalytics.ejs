@@ -1,0 +1,49 @@
+<!DOCTYPE HTML>
+<!--
+	Arcana by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+    <!-- based on no-side bar template -->
+    <%- include('../partials/head'); %>
+	<script src="/assets/js/Chart.js"></script>
+	<body class="is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+			<%- include('../partials/header'); %>
+
+			<!-- Main -->
+            <div class="container">
+                <section class="col-6 col-12-narrower">
+					<div class="container">
+						<div id="content">
+							<!-- Content -->
+                            <article>
+                                <%  if (operation == 'recommendation') { %>
+                                    <%- include('../partials/audit_analytics/recommendation'); %>
+								<% } else if (operation == 'findings') { %>
+									<%- include('../partials/audit_analytics/findings'); %>
+								<% } else if (operation == 'sentimentfindings') { %>
+									<%- include('../partials/audit_analytics/sentimentdocument'); %>
+								<% } else if (operation == 'sentimentfindingsdetailed') { %>
+									<%- include('../partials/audit_analytics/sentimentfinding'); %>
+								<% } else if (operation == 'trackauditrecs') { %>
+									<%- include('../partials/auditrecstatistics'); %>
+								<% } %>
+						</article>
+						</div>
+					</div>
+				</section>
+            </div>
+			<!-- Footer -->
+			<%- include('../partials/footer'); %>
+
+		</div>
+
+		<!-- Scripts -->
+		<%- include('../partials/scripts'); -%>
+
+	</body>
+</html>

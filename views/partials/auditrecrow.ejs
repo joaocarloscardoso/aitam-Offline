@@ -1,0 +1,43 @@
+<% reccatalog.forEach(function(item) { %>
+    <tr id="<%= item.RowId %>Row" style="display: table-row;">
+       <td>
+            <a href="/auditMatrices/recMatrix?id=<%= item.Id %>&src=tbl">#<%= item.Number %></a>
+            <input type="hidden" id="<%= item.RowId %>Id" name="<%= item.RowId %>Id" value="<%= item.Id %>"/>
+        </td>
+        <td>
+            <span><%= item.Description %></span>
+            <p><span><b><%=appAudit.recommendations.relatedFindings %>&nbsp;</b>
+                <% if(item.Findings.length > 0) { %>
+                    <% item.Findings.split("|").forEach(function(finding) { -%>
+                        <% subitem = finding.split("#") -%>
+                        <a  target="_blank" href="/auditMatrices/FindingData?id=<%= subitem[0] %>&src=tbl" data-tooltip-bottom="<%=appAudit.recommendations.selFindingTooltip %>">#<%= subitem[1] %></a> - 
+                    <% }) -%>
+                <% } else { %>
+                    <span><%=appAudit.recommendations.norelatedFindings %></span>
+                <% } %>   
+            </span></p>
+        </td>
+        <td>
+            <%if(item.Priority == "Urgent") { %>
+                <img id="phigh<%= item.RowId %>" src="../images/high-16.png" alt="" style="vertical-align: text-bottom; display: inline-block;"/>
+                <span><b><%= item.Priority %></b></span>
+            <% } else if (item.Priority == "Low") { %>
+                <span><b><%= item.Priority %></b></span>
+            <% } %>                
+        </td>
+        <td>
+            <span><%= item.Risk %></span><br/>
+            <span><b>(<%= item.Riskevaluation %>)</b></span>            
+        </td>
+        <td>
+            <span><%= item.Timeline %></span>
+        </td>
+        <td>
+            <span data-tooltip-right="<%=appAudit.recommendations.currentStatus %>"><%= item.Status %></span>
+        </td>
+        <td>
+            <a href="/auditrec/deleteauditrec/<%= item.Id %>"><%=appAudit.recommendations.delete %></a>
+        </td>
+     </tr>
+<% }) %>
+    

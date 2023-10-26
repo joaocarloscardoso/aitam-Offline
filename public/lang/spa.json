@@ -1,0 +1,370 @@
+{
+	"messages":{		
+		"mail_adress":"¡Email inválido!",
+		"mail_name":"¡El nombre debe tener al menos 3 caracteres!",
+		"mail_message":"¡El mensaje debe tener al menos 3 caracteres!",
+		"audit_file_version":"El archivo de auditoría cargado pertenece a una versión anterior de AITAM. Para garantizar la compatibilidad, el idioma de trabajo cambiará automáticamente al inglés.",
+		"audit_edit_save":"¡Auditoría guardada con éxito! Utilice el comando Descargar en el menú Auditoría para obtener el archivo.",
+		"audit_sync_preassessment":"¡Sincronización con la matriz A2.02 (02 Comprensión de los sistemas de TI) completada!",
+		"audit_portfolio_dettach":"La auditoría seleccionada se desvinculó correctamente.",
+		"audit_portfolio_attach":"La auditoría seleccionada se adjuntó correctamente.",
+		"finding_deleted":"Se eliminó lo resultado seleccionado!",
+		"recommendation_deleted":"¡Se eliminó la recomendación de auditoría seleccionada!"
+	},
+	"pageNavigation":{
+		"home": "Inicio",
+		"audit": {
+			"menu_title":"Visión general",
+			"menu_plan":"Plan",
+			"menu_findings":"Resultados",
+			"menu_recommendations":"Recomendaciones",
+			"menu_download":"Descargar",
+			"timeline": "Tablero de control de auditoría",
+			"WorkingAreas":{
+				"menu_title":"Áreas de trabajo",
+				"reference": "Referencia",
+				"plug_ins":"Complementos",
+				"preliminary": "Actividades preliminares",
+				"plan":"Tabla de riesgos",
+				"findings":"Tabla de resultados",
+				"recommendations":"Tabla de recomendaciones"
+			},
+			"analytics":{
+				"menu_title":"Analítica",
+				"treemap": "Mapa del árbol de auditoría",
+				"dommain_characterization": "Caracterización de dominio",
+				"hints": "Sugerencias",
+				"findings_analysis": "Análisis",
+				"sentiment_analysis_findings":"Análisis de sentimiento",
+				"recommendations_tracking":"Seguimiento",
+				"raw_data":"Exportar datos analíticos",
+				"procedure_data":"Exportar los procedimientos TM"
+			},
+			"download":"Descargar archivo de auditoría (XML)",
+			"close":"Cerrar archivo de auditoría"
+		},
+		"tool":"Herramienta",
+		"recommendations":{
+			"menu_title":"Recomendaciones",
+			"browse":"Navegar",
+			"manage":"Gestionar agregaciones"
+		},
+		"project":"Proyecto",
+		"get_in_touch":"Ponerse en contacto",
+		"change_language":"Cambiar idioma"
+	},
+	"buttons":{
+		"save": {
+			"name": "Guardar", 
+			"tooltip":""
+		},
+		"close": {
+			"name": "Cerrar", 
+			"tooltip":""
+		},
+		"reloadList": {
+			"name": "Recargar lista", 
+			"tooltip":""
+		},
+		"generateDocument": {
+			"name": "Generar documento", 
+			"tooltip":""
+		},
+		"planSyncPreassessment": {
+			"name": "Sincronizar con las actividades preliminares", 
+			"tooltip":"Esta funcionalidad se basa en el uso previo de la matriz A2.02 (02 Comprensión de los sistemas de TI)"
+		},
+		"planExportList": {
+			"name": "Exportar lista", 
+			"tooltip":"Esta funcionalidad genera un documento de procesamiento de texto que contiene la lista de planificación"
+		},
+		"planAuditProgramme": {
+			"name": "Programa de auditoria", 
+			"tooltip":"Esta funcionalidad genera un documento de procesamiento de texto que contiene el programa de auditoría"
+		},
+		"planAuditMatrix": {
+			"name": "Matriz de auditoría", 
+			"tooltip":"Esta funcionalidad genera la matriz de auditoría metodológica"
+		},
+		"planRiskHeatMatrix": {
+			"name": "Matriz de riesgo", 
+			"tooltip":"Esta funcionalidad genera la matriz de riesgo",
+			"introduction": "Para obtener una imagen completa, utilice la "
+		},
+		"planCollectionMatrices": {
+			"name": "Colección de matrices", 
+			"tooltip":"Esta funcionalidad genera la colección de matrices de todos los elementos incluidos en la auditoría"
+		},
+		"findingCreateFinding": {
+			"name": "Cerrar esta y crear nueva", 
+			"tooltip":""
+		},
+		"findingCloseCreateFinding": {
+			"name": "Cerrar y crear evidencia de auditoría", 
+			"tooltip":""
+		},
+		"findingExecutiveSummary": {
+			"name": "Resumen ejecutivo", 
+			"tooltip":"Esta funcionalidad genera un documento de procesamiento de texto que contiene el resumen ejecutivo"
+		},
+		"findingExecutiveSummaryRecommendations": {
+			"name": "Resumen ejecutivo (incluye recomendaciones) ", 
+			"tooltip":"Esta funcionalidad genera un documento de procesamiento de texto que contiene el resumen ejecutivo con recomendaciones"
+		},
+		"recommendationCreateRecommendation":{
+			"name":"Crear recomendación",
+			"tooltip":""
+		},
+		"recommendationCloseCreateRecommendation":{
+			"name":"Cerrar esta y crear nueva",
+			"tooltip":""
+		},
+		"recommendationTrackReport":{
+			"name":"Informe de seguimiento",
+			"tooltip":"Esta funcionalidad genera un documento de procesamiento de texto que contiene el informe de seguimiento de recomendaciones de auditoría"
+		},
+		"recommendationsAddFinding":{
+			"name":"Agregar ítem nuevo...",
+			"tooltip":""
+		},
+		"recommendationsDeleteFinding":{
+			"name":"Borrar...",
+			"tooltip":""
+		}
+	},
+	"audit" : {
+		"newUpload":{},
+		"reference" : {
+			"pageTitle": "Referencia de la auditoría",
+			"auditID": "ID de la Auditoría",
+			"auditTitle": "Título de la auditoría",
+			"auditBackground":"Antecedentes de la auditoría",
+			"auditScope":"Objetivos de auditoría (ISSAI 100/30, GUID 5100/5.2) y alcance (ISSAI 100/48, GUID 5100/5.4)",
+			"scope": "Alcance de la auditoría",
+			"approach": "Enfoque de la auditoria"
+		},
+		"timeline" : {
+			"pageTitle": "Tablero de control de auditoría",
+			"referenceFilled":"¡Información de referencia de auditoría registrada!",
+			"referencePartialFilled":"¡Información de referencia de auditoría parcialmente registrada!",
+			"referenceNotFilled":"¡La información de referencia de auditoría no está registrada!",
+			"pluginsSelected":" complementos seleccionados!",
+			"pluginsNotSelected":"¡No se seleccionaron complementos!",
+			"preassessmentFilled":"¡Información de las actividades preliminares registrada!",
+			"preassessmentNotFilled":"¡Información de las actividades preliminares no registrada!!",
+			"planFilled":"¡La información sobre la planificación está registrada!",
+			"planNotFilled":"¡La información sobre planificación no está registrada!",
+			"findingsRegistered":" resultados de auditoría registrados!",
+			"recommendationsRegistered":" recomendaciones de auditoría registradas!",
+			"reference": "Referencia de la auditoría",
+			"plugins": "Complementos disponibles",
+			"preassessment": "Actividades preliminares",
+			"plan": "Planificación de auditoría",
+			"findings": "Resultados de auditoría",
+			"recommendations": "Recomendaciones de auditoría"
+		},
+		"plugins" : {
+			"pageTitle": "Complementos disponibles para usar en la auditoría",
+			"nopluginsMsg": "¡No hay complementos disponibles!",
+			"referenceHeader": "Referencia",
+			"selectedHeader": "Seleccionado",
+			"selectedValues": {
+				"Yes":"Si",
+				"No": "No"
+			},
+			"descriptionHeader": "Descripción",
+			"versionHeader": "Versión",
+			"fileHeader": "Archivo"
+		},
+		"preliminaryActivities" : {
+			"pageTitle": "Actividades preliminares y de planificación (inicio) de la auditoría",
+			"noPreliminaryActivitiesMsg": "¡No hay actividades de preliminares y de planificación disponibles!",
+			"areaHeader": "Área",
+			"itemHeader": "Elemento (y matriz de soporte relacionada)"
+		},
+		"plan" : {
+			"pageTitle": "Dominios, áreas y elementos",
+			"noPlan": "¡No hay dominios, áreas y elementos disponibles!",
+			"riskFilter": {
+				"description": "Filtrado por",
+				"criteria1": "alto riesgo",
+				"criteria2": "riesgo medio/alto",
+				"criteria3": "incluir en auditoría",
+				"criteria4": "todos los elementos"
+			},
+			"domainHeader": "Dominio",
+			"areaHeader": "Área",
+			"issueHeader": "Elemento",
+			"risksHeader": "Riesgos (peso)",
+			"includeHeader": "Incluir en auditoría",
+			"reasonsHeader": "Razones, riesgos y observaciones",
+			"matrix": {
+				"objectives": "Objetivos",
+				"criteria":"Criterios",
+				"informationRequired":"Informacion requerida",
+				"methodOfAnalysis":"Método de análisis",
+				"foundPreviously":"Encontrado anteriormente",
+				"conclusion":"Observaciones"
+			}
+		},
+		"findings" : {
+			"pageTitle": "Resultados de la auditoría",
+			"noFindings": "¡No hay resultados disponibles!",
+			"findingFilter":"Use lo hipervínculo en ID para ver / editar el resultado",
+			"NumberHeader": "Número y nombre",
+			"sourceHeader": "Fuente > Dominio > Área > Elemento",
+			"causeHeader": "Causa y resultado",
+			"descriptionHeader": "Descripción",
+			"relevantHeader": "Pertinente",
+			"operationHeader": "Operación",
+			"delete": "Borrar...",
+			"matrix": {
+				"source": "Fuente",
+				"domain":"Dominio",
+				"area":"Área",
+				"issue":"Elemento",
+				"findingName":"Nombre de lo resultado de auditoría",
+				"cause":"Causa",
+				"result":"Resultado",
+				"findingNumber":"Número de lo resultado de auditoría",
+				"findingDescription":"Descripción de lo resultado de auditoría",
+				"recommendation":"Comentarios / observaciones internas",
+				"referenceLegalAct":"Referencia a acto legal",
+				"referenceReport":"Referencia en el informe",
+				"domainsAreasIssuesMap": "Mapa de dominios, áreas y elementos",
+				"noplan": "¡Ninguna evaluación de riesgos realizada o incluida en la auditoría! (El botón Guardar está deshabilitado)"
+			}
+		},
+		"recommendations": {
+			"pageTitle": "Recomendaciones de auditoría",
+			"noRecommendations": "¡No hay recomendaciones disponibles!",
+			"recommendationFilter":"Use lo hipervínculo en ID para ver / editar la recomendación de auditoría",
+			"NumberHeader":"Número",
+			"RecommendationHeader":"Recomendación",
+			"PriorityHeader":"Prioridad",
+			"RiskHeader":"Riesgo",
+			"TimelineHeader":"Cronología",
+			"StatusHeader":"Estado",
+			"OperationHeader":"Operación",
+			"delete": "Borrar...",
+			"relatedFindings":"Resultados relacionados:",
+			"norelatedFindings":"(ninguno hasta ahora)",
+			"selFindingTooltip":"Usa el hipervínculo en lo #número de lo resultado para visualizarlo",
+			"currentStatus":"El estado actual se recopila de la última evaluación; de lo contrario, se muestra el valor (aún no se ha accedido).",
+			"matrix": {
+				"recommendationDescription": "Descripción de la recomendación",
+				"recommendationNumber":"Número de recomendación",
+				"numberTooltip":"Número",
+				"priority":"Prioridad",
+				"riskCharacterization":"Caracterización del riesgo",
+				"riskCharacterizationTooltip":"(Categoría más relevante de) Riesgo que enfrentan las organizaciones directa e indirectamente como resultado de la no implementación de las recomendaciones de auditoría",
+				"riskLevel":"Nivel de riesgo",
+				"importance":"Importancia",
+				"accepted":"Aceptado (por el auditado)",
+				"acceptedTooltip":"Recomendación aceptada por el auditado",
+				"categorizing":"Categorizar la recomendación de auditoría",
+				"categorizingTooltip":"Categorización de la recomendación de auditoría (máximo 100 caracteres)",
+				"repeated":"¿Repetido en auditorías anteriores? (registrar en el campo de comentarios el historial)",
+				"repeteadTooltip":"Recomendación repetida en auditorías anteriores",
+				"actionPlan":"Plan de accion",
+				"actionPlanTooltip":"Plan de acción / remedio propuesto",
+				"timeline":"Cronología",
+				"timelineTooltip":"Cronograma previsto para ejecutar lo plan de acción / remedio propuesto",
+				"outcome":"Resultado deseado",
+				"outcomeTooltip":"Descripción del resultado deseado por la implementación de la recomendación",
+				"responsible":"Responsable",
+				"responsibleTooltip":"Identificar y dirigir recomendaciones a quienes tienen la responsabilidad y autoridad para actuar en consecuencia.",
+				"remarks":"Remarks",
+				"remarksTooltip":"(Unstructured) Notes and remarks about recommendation registered by the auditor",
+				"relatedFindings":"Resultados de la auditoría relacionados",
+				"selectFinding":"(¡Seleccione el resultado en el menú desplegable para obtener información relacionada!)",
+				"trackNotes":"Nota(s) de seguimiento",
+				"relatedFindingsMatrix":{
+					"operation":"Operación",
+					"number":"Número",
+					"description":"Descripción",
+					"source":"Fuente > Dominio > Área > Elemento",
+					"relevant":"Pertinente"
+				},
+				"monitoring":"Actividades de seguimiento y monitoreo",
+				"monitoringMatrix":{
+					"operation":"Operación",
+					"assessment":"Fecha de evaluación",
+					"status":"Estado",
+					"trackNote":"Nota de seguimiento"
+				}
+			}
+		},
+		"analytics" : {
+			"treemap" : {
+				"title" : "Mapa de árbol de la auditoría",
+				"noteTitle" : "Nota:",
+				"noteDescription" : "Considere varios elementos, como el tipo de imágenes (actúan como significantes visuales), ramas, colores y palabras clave, para que sea más fácil estructurar y recordar la información:",
+				"legendAudit" : "La auditoría y el punto de partida de un mapa de árbol de auditoría",
+				"legendPlanDomain" : "Los dominios de TI seleccionados en la tabla de riesgos (plan)",
+				"legendPlanArea" : "Las áreas de TI seleccionadas en la tabla de riesgos (plan)",
+				"legendPlanIssue" : "Los elementos de TI seleccionados en la tabla de riesgos (plan)",
+				"legendFinding" : "Los resultados relevantes encontrados",
+				"legendRec" : "Las recomendaciones formuladas, en relación con los resultados",
+				"actionNote" : "Haga clic en un nodo para obtener más información."
+			}
+		},
+		"donwload" : {},
+		"close" : {}
+	},
+	"portfolios": {
+		"browse" : {},
+		"managePortfolios" : {}
+	},
+	"ListsOfValues":{
+		"Generic":{
+			"YesNo":{
+				"Yes":{ "name":"Sí","value":"0" },
+				"No":{ "name":"No", "value":"0" }
+			}
+		},
+		"Plan":{
+			"Risk":{
+				"High":{ "name":"Alto","value":"3" },
+				"Medium":{ "name":"Medio","value":"2" },
+				"Low":{ "name":"Bajo", "value":"1" }
+			}
+		},
+		"Recommendation": {
+			"Priority": {
+				" ":{ "name":" ", "value":"0" },
+				"Urgent":{ "name":"Urgente","value":"0" },
+				"Regular":{ "name":"Regular", "value":"0" }
+			},
+			"RiskCharacterization": {
+				"Governance":{ "name":"Gobernancia", "value":"0" },
+				"Operational":{ "name":"Operacional", "value":"0" },
+				"Reputational":{ "name":"Reputacional", "value":"0" },
+				"Financial":{ "name":"Financiero", "value":"0" },
+				"Compliance":{ "name":"Conformidad", "value":"0" },
+				"MisappropriationOfAssets":{ "name":"Apropiación indebida de activos", "value":"0" }
+			},
+			"RiskEvaluation": {
+				"State":{ "name":"Estado", "value":"0" },
+				"Region":{ "name":"Región", "value":"0" },
+				"Municipality":{ "name":"Municipio", "value":"0" },
+				"ActivityArea":{ "name":"Área de actividad", "value":"0" },
+				"Entity":{ "name":"Entidad", "value":"0" }
+			},
+			"Importance": {
+				" ":{ "name":" ", "value":"0" },
+				"Strategic":{ "name":"Estratégico", "value":"0" },
+				"Important":{ "name":"Operacional", "value":"0" }
+			},
+			"ImplementationStatus": {
+				"Implemented":{ "name":"Implementado", "value":"0" },
+				"StartedImplementation":{ "name":"Implementación iniciada", "value":"0" },
+				"PartiallyImplemented":{ "name":"Implementado parcialmente", "value":"0" },
+				"FinalStageImplementation":{ "name":"Implementación en la etapa final", "value":"0" },
+				"NotStartedImplementation":{ "name":"Implementación no iniciada", "value":"0" },
+				"NotAddressed":{ "name":"No abordado", "value":"0" },
+				"NoLongerApplicable":{ "name":"Ya no es aplicable", "value":"0" }
+			}
+		}
+	}
+}

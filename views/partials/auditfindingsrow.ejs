@@ -1,0 +1,44 @@
+<% findingcatalog.forEach(function(item) { %>
+    <tr id="<%= item.RowId %>Row" style="display: table-row;">
+        <td>
+            <a href="/auditMatrices/findingMatrix?id=<%= item.Id %>&src=tbl">#<%= item.Number %></a>
+            <br/>&nbsp;<br/>
+            <span><a href="/auditMatrices/findingMatrix?id=<%= item.Id %>&src=tbl"><%= item.Name %></a></span>
+            <input type="hidden" id="<%= item.RowId %>Id" name="<%= item.RowId %>Id" value="<%= item.Id %>"/>
+       </td>
+       <td>
+            <span><%= item.Source %></span><br/>
+            <span><%= item.Domain %></span><br/>
+            <span><%= item.Area %></span><br/>
+            <span><%= item.Issue %></span>
+        </td>
+        <td>
+            <span><%= item.Cause %></span>
+            <br/>&nbsp;<br/>
+            <span><%= item.Result %></span>
+        </td>
+        <td>
+            <span><%= item.Description %></span>
+        </td>
+        <td>
+            <select class="custom-select" name="<%= item.RowId %>Include" id="<%= item.RowId %>Include" size="1" autofocus onchange="showInclude(this, '<%= item.RowId %>Image')">
+                <% if (item.Selected == "Yes") { %>
+                    <option value="Yes" selected>Yes</option>
+                    <option value="No">No</option>
+                <% } else { %>
+                    <option value="Yes">Yes</option>
+                    <option value="No" selected>No</option>
+                <% } %>                
+            </select>
+            <% if (item.Selected == "Yes") { %>
+                <img id="<%= item.RowId %>Image" src="../images/include-16b.png" alt="" style="vertical-align: text-bottom; display: inline-block;"/>
+            <% } else { %>
+                <img id="<%= item.RowId %>Image" src="../images/include-16b.png" alt="" style="vertical-align: text-bottom; display: none;"/>
+            <% } %>                
+        </td>
+        <td>
+            <a href="/findingaudit/deleteauditfinding/<%= item.Id %>"><%=appAudit.findings.delete %></a>
+        </td>
+    </tr>
+<% }) %>
+    

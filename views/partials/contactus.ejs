@@ -1,0 +1,42 @@
+<section id="contact" class="col-6 col-12-narrower">
+    <h3>Get In Touch</h3>
+    <% if(errors){ %>
+    <div class="col-12" id="err_contact">
+        <p>
+            <% errors.forEach(function(error){ %>
+                <span class="errformtext">* <%= error.msg %></span><br/>
+            <% }) %>    
+        </p>
+    </div>
+    <% } %>
+    <form method="POST" action="/portal/contactus">
+        <div class="row gtr-50">
+            <div class="col-6 col-12-mobilep">
+                <% if(errors){ %>
+                    <input type="text" name="name" id="name" placeholder="Name" value="<%= message.name %>" />
+                <% } else { %>
+                    <input type="text" name="name" id="name" placeholder="Name" />
+                <% } %> 
+            </div>
+            <div class="col-6 col-12-mobilep">
+                <% if(errors){ %>
+                    <input type="email" name="email" id="email" placeholder="Email" value="<%= message.email %>" />
+                <% } else { %>
+                    <input type="email" name="email" id="email" placeholder="Email" />
+                <% } %>
+            </div>
+            <div class="col-12">
+                <% if(errors){ %>
+                    <textarea name="message" id="message" placeholder="Message" rows="5"><%= message.message %></textarea>
+                <% } else { %>
+                    <textarea name="message" id="message" placeholder="Message" rows="5"></textarea>
+                <% } %>
+           </div>
+            <div class="col-12">
+                <ul class="actions">
+                    <li><input type="submit" class="button alt" value="Send Message" /></li>
+                </ul>
+            </div>
+          </div>
+    </form>
+</section>

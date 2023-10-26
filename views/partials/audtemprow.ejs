@@ -1,0 +1,17 @@
+<% audittemplates.forEach(function(item) { %>
+    <tr>
+        <td scope="row"><%= item.RowId %></td>
+        <td><a target="_blank" href="<%= downloadurlTemplates %><%= item.File %>"><%= item.File %></a></td>
+        <td><%= item.Reference %></td>
+        <td><%= item.Description %></td>
+        <% if (item.Support == "") { %>
+            <td>(not available)</td>
+        <% } else { %>
+            <td><%= item.Support %></td>
+        <% } %>
+        <td><%= item.Version %></td>
+        <td><%= item.Language %></td>
+        <td><%= item.Date %></td>
+        <td><%= item.Size %></td>
+    </tr>
+    <% }) %>

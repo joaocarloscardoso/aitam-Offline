@@ -1,0 +1,86 @@
+<section id="contact" class="col-6 col-12-narrower">
+    <header>
+        <h2></h2>
+        <h2><%= Matrix.IssueId %> - <%= Matrix.Issue %></h2>
+    </header>
+    <% if(msg != ''){ %>
+        <div class="col-12" id="save_auditmatrix">
+            <p>
+                <span class="successformtext"><%= msg %></span><br/>
+            </p>
+        </div>
+    <% } %>    
+    <% if(AuditErrors){ %>
+    <div class="col-12" id="err_auditmatrix">
+        <p>
+            <% AuditErrors.forEach(function(error){ %>
+                <span class="errformtext">* <%= error.msg %></span><br/>
+            <% }) %>    
+        </p>
+    </div>
+    <% } %>
+    <form method="POST" action="/auditMatrices/preassessMatrix">
+        <div class="row gtr-50">
+            <div class="col-12">
+                <ul class="actions">
+                    <li><a href="/generatedocs/docpreassessMatrix?area=<%= Matrix.AreaId %>&issue=<%= Matrix.IssueId %>" class="button"><%=appButtons.generateDocument.name %></a></li>
+                    <li><a href="/preassessaudit/auditpreassessment" class="button"><%=appButtons.close.name %></a></li>
+                    <li><input type="submit" class="button alt" value="<%=appButtons.save.name %>" /></li>
+                </ul>
+            </div>
+        </div>
+        <% let i=1 %>
+        <% Matrix.Sections.forEach(function(Section){ %>
+            <hr/>
+            <div class="row gtr-50">
+                <header>
+                    <% if (Section.SectionTip === "") { %>
+                        <h1><span><%= Section.SectionId %> <%= Section.SectionName %></span></h1>
+                    <%} else {%>
+                        <h1><span data-tooltip-right="<%= Section.SectionTip %>"><%= Section.SectionId %> <%= Section.SectionName %></span></h1>
+                    <% } %>
+                </header>
+                <% Section.Elements.forEach(function(Element){ %>
+                    <div class="col-12">
+                        <% if (Element.ElementTip === "") { %>
+                            <span><%= Element.ElementId %> <%= Element.ElementName %></span><br/>
+                        <%} else {%>
+                            <span data-tooltip-right="<%= Element.ElementTip %>"><%= Element.ElementId %> <%= Element.ElementName %></span><br/>
+                        <% } %>
+                        <% if (Element.Type === "text") { %>
+                            <textarea name="txt<%= i %>" id="txt<%= i %>" placeholder="<%= Element.ElementName %>" rows="3"><%= Element.Value %></textarea>
+                            <input type="hidden" name="el<%= i %>" id="el<%= i %>" value="txt"/>
+                        <% } %>
+                        <% if (Element.Type === "list") { %>
+                            <select name="sel<%= i %>" id="sel<%= i %>" size="1" autofocus>
+                            <% Element.Values.split("|").forEach(function(item) { -%>
+                                <% if (Element.Value === item) { %>
+                                    <option value="<%= item %>" selected><%= item %></option>
+                                <% } else { %>
+                                    <option value="<%= item %>"><%= item %></option>
+                                <% } %>       
+                            <% }) -%>         
+                            </select>
+                            <input type="hidden" name="el<%= i %>" id="el<%= i %>" value="sel"/>
+                        <% } %>
+                        <input type="hidden" name="ref<%= i %>" id="ref<%= i %>" value="<%= Element.RefId %>"/>
+                    </div>
+                    <% i++ %>
+                <% }) %>
+                <p></p>
+            </div>
+        <% }) %>
+        <input type="hidden" name="rows_count" id="rows_count" value="<%= (i-1) %>"/>
+        <div class="row gtr-50">
+            <div class="col-12">
+                <ul class="actions">
+                    <li><a href="/generatedocs/docpreassessMatrix?area=<%= Matrix.AreaId %>&issue=<%= Matrix.IssueId %>" class="button"><%=appButtons.generateDocument.name %></a></li>
+                    <li><a href="/preassessaudit/auditpreassessment" class="button"><%=appButtons.close.name %></a></li>
+                    <li><input type="submit" class="button alt" value="<%=appButtons.save.name %>" /></li>
+                </ul>
+            </div>
+            <input type="hidden" id="areaid" name="areaid" value="<%= Matrix.AreaId %>"/>
+            <input type="hidden" id="issueid" name="issueid" value="<%= Matrix.IssueId %>"/>
+        </div>
+    </form>
+</section>

@@ -1,0 +1,30 @@
+{"message":"garbage collector started on path: C:\\develop\\nodejs\\projects\\aitam\\work\\","level":"\u001b[34minfo\u001b[39m","timestamp":"2019-06-29 21:24:10"}
+{"message":"Session created received the id:c74684e6-f87f-495b-993f-188bf78701c2","level":"\u001b[34minfo\u001b[39m","timestamp":"2019-06-29 21:24:19"}
+{"message":"garbage collector started on path: C:\\develop\\nodejs\\projects\\aitam\\work\\","level":"\u001b[34minfo\u001b[39m","timestamp":"2019-06-29 21:27:57"}
+{"message":"req.user: undefined","level":"\u001b[34minfo\u001b[39m","timestamp":"2019-06-29 21:28:28"}
+{"message":"req.user: undefined","level":"\u001b[34minfo\u001b[39m","timestamp":"2019-06-29 21:28:45"}
+{"message":"garbage collector started on path: C:\\develop\\nodejs\\projects\\aitam\\work\\","level":"\u001b[34minfo\u001b[39m","timestamp":"2019-06-29 21:30:20"}
+{"message":"req.user: undefined","level":"\u001b[34minfo\u001b[39m","timestamp":"2019-06-29 21:30:38"}
+{"message":"Session id started: {\"user\":\"2f24vvg\"}","level":"\u001b[34minfo\u001b[39m","timestamp":"2019-06-29 21:30:38"}
+{"message":"User logged in: {\"id\":\"2f24vvg\",\"email\":\"test@test.com\",\"password\":\"$2a$10$A2g6pbxxhLA9MNYRJ0rnzOf/7Ara76B0KcRdjzUcsIBIclRuas/fG\"}","level":"\u001b[34minfo\u001b[39m","timestamp":"2019-06-29 21:30:38"}
+{"message":"Session created received the id:9c0c59c6-76d4-4422-8a65-fc36bf03241e","level":"\u001b[34minfo\u001b[39m","timestamp":"2019-06-29 21:30:43"}
+{"message":"Session created received the id:9c0c59c6-76d4-4422-8a65-fc36bf03241e","level":"\u001b[34minfo\u001b[39m","timestamp":"2019-06-29 21:30:51"}
+{"message":"Session created received the id:9c0c59c6-76d4-4422-8a65-fc36bf03241e","level":"\u001b[34minfo\u001b[39m","timestamp":"2019-06-29 21:30:58"}
+{"message":"Session created received the id:3ee2d304-a6dd-4455-9ecf-5ab3f2dbb9b7","level":"\u001b[34minfo\u001b[39m","timestamp":"2019-06-29 21:31:12"}
+{"message":"req.user: undefined","level":"\u001b[34minfo\u001b[39m","timestamp":"2019-06-29 21:31:37"}
+{"message":"garbage collector started on path: C:\\develop\\nodejs\\projects\\aitam\\work\\","level":"\u001b[34minfo\u001b[39m","timestamp":"2019-06-29 21:31:48"}
+{"message":"req.user: undefined","level":"\u001b[34minfo\u001b[39m","timestamp":"2019-06-29 21:32:16"}
+{"message":"req.user: undefined","level":"\u001b[34minfo\u001b[39m","timestamp":"2019-06-29 21:32:49"}
+{"message":"req.user: undefined","level":"\u001b[34minfo\u001b[39m","timestamp":"2019-06-29 21:33:28"}
+{"message":"garbage collector started on path: C:\\develop\\nodejs\\projects\\aitam\\work\\","level":"\u001b[34minfo\u001b[39m","timestamp":"2019-06-29 21:34:33"}
+{"message":"req.user: undefined","level":"\u001b[34minfo\u001b[39m","timestamp":"2019-06-29 21:34:57"}
+{"message":"Session id started: {\"user\":\"2f02vvg\"}","level":"\u001b[34minfo\u001b[39m","timestamp":"2019-06-29 21:34:57"}
+{"message":"User logged in: {\"id\":\"2f02vvg\",\"email\":\"NIK02@aitam.org\",\"password\":\"$2a$10$YgRYmZBAERD.G7Hd5HvBYODbTWzhL2tnupCH49aPqwjGLthlYriDK\"}","level":"\u001b[34minfo\u001b[39m","timestamp":"2019-06-29 21:34:57"}
+{"message":"garbage collector started on path: C:\\develop\\nodejs\\projects\\aitam\\work\\","level":"\u001b[34minfo\u001b[39m","timestamp":"2019-06-29 21:41:18"}
+{"message":"req.user: undefined","level":"\u001b[34minfo\u001b[39m","timestamp":"2019-06-29 21:41:39"}
+{"message":"Session id started: {\"user\":\"2f01vvg\"}","level":"\u001b[34minfo\u001b[39m","timestamp":"2019-06-29 21:41:39"}
+{"message":"User logged in: {\"id\":\"2f01vvg\",\"email\":\"NIK01@aitam.org\",\"password\":\"$2a$10$OZPJk4OGRtzN7qx7iQFNNeBYl9.n20F5YCRX3s0wov.Il3t9kjyS2\"}","level":"\u001b[34minfo\u001b[39m","timestamp":"2019-06-29 21:41:39"}
+{"message":"Session created received the id:df448e42-c178-45d6-9898-eb0c1fc2c733","level":"\u001b[34minfo\u001b[39m","timestamp":"2019-06-29 21:41:59"}
+{"message":"req.user: undefined","level":"\u001b[34minfo\u001b[39m","timestamp":"2019-06-29 21:42:22"}
+{"message":"Session id started: {\"user\":\"2f09vvg\"}","level":"\u001b[34minfo\u001b[39m","timestamp":"2019-06-29 21:42:22"}
+{"message":"User logged in: {\"id\":\"2f09vvg\",\"email\":\"TdC01@aitam.org\",\"password\":\"$2a$10$gNUdcNCbPcbSgcPBAjxokuDOq8Ko9oGa5BdJZPYUOTAQ.IaNnUHDm\"}","level":"\u001b[34minfo\u001b[39m","timestamp":"2019-06-29 21:42:22"}

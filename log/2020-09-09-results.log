@@ -1,0 +1,31 @@
+{"message":"garbage collector started on path: C:\\develop\\nodejs\\projects\\aitam\\work\\","level":"\u001b[34minfo\u001b[39m","timestamp":"2020-09-09 19:51:23"}
+{"message":"garbage collector started on path: C:\\develop\\nodejs\\projects\\aitam\\work\\","level":"\u001b[34minfo\u001b[39m","timestamp":"2020-09-09 19:51:26"}
+{"message":"Session created received the id:8fe05f44-34a1-4bc2-b513-dad5c426df38","level":"\u001b[34minfo\u001b[39m","timestamp":"2020-09-09 19:51:35"}
+{"message":"404 - Not Found","level":"\u001b[33mwarn\u001b[39m","timestamp":"2020-09-09 19:51:36"}
+{"message":"req.user: undefined","level":"\u001b[34minfo\u001b[39m","timestamp":"2020-09-09 19:51:43"}
+{"message":"Session id started: {\"user\":\"2f24vvg\"}","level":"\u001b[34minfo\u001b[39m","timestamp":"2020-09-09 19:51:43"}
+{"message":"User logged in: {\"id\":\"2f24vvg\",\"email\":\"test@test.com\",\"password\":\"$2a$10$A2g6pbxxhLA9MNYRJ0rnzOf/7Ara76B0KcRdjzUcsIBIclRuas/fG\"}","level":"\u001b[34minfo\u001b[39m","timestamp":"2020-09-09 19:51:43"}
+{"message":"garbage collector deleted  7efb0343-ed4b-4e0f-9391-caad3a34f7d1.src on folder: C:\\develop\\nodejs\\projects\\aitam\\work\\, path: C:\\develop\\nodejs\\projects\\aitam\\work\\7efb0343-ed4b-4e0f-9391-caad3a34f7d1.src","level":"\u001b[34minfo\u001b[39m","timestamp":"2020-09-09 20:00:00"}
+{"message":"garbage collector deleted  288e7401-4315-472a-a488-24db62c445f4.xml on folder: C:\\develop\\nodejs\\projects\\aitam\\work\\, path: C:\\develop\\nodejs\\projects\\aitam\\work\\288e7401-4315-472a-a488-24db62c445f4.xml","level":"\u001b[34minfo\u001b[39m","timestamp":"2020-09-09 20:00:00"}
+{"message":"garbage collector deleted  72be97e2-8438-4a0c-b1d5-b515c54a02f3.xml on folder: C:\\develop\\nodejs\\projects\\aitam\\work\\, path: C:\\develop\\nodejs\\projects\\aitam\\work\\72be97e2-8438-4a0c-b1d5-b515c54a02f3.xml","level":"\u001b[34minfo\u001b[39m","timestamp":"2020-09-09 20:00:00"}
+{"message":"garbage collector deleted  7efb0343-ed4b-4e0f-9391-caad3a34f7d1.xml on folder: C:\\develop\\nodejs\\projects\\aitam\\work\\, path: C:\\develop\\nodejs\\projects\\aitam\\work\\7efb0343-ed4b-4e0f-9391-caad3a34f7d1.xml","level":"\u001b[34minfo\u001b[39m","timestamp":"2020-09-09 20:00:00"}
+{"message":"garbage collector deleted  7efb0343-ed4b-4e0f-9391-caad3a34f7d1.vec on folder: C:\\develop\\nodejs\\projects\\aitam\\work\\, path: C:\\develop\\nodejs\\projects\\aitam\\work\\7efb0343-ed4b-4e0f-9391-caad3a34f7d1.vec","level":"\u001b[34minfo\u001b[39m","timestamp":"2020-09-09 20:00:00"}
+{"message":"garbage collector deleted  7efb0343-ed4b-4e0f-9391-caad3a34f7d1.tkn on folder: C:\\develop\\nodejs\\projects\\aitam\\work\\, path: C:\\develop\\nodejs\\projects\\aitam\\work\\7efb0343-ed4b-4e0f-9391-caad3a34f7d1.tkn","level":"\u001b[34minfo\u001b[39m","timestamp":"2020-09-09 20:00:00"}
+{"message":"garbage collector deleted  a849bbfa-438a-4720-b0bc-d8248daafffd.xml on folder: C:\\develop\\nodejs\\projects\\aitam\\work\\, path: C:\\develop\\nodejs\\projects\\aitam\\work\\a849bbfa-438a-4720-b0bc-d8248daafffd.xml","level":"\u001b[34minfo\u001b[39m","timestamp":"2020-09-09 20:00:00"}
+{"message":"garbage collector error:  Error: Can't delete C:\\develop\\nodejs\\projects\\aitam\\work\\288e7401-4315-472a-a488-24db62c445f4.xml","level":"\u001b[34minfo\u001b[39m","timestamp":"2020-09-09 20:00:00"}
+{"message":"garbage collector error:  Error: Can't delete C:\\develop\\nodejs\\projects\\aitam\\work\\72be97e2-8438-4a0c-b1d5-b515c54a02f3.xml","level":"\u001b[34minfo\u001b[39m","timestamp":"2020-09-09 20:00:00"}
+{"message":"garbage collector deleted  gazetteer.dic on folder: C:\\develop\\nodejs\\projects\\aitam\\work\\, path: C:\\develop\\nodejs\\projects\\aitam\\work\\gazetteer.dic","level":"\u001b[34minfo\u001b[39m","timestamp":"2020-09-09 20:00:00"}
+{"message":"garbage collector error:  Error: Can't delete C:\\develop\\nodejs\\projects\\aitam\\work\\7efb0343-ed4b-4e0f-9391-caad3a34f7d1.src","level":"\u001b[34minfo\u001b[39m","timestamp":"2020-09-09 20:00:00"}
+{"message":"garbage collector error:  Error: Can't delete C:\\develop\\nodejs\\projects\\aitam\\work\\7efb0343-ed4b-4e0f-9391-caad3a34f7d1.tkn","level":"\u001b[34minfo\u001b[39m","timestamp":"2020-09-09 20:00:00"}
+{"message":"garbage collector error:  Error: Can't delete C:\\develop\\nodejs\\projects\\aitam\\work\\7efb0343-ed4b-4e0f-9391-caad3a34f7d1.vec","level":"\u001b[34minfo\u001b[39m","timestamp":"2020-09-09 20:00:00"}
+{"message":"garbage collector error:  Error: Can't delete C:\\develop\\nodejs\\projects\\aitam\\work\\7efb0343-ed4b-4e0f-9391-caad3a34f7d1.xml","level":"\u001b[34minfo\u001b[39m","timestamp":"2020-09-09 20:00:00"}
+{"message":"garbage collector error:  Error: Can't delete C:\\develop\\nodejs\\projects\\aitam\\work\\a849bbfa-438a-4720-b0bc-d8248daafffd.xml","level":"\u001b[34minfo\u001b[39m","timestamp":"2020-09-09 20:00:00"}
+{"message":"garbage collector error:  Error: Can't delete C:\\develop\\nodejs\\projects\\aitam\\work\\gazetteer.dic","level":"\u001b[34minfo\u001b[39m","timestamp":"2020-09-09 20:00:00"}
+{"message":"garbage collector started on path: C:\\develop\\nodejs\\projects\\aitam\\work\\","level":"\u001b[34minfo\u001b[39m","timestamp":"2020-09-09 20:07:23"}
+{"message":"garbage collector started on path: C:\\develop\\nodejs\\projects\\aitam\\work\\","level":"\u001b[34minfo\u001b[39m","timestamp":"2020-09-09 20:12:29"}
+{"message":"Session created received the id:b9cea30d-da56-40a7-a7a0-e1f81db61f12","level":"\u001b[34minfo\u001b[39m","timestamp":"2020-09-09 20:12:31"}
+{"message":"req.user: undefined","level":"\u001b[34minfo\u001b[39m","timestamp":"2020-09-09 20:12:35"}
+{"message":"Session id started: {\"user\":\"2f24vvg\"}","level":"\u001b[34minfo\u001b[39m","timestamp":"2020-09-09 20:12:35"}
+{"message":"User logged in: {\"id\":\"2f24vvg\",\"email\":\"test@test.com\",\"password\":\"$2a$10$A2g6pbxxhLA9MNYRJ0rnzOf/7Ara76B0KcRdjzUcsIBIclRuas/fG\"}","level":"\u001b[34minfo\u001b[39m","timestamp":"2020-09-09 20:12:35"}
+{"message":"garbage collector started on path: C:\\develop\\nodejs\\projects\\aitam\\work\\","level":"\u001b[34minfo\u001b[39m","timestamp":"2020-09-09 20:20:58"}
+{"message":"garbage collector started on path: C:\\develop\\nodejs\\projects\\aitam\\work\\","level":"\u001b[34minfo\u001b[39m","timestamp":"2020-09-09 20:27:23"}

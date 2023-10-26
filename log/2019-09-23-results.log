@@ -1,0 +1,16 @@
+{"message":"garbage collector started on path: C:\\develop\\nodejs\\projects\\aitam\\work\\","level":"\u001b[34minfo\u001b[39m","timestamp":"2019-09-23 18:58:11"}
+{"message":"Session created received the id:70266c1e-ee26-4c4c-9368-1dfab31101b3","level":"\u001b[34minfo\u001b[39m","timestamp":"2019-09-23 18:59:18"}
+{"message":"req.user: undefined","level":"\u001b[34minfo\u001b[39m","timestamp":"2019-09-23 18:59:23"}
+{"message":"Session id started: {\"user\":\"2f24vvg\"}","level":"\u001b[34minfo\u001b[39m","timestamp":"2019-09-23 18:59:23"}
+{"message":"User logged in: {\"id\":\"2f24vvg\",\"email\":\"test@test.com\",\"password\":\"$2a$10$A2g6pbxxhLA9MNYRJ0rnzOf/7Ara76B0KcRdjzUcsIBIclRuas/fG\"}","level":"\u001b[34minfo\u001b[39m","timestamp":"2019-09-23 18:59:23"}
+{"message":"New audit file created:C:\\develop\\nodejs\\projects\\aitam\\work\\70266c1e-ee26-4c4c-9368-1dfab31101b3.xml","level":"\u001b[34minfo\u001b[39m","timestamp":"2019-09-23 18:59:26"}
+{"message":"audit file download: C:\\develop\\nodejs\\projects\\aitam\\work\\70266c1e-ee26-4c4c-9368-1dfab31101b3.xml","level":"\u001b[34minfo\u001b[39m","timestamp":"2019-09-23 19:00:13"}
+{"message":"Session created received the id:70266c1e-ee26-4c4c-9368-1dfab31101b3","level":"\u001b[34minfo\u001b[39m","timestamp":"2019-09-23 19:05:12"}
+{"message":"Session created received the id:70266c1e-ee26-4c4c-9368-1dfab31101b3","level":"\u001b[34minfo\u001b[39m","timestamp":"2019-09-23 19:06:12"}
+{"message":"404 - Not Found","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-09-23 19:37:25"}
+{"message":"Session created received the id:70266c1e-ee26-4c4c-9368-1dfab31101b3","level":"\u001b[34minfo\u001b[39m","timestamp":"2019-09-23 19:37:41"}
+{"message":"Session created received the id:70266c1e-ee26-4c4c-9368-1dfab31101b3","level":"\u001b[34minfo\u001b[39m","timestamp":"2019-09-23 19:37:53"}
+{"message":"404 - Not Found","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-09-23 19:55:45"}
+{"message":"404 - Not Found","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-09-23 20:25:22"}
+{"message":"Session created received the id:70266c1e-ee26-4c4c-9368-1dfab31101b3","level":"\u001b[34minfo\u001b[39m","timestamp":"2019-09-23 20:38:23"}
+{"message":"Session created received the id:70266c1e-ee26-4c4c-9368-1dfab31101b3","level":"\u001b[34minfo\u001b[39m","timestamp":"2019-09-23 20:49:12"}

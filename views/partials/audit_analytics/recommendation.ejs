@@ -1,0 +1,39 @@
+<section id="contact" class="col-6 col-12-narrower">
+    <header>
+        <h2></h2>
+        <h2>Hints for the audit</h2>
+        <p>Trigger this analysis to consider and find out through the CUBE
+            how other nearby audits can help to make better use of current resources, heading you to know:
+            Where are you? Opportunities, risks and threats to look for! How to get there? (and, potentially, obtain the desired outcome)</li>
+        </p>
+        <p>Such analysis can be performed at the planning or the execution phases of the audit.</p>
+    </header>
+    <% if(msg != ''){ %>
+        <div class="col-12" id="save_auditplan">
+            <p>
+                <span class="successformtext"><%= msg %></span><br/>
+            </p>
+        </div>
+    <% } %>    
+    <% if(Matrix.length > 0) { %>
+        Most relevant terms discovered and analyzed using Term Frequency-Inverse Document Frequency (TF-IDF) mechanism<br/>
+        <div class="col-4 col-12-narrower" style="width: 600px; height: 400px;">
+            <%- include('./recommendationchart'); %>
+        </div>
+    <% } %>
+    <form method="POST" action="/analytics/Recommendations">
+        <div class="row gtr-50">
+                <% if(Matrix.length > 0) { %>
+                    <div class="col-12">
+                        <ul class="actions">
+                            <% if(Matrix.length > 0) { %>
+                                <li><input type="submit" class="button alt" value="Get hints" /></li>
+                            <% } %>
+                        </ul>
+                    </div>
+                <% } else { %>
+                    <p>No terms discovered for analysis!</p>
+                <% } %>
+        </div>
+    </form>
+</section>

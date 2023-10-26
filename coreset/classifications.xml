@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classification>
+	<category name="Public assets">
+		<item name="Assets management - basic maintenance to be provided"/>
+		<item name="Procurement - compliance with regulations and guidelines"/>
+		<item name="Procurement platform to improve practices in centralised contracts"/>
+	</category>
+	<category name="Citizens matters">
+		<item name="Civil cases to be handled in proper way by Basic Courts"/>
+		<item name="Property Tax Information System to be corrected"/>
+		<item name="Waste collection fees"/>
+		<item name="Health to have improved IT system"/>
+		<item name="Air quality - legal framework to be added"/>
+	</category>
+	<category name="Public Finance">
+		<item name="Public debt to be managed properly"/>
+		<item name="Liabilities - information and cooperation between state institutions"/>
+		<item name="Uncollected debts"/>
+		<item name="Budgetary planning of revenues"/>
+		<item name="Creation of Internal Audit function"/>
+		<item name="Risk management by Government and state institutions"/>
+	</category>
+	<category name="Efficient administration">
+		<item name="Foreign Service - systematisation of diplomatic representations"/>
+		<item name="Managing staff responsible for diaspora relations"/>
+		<item name="Finance of the Institutions of Culture to be better managed"/>
+	</category>
+	<category name="Public enterprises">
+		<item name="State owned enterprises - situation to be reviewed"/>
+		<item name="State owned enterprises - work licences to be reviewed"/>
+	</category>
+	<category name="Implementation of recommendations">
+		<item name="Action Plan by Government"/>
+		<item name="Review by Assembly"/>
+		<item name="Municipal Assemblies to discuss and report"/>
+	</category>
+</classification>

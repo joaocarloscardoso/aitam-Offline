@@ -1,0 +1,182 @@
+
+<!--
+    withh vue component to show a graph with audits and related recommendations
+-->
+<script src="/assets/js/Chart.js"></script>
+<script type="text/javascript" src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
+
+<section id="Statistics" class="col-6 col-12-narrower">
+    <header>
+        <h2></h2>
+        <h2><%= catalog.portfolioid %></h2>
+        <p></p>
+        <p>
+            <%= catalog.description %>
+            <br/>Covers : <%= catalog.coverage %>
+            <br/>SAI: <%= catalog.org %>
+        </p>
+    </header>
+    <div class="container">
+        <div class="row gtr-200">
+            <div class="col-4 col-12-narrower" style="width: 600px; height: 400px;">
+                <%- include('./PortfolioStatus'); %>
+            </div>    
+            <div class="col-4 col-12-narrower" style="width: 600px; height: 400px;">
+                <%- include('./PortfolioNewIssues'); %>
+            </div>    
+        </div>
+        <p>&nbsp;</p>
+        <div class="row gtr-200">    
+            <div class="col-4 col-12-narrower" style="width: 600px; height: 400px;">
+                <%- include('./PortfolioRiskRating'); %>
+            </div>    
+            <div class="col-4 col-12-narrower" style="width: 600px; height: 400px;">
+            </div>    
+            <p>&nbsp;</p>
+        </div>
+    </div>
+    <hr/>
+    <div class="container">
+        <section class="col-6 col-12-narrower">
+            <div class="container">
+                <div id="content">
+                    <!-- Content -->
+                    <article>
+                        <section id="contact" class="col-6 col-12-narrower">
+                            <header>
+                                <h3>Audits</h3>
+                                <p>(Click on a map node to obtain more information)</p>
+                            </header>
+                            <div id="mynetwork" style="height: 400px;"></div>
+                        </section>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </div>
+    <div class="container">
+        <div id="content">
+            <article>
+                <%- include('./PortfolioAudits'); %>
+            </article>
+        </div>
+    </div>
+</section>
+
+<script type="text/javascript">
+    //create support array of objects for sweet alert and hook for related matrix
+    var supporNodes= <%- JSON.stringify(catalog.portfoliomap.support) %>;
+
+    // create an array with nodes
+    //if recommendation is not linked with finding, at least it will linked with root node: the audit himself
+    var nodes = new vis.DataSet(
+        <%- JSON.stringify(catalog.portfoliomap.nodes) %>
+    );
+    
+    var source = <%- JSON.stringify(catalog.portfoliomap.edges) %>; 
+
+    // create an array with edges
+    var edges = new vis.DataSet(
+        <%- JSON.stringify(catalog.portfoliomap.edges) %>
+    );
+
+    // create a network
+    var container = document.getElementById('mynetwork');
+
+    // provide the data in the vis format
+    var data = {
+        nodes: nodes,
+        edges: edges
+    };
+    var options = {
+        interaction:{hover:true},
+        layout: {
+            hierarchical: {
+                sortMethod: 'directed',
+                shakeTowards: 'hubsize'
+            }
+        },
+        nodes: {
+            shape: 'dot',
+            size: 30,
+            font: {
+                size: 12,
+                color: '#000000'
+            },
+            borderWidth: 2,
+            shadow:true
+        },
+        edges: {
+            width: 2,
+            smooth: true,
+            arrows: { to: true },
+            shadow:true
+        }
+    };
+
+    // initialize your network!
+    var network = new vis.Network(container, data, options);
+
+    var traverse = function(collection, value) {
+        nodes.remove({id: value});
+        for (var i=0; i<collection.length; i++) {
+            if (collection[i].from == value){
+                var foundLabel = traverse(collection, collection[i].to);
+                if(foundLabel) { return foundLabel; }
+                nodes.remove({id: collection[i].to});
+                //window.alert(collection[i].to);
+            }
+            //var ck = current.out[cki];
+            //var child = tree[ck];
+            //traverse(tree, child);
+        }
+        return null;
+    };
+    
+    network.on("click", function (params) {
+        var vButtonVisibility = true;
+        params.event = "[original event]";
+        if (params.nodes >= 0){
+            if (supporNodes[params.nodes].matrix === ''){
+                vButtonVisibility= false;
+            } else {
+                vButtonVisibility= true;
+            };
+            swal({
+                title: supporNodes[params.nodes].title,
+                text: supporNodes[params.nodes].description,
+                buttons: {
+                    Matrix: {
+                        text: "Browse audit",
+                        value: "matrix",
+                        visible: vButtonVisibility,
+                        closeModal: true,
+                    },
+                    Delete: {
+                        text: "Hide branch",
+                        value: "deletebranch",
+                        className: "red-bg",
+                        closeModal: true,
+                    },
+                    Close: {
+                        text: "Close",
+                        value: true,
+                        closeModal: true,
+                    }
+                },
+            })
+            .then((value) => {
+                switch (value) {
+                    case "deletebranch":
+                        var vNode = params.nodes;
+                        traverse(source, params.nodes); 
+                        nodes.remove({id: parseInt(vNode)});
+                        break;
+                    case "matrix":
+                        window.location.href = supporNodes[params.nodes].matrix;
+                    break;
+                }
+            });            
+        }
+    });
+</script>

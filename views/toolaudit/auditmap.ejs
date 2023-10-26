@@ -1,0 +1,219 @@
+<!DOCTYPE HTML>
+<!--
+	Arcana by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+    <!-- based on no-side bar template -->
+    <%- include('../partials/head'); %>
+    <script type="text/javascript" src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
+
+	<body class="is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+			<%- include('../partials/header'); %>
+
+			<!-- Main -->
+            <div class="container">
+                <section class="col-6 col-12-narrower">
+					<div class="container">
+						<div id="content">
+							<!-- Content -->
+                            <article>
+                                <section id="contact" class="col-6 col-12-narrower">
+                                    <header>
+                                        <h2></h2>
+                                        <h2><%=appAudit.analytics.treemap.title %></h2>
+                                        <table>
+                                            <tr>
+                                                <td colspan="2">
+                                                    <b><%=appAudit.analytics.treemap.noteTitle %></b><br/>
+                                                    <%=appAudit.analytics.treemap.noteDescription %>
+                                                    <br/>&nbsp;
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td width="90px"><img src="../images/treemap_audit.png"></td><td style="vertical-align: middle;"><%=appAudit.analytics.treemap.legendAudit %></td>
+                                            </tr>
+                                            <tr>
+                                                <td width="90px"><img src="../images/treemap_plan_domain.png" width="80px"></td><td style="vertical-align: middle;"><%=appAudit.analytics.treemap.legendPlanDomain %></td>
+                                            </tr>
+                                            <tr>
+                                                <td width="90px"><img src="../images/treemap_plan_area.png"></td><td style="vertical-align: middle;"><%=appAudit.analytics.treemap.legendPlanArea %></td>
+                                            </tr>
+                                            <tr>
+                                                <td width="90px"><img src="../images/treemap_plan_issue.png"></td><td style="vertical-align: middle;"><%=appAudit.analytics.treemap.legendPlanIssue %></td>
+                                            </tr>
+                                            <tr>
+                                                <td width="90px"><img src="../images/treemap_finding.png"></td><td style="vertical-align: middle;"><%=appAudit.analytics.treemap.legendFinding %></td>
+                                            </tr>
+                                            <tr>
+                                                <td width="90px"><img src="../images/treemap_rec.png"></td><td style="vertical-align: middle;"><%=appAudit.analytics.treemap.legendRec %></td>
+                                            </tr>
+                                        </table><p>&nbsp;</p>
+                                        <p><%=appAudit.analytics.treemap.actionNote %></p>
+                                    </header>
+                                    <div id="mynetwork"></div>
+                                </section>
+                            </article>
+						</div>
+					</div>
+				</section>
+            </div>
+			<!-- Footer -->
+			<%- include('../partials/footer'); %>
+
+		</div>
+
+        <script type="text/javascript">
+            //create support array of objects for sweet alert and hook for related matrix
+            var supporNodes= <%- JSON.stringify(data.support) %>;
+
+            // create an array with nodes
+            //if recommendation is not linked with finding, at least it will linked with root node: the audit himself
+            var nodes = new vis.DataSet(
+                <%- JSON.stringify(data.nodes) %>
+            );
+            
+            var source = <%- JSON.stringify(data.edges) %>; 
+            var sourceNodes = <%- JSON.stringify(data.nodes) %>; 
+
+            // create an array with edges
+            var edges = new vis.DataSet(
+                <%- JSON.stringify(data.edges) %>
+            );
+    
+            // create a network
+            var container = document.getElementById('mynetwork');
+    
+            // provide the data in the vis format
+            var data = {
+                nodes: nodes,
+                edges: edges
+            };
+            var options = {
+                interaction:{hover:true},
+                layout: {
+                    hierarchical: {
+                        sortMethod: 'directed',
+                        shakeTowards: 'hubsize'
+                    }
+                },
+                nodes: {
+                    shape: 'dot',
+                    size: 30,
+                    font: {
+                        size: 12,
+                        color: '#000000'
+                    },
+                    borderWidth: 2,
+                    shadow:true
+                },
+                edges: {
+                    width: 2,
+                    smooth: true,
+                    arrows: { to: true },
+                    shadow:true
+                }
+            };
+    
+            // initialize your network!
+            var network = new vis.Network(container, data, options);
+
+            var traverse = function(collection, value) {
+                nodes.remove({id: value});
+                for (var i=0; i<collection.length; i++) {
+                    if (collection[i].from == value){
+                        var foundLabel = traverse(collection, collection[i].to);
+                        if(foundLabel) { return foundLabel; }
+                        nodes.remove({id: collection[i].to});
+                        //window.alert(collection[i].to);
+                    }
+                    //var ck = current.out[cki];
+                    //var child = tree[ck];
+                    //traverse(tree, child);
+                }
+                return null;
+            };
+            
+            var keep = function(collection, value) {
+                var group=0
+                for (var j=0; j<collection.length; j++) {
+                    if (collection[j].id == value){
+                        group=collection[j].group;
+                        break;
+                    };
+                }
+                for (var j=0; j<collection.length; j++) {
+                    if (collection[j].group != group && collection[j].group != "0"){
+                        nodes.remove({id: collection[j].id});
+                    };
+                }
+                return null;
+            };
+
+            network.on("click", function (params) {
+                var vButtonVisibility = true;
+                params.event = "[original event]";
+                if (params.nodes >= 0){
+                    if (supporNodes[params.nodes].matrix === ''){
+                        vButtonVisibility= false;
+                    } else {
+                        vButtonVisibility= true;
+                    };
+                    swal({
+                        title: supporNodes[params.nodes].title,
+                        text: supporNodes[params.nodes].description,
+                        buttons: {
+                            Matrix: {
+                                text: "Open matrix",
+                                value: "matrix",
+                                visible: vButtonVisibility,
+                                closeModal: true,
+                            },
+                            Delete: {
+                                text: "Hide branch",
+                                value: "deletebranch",
+                                className: "red-bg",
+                                closeModal: true,
+                            },
+                            DeleteOther: {
+                                text: "Hide others",
+                                value: "deleteotherbranch",
+                                className: "red-bg",
+                                closeModal: true,
+                            },
+                            Close: {
+                                text: "Close",
+                                value: true,
+                                closeModal: true,
+                            }
+                        },
+                    })
+                    .then((value) => {
+                        switch (value) {
+                            case "deletebranch":
+                                var vNode = params.nodes;
+                                traverse(source, params.nodes); 
+                                nodes.remove({id: parseInt(vNode)});
+                                break;
+                            case "deleteotherbranch":
+                                var vNode = params.nodes;
+                                keep(sourceNodes, params.nodes); 
+                                break;
+                            case "matrix":
+                                window.location.href = supporNodes[params.nodes].matrix;
+                            break;
+                        }
+                    });            
+                }
+            });
+        </script>
+    
+		<!-- Scripts -->
+        <%- include('../partials/scripts'); -%>
+	</body>
+
+</html>

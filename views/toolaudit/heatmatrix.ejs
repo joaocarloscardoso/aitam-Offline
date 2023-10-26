@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Risk heat matrix</title>
+        <meta charset="windows-1252"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <style>
+            .rTable {
+               display: table;
+               width: 100%;
+               border-collapse: collapse;
+            }
+            .rTableRow {
+               display: table-row;
+            }
+            .rTableHeading {
+               display: table-header-group;
+               background-color: #ddd;
+            }
+            .rTableCell, .rTableHead {
+               display: table-cell;
+               padding: 3px 10px;
+               border: 1px solid #000000;
+               text-align: left;
+               vertical-align: text-top;
+            }
+            .rTableHeading {
+               display: table-header-group;
+               background-color: #ddd;
+               font-weight: bold;
+            }
+            .rTableFoot {
+               display: table-footer-group;
+               font-weight: bold;
+               background-color: #ddd;
+            }
+            .rTableBody {
+               display: table-row-group;
+            }           
+        </style>
+    </head>
+    <body>
+        <div><h1><%= plancatalog.Title %> (risk heat matrix)</h1></div> 
+        <div>
+            <span style="font-weight: bold;">Background:</span> <%= plancatalog.Background %><br/>&nbsp;<br/>
+        </div> 
+        <div>
+            <span style="font-weight: bold;">Scope:</span><%= plancatalog.Scope %><br/>&nbsp;<br/>
+        </div> 
+        <table style="width: 300px;border-collapse: collapse;">
+            <tr>
+                <td style="text-align: center;vertical-align: middle;background-color: black;border: 1px solid #000000;" colspan="3"><span style="font-weight: bold; color: white;">Risk rating key</span></td>
+            </tr>
+            <tr>
+                <td style="background-color: green;width: 100px;padding: 3px 10px;border: 1px solid #000000;text-align: center;vertical-align: middle;">LOW</td>
+                <td style="background-color: yellow;width: 100px;padding: 3px 10px;border: 1px solid #000000;text-align: center;vertical-align: middle;">MEDIUM</td>
+                <td style="background-color: red;width: 100px;padding: 3px 10px;border: 1px solid #000000;text-align: center;vertical-align: middle;">HIGH</td>
+            </tr>
+        </table>
+        <br/>
+        <table class="rTable">
+            <tr="rTableRow">
+                <th class="rTableHead" style="background-color: black;"><span style="font-weight: bold; color: white;">Domain</span></th>
+                <th class="rTableHead" style="background-color: black;"><span style="font-weight: bold; color: white;">Area</span></th>
+                <th class="rTableHead" style="background-color: black;"><span style="font-weight: bold; color: white;">Issue</span></th>
+            </tr>
+            <% plancatalog.Domains.forEach(function(item) { %>
+                <% vDomainRow = item.rowspan %>
+                <tr class="rTableRow">
+                    <td class="rTableCell" style="background-color: <%= item.color %>" rowspan="<%= item.rowspan %>">
+                        <span style="color: black"><%= item.Domain %></span>
+                    </td>
+                    <%vAreaRow = 1 %>
+                    <% item.Areas.forEach(function(areaitem) { %>
+                        <% if (vAreaRow == 1) { %>
+                            <td class="rTableCell" style="background-color: <%= areaitem.color %>" rowspan="<%= areaitem.rowspan %>">
+                                <span style="color: black"><%= areaitem.Area %></span>
+                            </td>
+                            <%vIssueRow = 1 %>
+                            <% areaitem.Issues.forEach(function(issueitem) { %>
+                                <% if (vIssueRow == 1) { %>
+                                    <td class="rTableCell" style="background-color: <%= issueitem.color %>">
+                                        <span style="color: black"><%= issueitem.Issue %></span>
+                                    </td>
+                                <% } else {%>
+                                    <tr class="rTableRow">
+                                        <td class="rTableCell" style="background-color: <%= issueitem.color %>">
+                                            <span style="color: black"><%= issueitem.Issue %></span>
+                                        </td>    
+                                    </tr>
+                                <% } %>
+                                <%vIssueRow = vIssueRow + 1 %>
+                            <% }) %>
+                        <% } else {%>
+                            <tr class="rTableRow">
+                                <td class="rTableCell" style="background-color: <%= areaitem.color %>" rowspan="<%= areaitem.rowspan %>">
+                                    <span style="color: black"><%= areaitem.Area %></span>
+                                </td>
+                                <%vIssueRow = 1 %>
+                                <% areaitem.Issues.forEach(function(issueitem) { %>
+                                    <% if (vIssueRow == 1) { %>
+                                        <td class="rTableCell" style="background-color: <%= issueitem.color %>">
+                                            <span style="color: black"><%= issueitem.Issue %></span>
+                                        </td>
+                                    <% } else {%>
+                                        <tr class="rTableRow">
+                                            <td class="rTableCell" style="background-color: <%= issueitem.color %>">
+                                                <span style="color: black"><%= issueitem.Issue %></span>
+                                            </td>    
+                                        </tr>
+                                    <% } %>
+                                    <%vIssueRow = vIssueRow + 1 %>
+                                <% }) %>
+                            </tr>
+                        <% } %>
+                        <%vAreaRow = vAreaRow + 1 %>
+                    <% }) %>
+                </tr>
+            <% }) %>
+        </div>        
+    </body>
+</html>

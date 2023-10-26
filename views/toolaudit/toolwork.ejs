@@ -1,0 +1,60 @@
+<!DOCTYPE HTML>
+<!--
+	Arcana by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+    <!-- based on no-side bar template -->
+    <%- include('../partials/head'); %>
+    <body class="is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+			<%- include('../partials/header'); %>
+
+			<!-- Main -->
+            <div class="container">
+                <section class="col-6 col-12-narrower">
+					<div class="container">
+						<div id="content">
+							<!-- Content -->
+                            <article>
+                                <%  if (operation == 'audit_creation') { %>
+                                    <%- include('../partials/auditcreation'); %>
+                                <% } else if (operation == 'audit_reference') { %>
+                                    <%- include('../partials/auditreference'); %>
+								<% } else if (operation == 'audit_plugins') { %>
+									<%- include('../partials/auditplugins'); %>
+								<% } else if (operation == 'audit_line') { %>
+									<%- include('../partials/auditline'); %>
+								<% } else if (operation == 'audit_plugins') { %>
+									<%- include('../partials/auditplugins'); %>
+								<% } else if (operation == 'audit_preassess') { %>
+									<%- include('../partials/auditpreassessment'); %>
+								<% } else if (operation == 'audit_plan') { %>
+									<%- include('../partials/auditplan'); %>
+								<% } else if (operation == 'audit_stats') { %>
+									<%- include('../partials/auditstatistics'); %>
+								<% } else if (operation == 'audit_history') { %>
+									<%- include('../partials/audithistory'); %>
+								<% } else if (operation == 'audit_findings') { %>
+									<%- include('../partials/auditfindings'); %>
+								<% } else if (operation == 'audit_recommendations') { %>
+									<%- include('../partials/auditrec'); %>
+								<% } %>
+						</article>
+						</div>
+					</div>
+				</section>
+            </div>
+			<!-- Footer -->
+			<%- include('../partials/footer'); %>
+
+		</div>
+
+		<!-- Scripts -->
+		<%- include('../partials/scripts'); -%>
+
+	</body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE HTML>
+<!--
+	Arcana by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+    <!-- based on no-side bar template -->
+    <%- include('../partials/head'); %>
+    <body class="is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+			<%- include('../partials/header'); %>
+
+			<!-- Main -->
+				<section class="wrapper style1">
+					<div class="container">
+						<div id="content">
+
+							<!-- Content -->
+
+								<article>
+									<header>
+										<h2>Plug-ins catalogue</h2>
+										<%- include('../partials/pluginstats'); %>
+										<p>
+											A plug-in (or extension) is a component that adds a specific feature to the “core” Handbook,
+											therefore creating abilities which extend or customize the tool.
+											The plug-in should be used to add new features and updates, highlighting emerging areas of 
+											interest and providing the users with essential information and key questions needed for an 
+											effective planning of IT Audits.
+										</p>
+										<p>
+											<b>Note:</b> All plug-ins are automatically available in the web version.
+										</p>
+									</header>
+
+									<p>
+										<% if(catalog.length > 0) { %>
+										<table id='tablecatalog'>
+											<thead>
+												<%- include('../partials/pluginrheader'); %>
+											</thead>    
+											<tbody>
+												<%- include('../partials/pluginrow'); %>
+											</tbody>
+										</table>
+										<% } else { %>
+										<p>No Plug-Ins available!</p>
+										<% } %>
+                                    </p>
+
+									<header>
+										<h2>Audit Templates catalogue</h2>
+										<p>
+											A template is a generic document, created by auditors in a SAI 
+											or between SAIs, using the tool itself. Can be reused as the basis 
+											and preparation of another audit in related domain or domains, 
+											since contains specific information pre-filled at pre-assessment 
+											level, as well in plan and findings areas. A planning on a risk 
+											assessment based selection may be present to give guidance, 
+											identifying specific domain or combination of domains 
+											(which can include the use of plug-ins), most critical areas 
+											and issues.
+										</p>
+									</header>
+
+									<p>
+										<% if(audittemplates.length > 0) { %>
+										<table id='tablecatalog'>
+											<thead>
+												<%- include('../partials/audtempheader'); %>
+											</thead>    
+											<tbody>
+												<%- include('../partials/audtemprow'); %>
+											</tbody>
+										</table>
+										<% } else { %>
+										<p>No audit templates available!</p>
+										<% } %>
+                                    </p>
+
+
+								</article>
+
+						</div>
+					</div>
+				</section>
+
+			<!-- Footer -->
+			<%- include('../partials/footer'); %>
+
+		</div>
+
+		<!-- Scripts -->
+		<%- include('../partials/scripts'); -%>
+
+	</body>
+</html>

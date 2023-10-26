@@ -1,0 +1,177 @@
+{"message":"garbage collector started on path: C:\\develop\\nodejs\\projects\\aitam\\work\\","level":"\u001b[34minfo\u001b[39m","timestamp":"2019-12-05 19:38:11"}
+{"message":"Session created received the id:2ee98e44-de90-4903-9a8f-b591a14c6eff","level":"\u001b[34minfo\u001b[39m","timestamp":"2019-12-05 19:38:21"}
+{"message":"req.user: undefined","level":"\u001b[34minfo\u001b[39m","timestamp":"2019-12-05 19:38:26"}
+{"message":"Session id started: {\"user\":\"2f24vvg\"}","level":"\u001b[34minfo\u001b[39m","timestamp":"2019-12-05 19:38:26"}
+{"message":"User logged in: {\"id\":\"2f24vvg\",\"email\":\"test@test.com\",\"password\":\"$2a$10$A2g6pbxxhLA9MNYRJ0rnzOf/7Ara76B0KcRdjzUcsIBIclRuas/fG\"}","level":"\u001b[34minfo\u001b[39m","timestamp":"2019-12-05 19:38:26"}
+{"message":"User (2f24vvg) uploaded a file: {\"file-upload\":{\"size\":427135,\"path\":\"C:\\\\develop\\\\nodejs\\\\projects\\\\aitam\\\\work\\\\2ee98e44-de90-4903-9a8f-b591a14c6eff.xml\",\"name\":\"test_site3.xml\",\"type\":\"text/xml\",\"mtime\":\"2019-12-05T19:38:32.124Z\"}}","level":"\u001b[34minfo\u001b[39m","timestamp":"2019-12-05 19:38:32"}
+{"message":"audit file download: C:\\develop\\nodejs\\projects\\aitam\\work\\2ee98e44-de90-4903-9a8f-b591a14c6eff.xml","level":"\u001b[34minfo\u001b[39m","timestamp":"2019-12-05 19:39:51"}
+{"message":"garbage collector started on path: C:\\develop\\nodejs\\projects\\aitam\\work\\","level":"\u001b[34minfo\u001b[39m","timestamp":"2019-12-05 19:40:22"}
+{"message":"req.user: undefined","level":"\u001b[34minfo\u001b[39m","timestamp":"2019-12-05 19:45:05"}
+{"message":"Session id started: {\"user\":\"2f24vvg\"}","level":"\u001b[34minfo\u001b[39m","timestamp":"2019-12-05 19:45:05"}
+{"message":"User logged in: {\"id\":\"2f24vvg\",\"email\":\"test@test.com\",\"password\":\"$2a$10$A2g6pbxxhLA9MNYRJ0rnzOf/7Ara76B0KcRdjzUcsIBIclRuas/fG\"}","level":"\u001b[34minfo\u001b[39m","timestamp":"2019-12-05 19:45:05"}
+{"message":"User (2f24vvg) uploaded a file: {\"file-upload\":{\"size\":427135,\"path\":\"C:\\\\develop\\\\nodejs\\\\projects\\\\aitam\\\\work\\\\334e9ef6-caf6-43a6-8f53-2618d143605c.xml\",\"name\":\"test_site3.xml\",\"type\":\"text/xml\",\"mtime\":\"2019-12-05T19:45:09.978Z\"}}","level":"\u001b[34minfo\u001b[39m","timestamp":"2019-12-05 19:45:09"}
+{"message":"garbage collector started on path: C:\\develop\\nodejs\\projects\\aitam\\work\\","level":"\u001b[34minfo\u001b[39m","timestamp":"2019-12-05 19:53:55"}
+{"message":"Session created received the id:86833bcd-bb03-4669-8cec-87056be31091","level":"\u001b[34minfo\u001b[39m","timestamp":"2019-12-05 19:54:05"}
+{"message":"garbage collector started on path: C:\\develop\\nodejs\\projects\\aitam\\work\\","level":"\u001b[34minfo\u001b[39m","timestamp":"2019-12-05 19:59:19"}
+{"message":"req.user: undefined","level":"\u001b[34minfo\u001b[39m","timestamp":"2019-12-05 20:04:25"}
+{"message":"Session id started: {\"user\":\"2f24vvg\"}","level":"\u001b[34minfo\u001b[39m","timestamp":"2019-12-05 20:04:25"}
+{"message":"User logged in: {\"id\":\"2f24vvg\",\"email\":\"test@test.com\",\"password\":\"$2a$10$A2g6pbxxhLA9MNYRJ0rnzOf/7Ara76B0KcRdjzUcsIBIclRuas/fG\"}","level":"\u001b[34minfo\u001b[39m","timestamp":"2019-12-05 20:04:25"}
+{"message":"User (2f24vvg) uploaded a file: {\"file-upload\":{\"size\":427135,\"path\":\"C:\\\\develop\\\\nodejs\\\\projects\\\\aitam\\\\work\\\\bb98fbe0-d963-4c53-8a01-147e53e555d5.xml\",\"name\":\"test_site3.xml\",\"type\":\"text/xml\",\"mtime\":\"2019-12-05T20:04:31.237Z\"}}","level":"\u001b[34minfo\u001b[39m","timestamp":"2019-12-05 20:04:31"}
+{"message":"404 - Not Found","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-12-05 20:06:40"}
+{"message":"404 - Not Found","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-12-05 20:06:40"}
+{"message":"404 - Not Found","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-12-05 20:06:40"}
+{"message":"404 - Not Found","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-12-05 20:06:40"}
+{"message":"404 - Not Found","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-12-05 20:06:40"}
+{"message":"404 - Not Found","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-12-05 20:06:41"}
+{"message":"404 - Not Found","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-12-05 20:06:41"}
+{"message":"404 - Not Found","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-12-05 20:06:41"}
+{"message":"404 - Not Found","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-12-05 20:06:41"}
+{"message":"404 - Not Found","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-12-05 20:06:41"}
+{"message":"404 - Not Found","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-12-05 20:06:48"}
+{"message":"404 - Not Found","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-12-05 20:06:48"}
+{"message":"404 - Not Found","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-12-05 20:06:48"}
+{"message":"404 - Not Found","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-12-05 20:06:48"}
+{"message":"404 - Not Found","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-12-05 20:06:48"}
+{"message":"404 - Not Found","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-12-05 20:06:48"}
+{"message":"404 - Not Found","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-12-05 20:06:49"}
+{"message":"404 - Not Found","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-12-05 20:06:49"}
+{"message":"404 - Not Found","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-12-05 20:06:49"}
+{"message":"404 - Not Found","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-12-05 20:06:49"}
+{"message":"404 - Not Found","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-12-05 20:30:29"}
+{"message":"404 - Not Found","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-12-05 20:30:29"}
+{"message":"404 - Not Found","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-12-05 20:30:29"}
+{"message":"404 - Not Found","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-12-05 20:30:29"}
+{"message":"404 - Not Found","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-12-05 20:30:29"}
+{"message":"404 - Not Found","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-12-05 20:30:29"}
+{"message":"404 - Not Found","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-12-05 20:30:34"}
+{"message":"404 - Not Found","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-12-05 20:30:34"}
+{"message":"404 - Not Found","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-12-05 20:30:34"}
+{"message":"404 - Not Found","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-12-05 20:30:34"}
+{"message":"404 - Not Found","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-12-05 20:36:14"}
+{"message":"404 - Not Found","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-12-05 20:36:14"}
+{"message":"404 - Not Found","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-12-05 20:36:14"}
+{"message":"404 - Not Found","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-12-05 20:36:14"}
+{"message":"404 - Not Found","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-12-05 20:36:14"}
+{"message":"404 - Not Found","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-12-05 20:36:14"}
+{"message":"404 - Not Found","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-12-05 20:37:37"}
+{"message":"404 - Not Found","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-12-05 20:37:37"}
+{"message":"404 - Not Found","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-12-05 20:37:37"}
+{"message":"404 - Not Found","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-12-05 20:37:37"}
+{"message":"404 - Not Found","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-12-05 20:37:37"}
+{"message":"404 - Not Found","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-12-05 20:37:37"}
+{"message":"404 - Not Found","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-12-05 20:37:40"}
+{"message":"404 - Not Found","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-12-05 20:37:40"}
+{"message":"404 - Not Found","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-12-05 20:37:40"}
+{"message":"404 - Not Found","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-12-05 20:37:40"}
+{"message":"404 - Not Found","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-12-05 20:37:40"}
+{"message":"404 - Not Found","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-12-05 20:37:40"}
+{"message":"404 - Not Found","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-12-05 20:39:37"}
+{"message":"404 - Not Found","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-12-05 20:39:37"}
+{"message":"404 - Not Found","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-12-05 20:39:37"}
+{"message":"404 - Not Found","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-12-05 20:39:37"}
+{"message":"404 - Not Found","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-12-05 20:39:37"}
+{"message":"404 - Not Found","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-12-05 20:39:37"}
+{"message":"404 - Not Found","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-12-05 20:39:44"}
+{"message":"404 - Not Found","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-12-05 20:39:44"}
+{"message":"404 - Not Found","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-12-05 20:39:44"}
+{"message":"404 - Not Found","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-12-05 20:39:44"}
+{"message":"garbage collector started on path: C:\\develop\\nodejs\\projects\\aitam\\work\\","level":"\u001b[34minfo\u001b[39m","timestamp":"2019-12-05 20:44:33"}
+{"message":"Session created received the id:e7d8a52c-5e7d-4b60-b409-87b8e5fe60be","level":"\u001b[34minfo\u001b[39m","timestamp":"2019-12-05 20:44:58"}
+{"message":"req.user: undefined","level":"\u001b[34minfo\u001b[39m","timestamp":"2019-12-05 20:45:42"}
+{"message":"Session id started: {\"user\":\"2f24vvg\"}","level":"\u001b[34minfo\u001b[39m","timestamp":"2019-12-05 20:45:42"}
+{"message":"User logged in: {\"id\":\"2f24vvg\",\"email\":\"test@test.com\",\"password\":\"$2a$10$A2g6pbxxhLA9MNYRJ0rnzOf/7Ara76B0KcRdjzUcsIBIclRuas/fG\"}","level":"\u001b[34minfo\u001b[39m","timestamp":"2019-12-05 20:45:42"}
+{"message":"User (2f24vvg) uploaded a file: {\"file-upload\":{\"size\":427135,\"path\":\"C:\\\\develop\\\\nodejs\\\\projects\\\\aitam\\\\work\\\\e7d8a52c-5e7d-4b60-b409-87b8e5fe60be.xml\",\"name\":\"test_site3.xml\",\"type\":\"text/xml\",\"mtime\":\"2019-12-05T20:45:48.222Z\"}}","level":"\u001b[34minfo\u001b[39m","timestamp":"2019-12-05 20:45:48"}
+{"message":"Session created received the id:e7d8a52c-5e7d-4b60-b409-87b8e5fe60be","level":"\u001b[34minfo\u001b[39m","timestamp":"2019-12-05 20:56:25"}
+{"message":"User (2f24vvg) uploaded a file: {\"file-upload\":{\"size\":427135,\"path\":\"C:\\\\develop\\\\nodejs\\\\projects\\\\aitam\\\\work\\\\e7d8a52c-5e7d-4b60-b409-87b8e5fe60be.xml\",\"name\":\"test_site3.xml\",\"type\":\"text/xml\",\"mtime\":\"2019-12-05T20:56:37.936Z\"}}","level":"\u001b[34minfo\u001b[39m","timestamp":"2019-12-05 20:56:37"}
+{"message":"garbage collector started on path: C:\\develop\\nodejs\\projects\\aitam\\work\\","level":"\u001b[34minfo\u001b[39m","timestamp":"2019-12-05 21:32:07"}
+{"message":"Session created received the id:48b55c24-6f4e-41be-9ebc-a1e9170306af","level":"\u001b[34minfo\u001b[39m","timestamp":"2019-12-05 21:32:19"}
+{"message":"req.user: undefined","level":"\u001b[34minfo\u001b[39m","timestamp":"2019-12-05 21:32:31"}
+{"message":"Session id started: {\"user\":\"2f24vvg\"}","level":"\u001b[34minfo\u001b[39m","timestamp":"2019-12-05 21:32:31"}
+{"message":"User logged in: {\"id\":\"2f24vvg\",\"email\":\"test@test.com\",\"password\":\"$2a$10$A2g6pbxxhLA9MNYRJ0rnzOf/7Ara76B0KcRdjzUcsIBIclRuas/fG\"}","level":"\u001b[34minfo\u001b[39m","timestamp":"2019-12-05 21:32:31"}
+{"message":"User (2f24vvg) uploaded a file: {\"file-upload\":{\"size\":427135,\"path\":\"C:\\\\develop\\\\nodejs\\\\projects\\\\aitam\\\\work\\\\48b55c24-6f4e-41be-9ebc-a1e9170306af.xml\",\"name\":\"test_site3.xml\",\"type\":\"text/xml\",\"mtime\":\"2019-12-05T21:32:42.312Z\"}}","level":"\u001b[34minfo\u001b[39m","timestamp":"2019-12-05 21:32:42"}
+{"message":"garbage collector started on path: C:\\develop\\nodejs\\projects\\aitam\\work\\","level":"\u001b[34minfo\u001b[39m","timestamp":"2019-12-05 21:46:04"}
+{"message":"req.user: undefined","level":"\u001b[34minfo\u001b[39m","timestamp":"2019-12-05 21:46:20"}
+{"message":"Session id started: {\"user\":\"2f24vvg\"}","level":"\u001b[34minfo\u001b[39m","timestamp":"2019-12-05 21:46:20"}
+{"message":"User logged in: {\"id\":\"2f24vvg\",\"email\":\"test@test.com\",\"password\":\"$2a$10$A2g6pbxxhLA9MNYRJ0rnzOf/7Ara76B0KcRdjzUcsIBIclRuas/fG\"}","level":"\u001b[34minfo\u001b[39m","timestamp":"2019-12-05 21:46:20"}
+{"message":"User (2f24vvg) uploaded a file: {\"file-upload\":{\"size\":427135,\"path\":\"C:\\\\develop\\\\nodejs\\\\projects\\\\aitam\\\\work\\\\468b93b5-ca36-4d3c-9fd7-40f9c541d338.xml\",\"name\":\"test_site3.xml\",\"type\":\"text/xml\",\"mtime\":\"2019-12-05T21:46:25.463Z\"}}","level":"\u001b[34minfo\u001b[39m","timestamp":"2019-12-05 21:46:25"}
+{"message":"garbage collector started on path: C:\\develop\\nodejs\\projects\\aitam\\work\\","level":"\u001b[34minfo\u001b[39m","timestamp":"2019-12-05 21:55:24"}
+{"message":"req.user: undefined","level":"\u001b[34minfo\u001b[39m","timestamp":"2019-12-05 21:55:43"}
+{"message":"Session id started: {\"user\":\"2f24vvg\"}","level":"\u001b[34minfo\u001b[39m","timestamp":"2019-12-05 21:55:43"}
+{"message":"User logged in: {\"id\":\"2f24vvg\",\"email\":\"test@test.com\",\"password\":\"$2a$10$A2g6pbxxhLA9MNYRJ0rnzOf/7Ara76B0KcRdjzUcsIBIclRuas/fG\"}","level":"\u001b[34minfo\u001b[39m","timestamp":"2019-12-05 21:55:43"}
+{"message":"garbage collector started on path: C:\\develop\\nodejs\\projects\\aitam\\work\\","level":"\u001b[34minfo\u001b[39m","timestamp":"2019-12-05 21:56:29"}
+{"message":"Graph db error: Neo4jError: Cannot run query in a closed session.","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-12-05 21:56:30"}
+{"message":"Graph db error: Neo4jError: Cannot run query in a closed session.","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-12-05 21:56:30"}
+{"message":"Graph db error: Neo4jError: Cannot run query in a closed session.","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-12-05 21:56:30"}
+{"message":"Graph db error: Neo4jError: Cannot run query in a closed session.","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-12-05 21:56:30"}
+{"message":"Graph db error: Neo4jError: Cannot run query in a closed session.","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-12-05 21:56:30"}
+{"message":"Graph db error: Neo4jError: Ignored either because of an error or RESET","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-12-05 21:56:30"}
+{"message":"Session created received the id:38d4e55a-e240-4e59-ae80-482e9b6cd804","level":"\u001b[34minfo\u001b[39m","timestamp":"2019-12-05 21:56:38"}
+{"message":"Graph db error: Neo4jError: Cannot run query in a closed session.","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-12-05 21:56:38"}
+{"message":"Graph db error: Neo4jError: Cannot run query in a closed session.","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-12-05 21:56:38"}
+{"message":"Graph db error: Neo4jError: Cannot run query in a closed session.","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-12-05 21:56:38"}
+{"message":"Graph db error: Neo4jError: Cannot run query in a closed session.","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-12-05 21:56:38"}
+{"message":"Graph db error: Neo4jError: Cannot run query in a closed session.","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-12-05 21:56:38"}
+{"message":"Graph db error: Neo4jError: The transaction has been terminated. Retry your operation in a new transaction, and you should see a successful result. Explicitly terminated by the user. ","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-12-05 21:56:38"}
+{"message":"garbage collector started on path: C:\\develop\\nodejs\\projects\\aitam\\work\\","level":"\u001b[34minfo\u001b[39m","timestamp":"2019-12-05 21:57:17"}
+{"message":"Graph db error: Neo4jError: Cannot run query in a closed session.","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-12-05 21:57:18"}
+{"message":"Graph db error: Neo4jError: Cannot run query in a closed session.","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-12-05 21:57:18"}
+{"message":"Graph db error: Neo4jError: Cannot run query in a closed session.","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-12-05 21:57:18"}
+{"message":"Graph db error: Neo4jError: Cannot run query in a closed session.","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-12-05 21:57:18"}
+{"message":"Graph db error: Neo4jError: Cannot run query in a closed session.","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-12-05 21:57:18"}
+{"message":"Graph db error: Neo4jError: The transaction has been terminated. Retry your operation in a new transaction, and you should see a successful result. Explicitly terminated by the user. ","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-12-05 21:57:18"}
+{"message":"garbage collector started on path: C:\\develop\\nodejs\\projects\\aitam\\work\\","level":"\u001b[34minfo\u001b[39m","timestamp":"2019-12-05 21:59:57"}
+{"message":"Graph db error: Neo4jError: Cannot run query in a closed session.","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-12-05 21:59:57"}
+{"message":"Graph db error: Neo4jError: Cannot run query in a closed session.","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-12-05 21:59:57"}
+{"message":"Graph db error: Neo4jError: Cannot run query in a closed session.","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-12-05 21:59:57"}
+{"message":"Graph db error: Neo4jError: Cannot run query in a closed session.","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-12-05 21:59:57"}
+{"message":"Graph db error: Neo4jError: Cannot run query in a closed session.","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-12-05 21:59:57"}
+{"message":"Graph db error: Neo4jError: Ignored either because of an error or RESET","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-12-05 21:59:57"}
+{"message":"garbage collector deleted  d008d015-9e82-4bff-a53a-a66c1a032fca.sent on folder: C:\\develop\\nodejs\\projects\\aitam\\work\\, path: C:\\develop\\nodejs\\projects\\aitam\\work\\d008d015-9e82-4bff-a53a-a66c1a032fca.sent","level":"\u001b[34minfo\u001b[39m","timestamp":"2019-12-05 22:00:00"}
+{"message":"garbage collector deleted  d008d015-9e82-4bff-a53a-a66c1a032fca.tkn on folder: C:\\develop\\nodejs\\projects\\aitam\\work\\, path: C:\\develop\\nodejs\\projects\\aitam\\work\\d008d015-9e82-4bff-a53a-a66c1a032fca.tkn","level":"\u001b[34minfo\u001b[39m","timestamp":"2019-12-05 22:00:00"}
+{"message":"garbage collector deleted  d008d015-9e82-4bff-a53a-a66c1a032fca.src on folder: C:\\develop\\nodejs\\projects\\aitam\\work\\, path: C:\\develop\\nodejs\\projects\\aitam\\work\\d008d015-9e82-4bff-a53a-a66c1a032fca.src","level":"\u001b[34minfo\u001b[39m","timestamp":"2019-12-05 22:00:00"}
+{"message":"garbage collector deleted  d008d015-9e82-4bff-a53a-a66c1a032fca.vec on folder: C:\\develop\\nodejs\\projects\\aitam\\work\\, path: C:\\develop\\nodejs\\projects\\aitam\\work\\d008d015-9e82-4bff-a53a-a66c1a032fca.vec","level":"\u001b[34minfo\u001b[39m","timestamp":"2019-12-05 22:00:00"}
+{"message":"garbage collector deleted  d008d015-9e82-4bff-a53a-a66c1a032fca.xml on folder: C:\\develop\\nodejs\\projects\\aitam\\work\\, path: C:\\develop\\nodejs\\projects\\aitam\\work\\d008d015-9e82-4bff-a53a-a66c1a032fca.xml","level":"\u001b[34minfo\u001b[39m","timestamp":"2019-12-05 22:00:00"}
+{"message":"garbage collector started on path: C:\\develop\\nodejs\\projects\\aitam\\work\\","level":"\u001b[34minfo\u001b[39m","timestamp":"2019-12-05 22:05:51"}
+{"message":"Graph db error: Neo4jError: Queries cannot be run directly on a session with an open transaction; either run from within the transaction or use a different session.","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-12-05 22:05:52"}
+{"message":"Graph db error: Neo4jError: Queries cannot be run directly on a session with an open transaction; either run from within the transaction or use a different session.","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-12-05 22:05:52"}
+{"message":"Graph db error: Neo4jError: Queries cannot be run directly on a session with an open transaction; either run from within the transaction or use a different session.","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-12-05 22:05:52"}
+{"message":"Graph db error: Neo4jError: Queries cannot be run directly on a session with an open transaction; either run from within the transaction or use a different session.","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-12-05 22:05:52"}
+{"message":"Graph db error: Neo4jError: Queries cannot be run directly on a session with an open transaction; either run from within the transaction or use a different session.","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-12-05 22:05:52"}
+{"message":"Graph db error: Neo4jError: The transaction has been terminated. Retry your operation in a new transaction, and you should see a successful result. Explicitly terminated by the user. ","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-12-05 22:05:52"}
+{"message":"garbage collector started on path: C:\\develop\\nodejs\\projects\\aitam\\work\\","level":"\u001b[34minfo\u001b[39m","timestamp":"2019-12-05 22:07:03"}
+{"message":"Graph db error: Neo4jError: Cannot run query in a closed session.","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-12-05 22:07:04"}
+{"message":"Graph db error: Neo4jError: Cannot run query in a closed session.","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-12-05 22:07:04"}
+{"message":"Graph db error: Neo4jError: Cannot run query in a closed session.","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-12-05 22:07:04"}
+{"message":"Graph db error: Neo4jError: Cannot run query in a closed session.","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-12-05 22:07:04"}
+{"message":"Graph db error: Neo4jError: Cannot run query in a closed session.","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-12-05 22:07:04"}
+{"message":"Graph db error: Neo4jError: The transaction has been terminated. Retry your operation in a new transaction, and you should see a successful result. Explicitly terminated by the user. ","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-12-05 22:07:04"}
+{"message":"garbage collector started on path: C:\\develop\\nodejs\\projects\\aitam\\work\\","level":"\u001b[34minfo\u001b[39m","timestamp":"2019-12-05 22:07:58"}
+{"message":"2Graph db error: Neo4jError: Cannot run query in a closed session.","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-12-05 22:07:59"}
+{"message":"3Graph db error: Neo4jError: Cannot run query in a closed session.","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-12-05 22:07:59"}
+{"message":"4Graph db error: Neo4jError: Cannot run query in a closed session.","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-12-05 22:07:59"}
+{"message":"5Graph db error: Neo4jError: Cannot run query in a closed session.","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-12-05 22:07:59"}
+{"message":"6Graph db error: Neo4jError: Cannot run query in a closed session.","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-12-05 22:07:59"}
+{"message":"1Graph db error: Neo4jError: The transaction has been terminated. Retry your operation in a new transaction, and you should see a successful result. Explicitly terminated by the user. ","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-12-05 22:07:59"}
+{"message":"garbage collector started on path: C:\\develop\\nodejs\\projects\\aitam\\work\\","level":"\u001b[34minfo\u001b[39m","timestamp":"2019-12-05 22:14:17"}
+{"message":"2Graph db error: Neo4jError: Queries cannot be run directly on a session with an open transaction; either run from within the transaction or use a different session.","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-12-05 22:14:18"}
+{"message":"3Graph db error: Neo4jError: Queries cannot be run directly on a session with an open transaction; either run from within the transaction or use a different session.","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-12-05 22:14:18"}
+{"message":"4Graph db error: Neo4jError: Queries cannot be run directly on a session with an open transaction; either run from within the transaction or use a different session.","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-12-05 22:14:18"}
+{"message":"5Graph db error: Neo4jError: Queries cannot be run directly on a session with an open transaction; either run from within the transaction or use a different session.","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-12-05 22:14:18"}
+{"message":"6Graph db error: Neo4jError: Queries cannot be run directly on a session with an open transaction; either run from within the transaction or use a different session.","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-12-05 22:14:18"}
+{"message":"1Graph db error: Neo4jError: The transaction has been terminated. Retry your operation in a new transaction, and you should see a successful result. Explicitly terminated by the user. ","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-12-05 22:14:18"}
+{"message":"garbage collector started on path: C:\\develop\\nodejs\\projects\\aitam\\work\\","level":"\u001b[34minfo\u001b[39m","timestamp":"2019-12-05 22:16:16"}
+{"message":"4Graph db error: Neo4jError: Queries cannot be run directly on a session with an open transaction; either run from within the transaction or use a different session.","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-12-05 22:16:16"}
+{"message":"5Graph db error: Neo4jError: Queries cannot be run directly on a session with an open transaction; either run from within the transaction or use a different session.","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-12-05 22:16:16"}
+{"message":"6Graph db error: Neo4jError: Queries cannot be run directly on a session with an open transaction; either run from within the transaction or use a different session.","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-12-05 22:16:16"}
+{"message":"1Graph db error: Neo4jError: The transaction has been terminated. Retry your operation in a new transaction, and you should see a successful result. Explicitly terminated by the user. ","level":"\u001b[33mwarn\u001b[39m","timestamp":"2019-12-05 22:16:16"}
+{"message":"garbage collector started on path: C:\\develop\\nodejs\\projects\\aitam\\work\\","level":"\u001b[34minfo\u001b[39m","timestamp":"2019-12-05 22:18:23"}
+{"message":"Session created received the id:feae437c-f121-4a4f-97e6-1d402a916208","level":"\u001b[34minfo\u001b[39m","timestamp":"2019-12-05 22:18:36"}
+{"message":"req.user: undefined","level":"\u001b[34minfo\u001b[39m","timestamp":"2019-12-05 22:19:01"}
+{"message":"Session id started: {\"user\":\"2f24vvg\"}","level":"\u001b[34minfo\u001b[39m","timestamp":"2019-12-05 22:19:01"}
+{"message":"User logged in: {\"id\":\"2f24vvg\",\"email\":\"test@test.com\",\"password\":\"$2a$10$A2g6pbxxhLA9MNYRJ0rnzOf/7Ara76B0KcRdjzUcsIBIclRuas/fG\"}","level":"\u001b[34minfo\u001b[39m","timestamp":"2019-12-05 22:19:01"}
+{"message":"User (2f24vvg) uploaded a file: {\"file-upload\":{\"size\":427135,\"path\":\"C:\\\\develop\\\\nodejs\\\\projects\\\\aitam\\\\work\\\\feae437c-f121-4a4f-97e6-1d402a916208.xml\",\"name\":\"test_site3.xml\",\"type\":\"text/xml\",\"mtime\":\"2019-12-05T22:19:08.471Z\"}}","level":"\u001b[34minfo\u001b[39m","timestamp":"2019-12-05 22:19:08"}
+{"message":"garbage collector started on path: C:\\develop\\nodejs\\projects\\aitam\\work\\","level":"\u001b[34minfo\u001b[39m","timestamp":"2019-12-05 22:21:38"}
+{"message":"req.user: undefined","level":"\u001b[34minfo\u001b[39m","timestamp":"2019-12-05 22:24:22"}
+{"message":"Session id started: {\"user\":\"2f24vvg\"}","level":"\u001b[34minfo\u001b[39m","timestamp":"2019-12-05 22:24:22"}
+{"message":"User logged in: {\"id\":\"2f24vvg\",\"email\":\"test@test.com\",\"password\":\"$2a$10$A2g6pbxxhLA9MNYRJ0rnzOf/7Ara76B0KcRdjzUcsIBIclRuas/fG\"}","level":"\u001b[34minfo\u001b[39m","timestamp":"2019-12-05 22:24:22"}
+{"message":"User (2f24vvg) uploaded a file: {\"file-upload\":{\"size\":427135,\"path\":\"C:\\\\develop\\\\nodejs\\\\projects\\\\aitam\\\\work\\\\0addec3b-a35d-43b1-85dc-5b8b56df4f9c.xml\",\"name\":\"test_site3.xml\",\"type\":\"text/xml\",\"mtime\":\"2019-12-05T22:24:28.468Z\"}}","level":"\u001b[34minfo\u001b[39m","timestamp":"2019-12-05 22:24:28"}

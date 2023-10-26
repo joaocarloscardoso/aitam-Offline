@@ -1,0 +1,12 @@
+<body>
+    <div>
+        <h2>Information request on AITAM</h2>
+        <p style="font-size: 14px; font-family: 'Courier New', Courier, monospace; text-align:left;">
+            <b>From: <%= message.name %> (<a href="mailto:<%= message.email %>"><%= message.email %></a>)</b>
+        </p>
+        <p style="font-size: 14px; font-family: 'Courier New', Courier, monospace; text-align:left;">
+            <b>Message:</b><br/>
+            <%= message.message %>
+        </p>
+    </div>
+</body>

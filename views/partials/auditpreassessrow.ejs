@@ -1,0 +1,11 @@
+<% preassesscatalog.forEach(function(item) { %>
+    <tr>
+        <td>
+            <%= item.Area %>
+        </td>
+        <td>
+            <a href="/auditMatrices/preassessMatrix?area=<%= item.AreaId %>&issue=<%= item.IssueId %>"><%= item.Issue %></a>
+        </td>
+    </tr>
+<% }) %>
+    

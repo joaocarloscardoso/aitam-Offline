@@ -1,0 +1,30 @@
+{
+    "users": [
+      {
+        "id":"2f24vvg",
+        "email": "test@test.com",
+        "password": "$2a$10$A2g6pbxxhLA9MNYRJ0rnzOf/7Ara76B0KcRdjzUcsIBIclRuas/fG" 
+      },
+      {
+        "id":"d1u9nq",
+        "email": "user2@example.com",
+        "password": "$2a$10$A2g6pbxxhLA9MNYRJ0rnzOf/7Ara76B0KcRdjzUcsIBIclRuas/fG"
+      },
+      {"id":"2f01vvg","email": "NIK01@aitam.org","password": "$2a$10$OZPJk4OGRtzN7qx7iQFNNeBYl9.n20F5YCRX3s0wov.Il3t9kjyS2"},
+      {"id":"2f02vvg","email": "NIK02@aitam.org","password": "$2a$10$PIVBtc9dsMeLQWwVYqaZUOxNoeP4bcC0Vw6oo4NMKstqpCC3roa2."},
+      {"id":"2f03vvg","email": "GAOUSA01@aitam.org","password": "$2a$10$5c8S44inKnOfwknxkr4Yr.EqX6cJX01HCfXg5XkAnKOaNEkGm54cS"},
+      {"id":"2f04vvg","email": "GAOUSA02@aitam.org","password": "$2a$10$o9Ag9FcL5Vv8/WeP4c5IYuAKNkshiIWKrYEmqA1GlCrNylJcAx8J."},
+      {"id":"2f05vvg","email": "RIIGIKONTROL01@aitam.org","password": "$2a$10$rfmGve1oaHCahPMHp9TGXOOui8EHZbwEMpsTBNANJ57IOgmlhzmTW"},
+      {"id":"2f06vvg","email": "RIIGIKONTROL02@aitam.org","password": "$2a$10$26MG3uloiIXfepWIkpvdw.hdvS6yjxG1QJAuICNyJMp5oH6Cby2XC"},
+      {"id":"2f07vvg","email": "VALSTSKONTROLE01@aitam.org","password": "$2a$10$CXq6S9DsmdIr.1Yxa4jvH.qwUNp3bE1LVTlrgMEdS5KzxFVoPPQxS"},
+      {"id":"2f08vvg","email": "VALSTSKONTROLE02@aitam.org","password": "$2a$10$S6K9JToe1E.NPPHgAuVGG.qF6sZKUUzK48SLkhXDnluCHksFCcJCS"},
+      {"id":"2f09vvg","email": "TdC01@aitam.org","password": "$2a$10$gNUdcNCbPcbSgcPBAjxokuDOq8Ko9oGa5BdJZPYUOTAQ.IaNnUHDm"},
+      {"id":"2f10vvg","email": "TdC02@aitam.org","password": "$2a$10$5J45S9ra8blrbLU5da0AOOIK5.J8diQZFFETy/TcsJSBHZqtpiTnK"},
+      {"id":"2f11vvg","email": "KLSH01@aitam.org","password": "$2a$10$xkMo4qwmxmEWaSWxP0dNP.fGQ9cCo0aCqxf.HGPCGSrETzH4V1khC"},
+      {"id":"2f12vvg","email": "KLSH02@aitam.org","password": "$2a$10$s52l2Ix0EvcwVKpQQVJnMOhXoNwQC4vQHuAGiT3GiViZ69oi.JOE."},
+      {"id":"2f13vvg","email": "NKUSK01@aitam.org","password": "$2a$10$Xx2WI9qWvGpOtWm4JRQjBOF9naukWX8nZPooMp2bouJCESMN62C4e"},
+      {"id":"2f14vvg","email": "NKUSK02@aitam.org","password": "$2a$10$y6uW2EKq4CRxBUgeq5nJseDHYDOp2R0q/tmo86IJpCQNDrZo5eO1C"},
+      {"id":"2f15vvg","email": "IDI01@aitam.org","password": "$2a$10$jCKTvuJPPPIv32GTXsTP5e2fEHBP58AMVtaozxFNl8PvRBQoapz0q"},
+      {"id":"2f16vvg","email": "IDI02@aitam.org","password": "$2a$10$mnQUzX.2aBaIHct2O8JGyeqXloqkn8YdrhSlyvxitF3kCacw4q5FO"}
+    ]
+}

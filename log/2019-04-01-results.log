@@ -1,0 +1,13 @@
+{"message":"garbage collector started on path: C:\\develop\\nodejs\\projects\\aitam\\work\\","level":"\u001b[34minfo\u001b[39m","timestamp":"2019-04-01 21:48:12"}
+{"message":"Session created received the id:1c6b80b3-fdea-450d-b923-9d7764cbab65","level":"\u001b[34minfo\u001b[39m","timestamp":"2019-04-01 21:48:23"}
+{"message":"req.user: undefined","level":"\u001b[34minfo\u001b[39m","timestamp":"2019-04-01 21:48:36"}
+{"message":"Session id started: {\"user\":\"2f24vvg\"}","level":"\u001b[34minfo\u001b[39m","timestamp":"2019-04-01 21:48:36"}
+{"message":"User logged in: {\"id\":\"2f24vvg\",\"email\":\"test@test.com\",\"password\":\"$2a$10$A2g6pbxxhLA9MNYRJ0rnzOf/7Ara76B0KcRdjzUcsIBIclRuas/fG\"}","level":"\u001b[34minfo\u001b[39m","timestamp":"2019-04-01 21:48:36"}
+{"message":"User (2f24vvg) uploaded a file: {\"file-upload\":{\"size\":477123,\"path\":\"C:\\\\develop\\\\nodejs\\\\projects\\\\aitam\\\\work\\\\1c6b80b3-fdea-450d-b923-9d7764cbab65.xml\",\"name\":\"test_site2.xml\",\"type\":\"text/xml\",\"mtime\":\"2019-04-01T20:48:45.876Z\"}}","level":"\u001b[34minfo\u001b[39m","timestamp":"2019-04-01 21:48:45"}
+{"message":"garbage collector started on path: C:\\develop\\nodejs\\projects\\aitam\\work\\","level":"\u001b[34minfo\u001b[39m","timestamp":"2019-04-01 21:51:23"}
+{"message":"Session created received the id:23bc4313-649b-480b-8c96-05a306a31ff0","level":"\u001b[34minfo\u001b[39m","timestamp":"2019-04-01 21:51:27"}
+{"message":"req.user: undefined","level":"\u001b[34minfo\u001b[39m","timestamp":"2019-04-01 21:51:32"}
+{"message":"Session id started: {\"user\":\"2f24vvg\"}","level":"\u001b[34minfo\u001b[39m","timestamp":"2019-04-01 21:51:32"}
+{"message":"User logged in: {\"id\":\"2f24vvg\",\"email\":\"test@test.com\",\"password\":\"$2a$10$A2g6pbxxhLA9MNYRJ0rnzOf/7Ara76B0KcRdjzUcsIBIclRuas/fG\"}","level":"\u001b[34minfo\u001b[39m","timestamp":"2019-04-01 21:51:32"}
+{"message":"User (2f24vvg) uploaded a file: {\"file-upload\":{\"size\":477123,\"path\":\"C:\\\\develop\\\\nodejs\\\\projects\\\\aitam\\\\work\\\\23bc4313-649b-480b-8c96-05a306a31ff0.xml\",\"name\":\"test_site2.xml\",\"type\":\"text/xml\",\"mtime\":\"2019-04-01T20:51:38.945Z\"}}","level":"\u001b[34minfo\u001b[39m","timestamp":"2019-04-01 21:51:38"}
+{"message":"audit file download: C:\\develop\\nodejs\\projects\\aitam\\work\\23bc4313-649b-480b-8c96-05a306a31ff0.xml","level":"\u001b[34minfo\u001b[39m","timestamp":"2019-04-01 21:53:23"}

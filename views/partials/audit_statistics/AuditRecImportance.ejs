@@ -1,0 +1,68 @@
+<h1>Importance of recommendations</h1>
+<canvas id="chartjs-IR" class="chartjs" width="undefined" height="undefined"></canvas>
+<script>
+    new Chart(document.getElementById("chartjs-IR"),
+    {
+    "type":"horizontalBar",
+    "data":{
+        "labels":[
+            <% let i=1 %>
+            <% data.StatImportance.forEach(function(item) { -%>
+                <% if (i == 1) { -%>
+                    "<%= item.Importance %>"
+                <% } else { %>
+                    ,"<%= item.Importance %>"
+                <% } %>
+                <% i++ %>
+            <% }) -%>
+        ],
+        "datasets":
+            [
+                {
+                    "label":"Number",
+                    "data":[
+                        <%  i=1 %>
+                        <% data.StatImportance.forEach(function(item) { -%>
+                            <% if (i == 1) { -%>
+                                <%= item.Number %>
+                            <% } else { %>
+                                ,<%= item.Number %>
+                            <% } %>
+                            <% i++ %>
+                        <% }) -%>
+                    ],
+                    "fill":false,
+                    "backgroundColor":[
+                        <%  i=1 %>
+                        <% data.StatImportance.forEach(function(item) { -%>
+                            <% if (i == 1) { -%>
+                                "rgba(255, 99, 132, 0.2)"
+                            <% } else { %>
+                                ,"rgba(54, 162, 235, 0.2)"
+                            <% } %>
+                            <% i++ %>
+                        <% }) -%>
+                    ],
+                    "borderColor":[
+                        <%  i=1 %>
+                        <% data.StatImportance.forEach(function(item) { -%>
+                            <% if (i == 1) { -%>
+                                "rgba(255, 99, 132, 0.2)"
+                            <% } else { %>
+                                ,"rgba(54, 162, 235, 0.2)"
+                            <% } %>
+                            <% i++ %>
+                        <% }) -%>
+                    ],
+                    "borderWidth":1
+                }
+            ]
+        },
+        "options":{
+            "scales":
+                {
+                    "xAxes":[{"ticks":{"beginAtZero":true}}]
+                }
+        }
+    });
+</script>

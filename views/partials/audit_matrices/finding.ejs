@@ -1,0 +1,241 @@
+<section id="contact" class="col-6 col-12-narrower">
+        <header>
+            <h2></h2>
+            <h2><%= Matrix.FindingId %></h2>
+        </header>
+        <% if(msg != ''){ %>
+            <div class="col-12" id="save_auditmatrix">
+                <p>
+                    <span class="successformtext"><%= msg %></span><br/>
+                </p>
+            </div>
+        <% } %>    
+        <% if(AuditErrors){ %>
+        <div class="col-12" id="err_auditmatrix">
+            <p>
+                <% AuditErrors.forEach(function(error){ %>
+                    <span class="errformtext">* <%= error.msg %></span><br/>
+                <% }) %>    
+            </p>
+        </div>
+        <% } %>
+        <% if(Matrix.Domains == ''){ %>
+        <div class="col-12" id="err_auditmatrix">
+            <p>
+                <span class="errformtext">* <%=appAudit.findings.matrix.noplan %></span><br/>
+            </p>
+        </div>
+        <% } %>
+        <form method="POST" action="/auditMatrices/findingMatrix">
+            <div class="row gtr-50">
+                <div class="col-12">
+                    <ul class="actions">
+                        <% if (Matrix.FindingId != "(New)") { %>
+                            <li><a href="/generatedocs/docfindingMatrix?id=<%= Matrix.FindingId %>" class="button"><%=appButtons.generateDocument.name %></a></li>
+                        <% } %>
+                        <% if (source === "map") { %>
+                            <li><a href="/analytics/AuditMap" class="button"><%=appButtons.close.name %></a></li>
+                        <% } else { %>
+                            <li><a href="/findingaudit/auditfindings" class="button"><%=appButtons.close.name %></a></li>
+                        <% } %>
+                        <li><a href="/auditMatrices/findingMatrix?id=New&number=<%= Matrix.Number %>" class="button"><%=appButtons.findingCloseCreateFinding.name %></a></li>
+                        <% if(Matrix.Domains == ''){ %>
+                            <li><input type="submit" class="button alt" value="<%=appButtons.save.name %>" disabled/></li>
+                        <% } else { %>
+                            <li><input type="submit" class="button alt" value="<%=appButtons.save.name %>" /></li>
+                        <% } %>
+                    </ul>
+                </div>
+                <div class="col-12">
+                    <%=appAudit.findings.matrix.source %><br/>
+                    <select name="source" id="source" size="1" autofocus onchange="RedoDomains()">
+                        <% Matrix.Sources.split("|").forEach(function(item) { -%>
+                            <% if (Matrix.Source === item) { %>
+                                <option value="<%= item %>" selected><%= item %></option>
+                            <% } else { %>
+                                <option value="<%= item %>"><%= item %></option>
+                            <% } %>       
+                        <% }) -%>         
+                        </select>
+                    <input type="hidden" id="findingid" name="findingid" value="<%= Matrix.FindingId %>"/>
+                </div>
+                <div class="col-12">
+                    <%=appAudit.findings.matrix.domain %><br/>
+                    <select name="domain" id="domain" size="1" autofocus onchange="RedoAreas()">
+                        <% Matrix.Domains.split("|").forEach(function(item) { -%>
+                            <% subitem = item.split("#") %>
+                            <% if (subitem[0].indexOf(Matrix.Source) > -1) { %>
+                                <% if (Matrix.Domain == subitem[0]) { %>
+                                    <option value="<%= subitem[0] %>" selected><%= subitem[1] %></option>
+                                <% } else { %>
+                                    <option value="<%= subitem[0] %>"><%= subitem[1] %></option>
+                                <% } %>  
+                            <% } %>      
+                        <% }) -%>         
+                    </select>
+                </div>
+                <div class="col-12">
+                    <%=appAudit.findings.matrix.area %><br/>
+                    <select name="area" id="area" size="1" autofocus onchange="RedoIssues()">
+                        <% Matrix.Areas.split("|").forEach(function(item) { -%>
+                            <% subitem = item.split("#") %>                    
+                            <% if (subitem[0].indexOf(Matrix.Domain) > -1) { %>
+                                <% if (Matrix.Area == subitem[0]) { %>
+                                    <option value="<%= subitem[0] %>" selected><%= subitem[1] %></option>
+                                <% } else { %>
+                                    <option value="<%= subitem[0] %>"><%= subitem[1] %></option>
+                                <% } %>       
+                            <% } %>
+                        <% }) -%>         
+                    </select>
+                </div>
+                <div class="col-12">
+                    <%=appAudit.findings.matrix.issue %><br/>
+                    <select name="issue" id="issue" size="1" autofocus>
+                        <% Matrix.Issues.split("|").forEach(function(item) { -%>
+                            <% subitem = item.split("#") %>
+                            <% if (subitem[0].indexOf(Matrix.Area) > -1) { %>
+                                <% if (Matrix.Issue == subitem[0]) { %>
+                                    <option value="<%= subitem[0] %>" selected><%= subitem[1] %></option>
+                                <% } else { %>
+                                    <option value="<%= subitem[0] %>"><%= subitem[1] %></option>
+                                <% } %>
+                            <% } %>
+                        <% }) -%>         
+                    </select>
+                </div>
+                <div class="col-12">
+                    <%=appAudit.findings.matrix.findingName %><br/>
+                    <textarea name="findname" id="findname" placeholder="<%=appAudit.findings.matrix.findingName %>" rows="1"><%= Matrix.Name %></textarea>
+                </div>
+                <div class="col-12">
+                    <%=appAudit.findings.matrix.cause %><br/>
+                    <textarea name="cause" id="cause" placeholder="<%=appAudit.findings.matrix.cause %>" rows="1"><%= Matrix.Cause %></textarea>
+                </div>
+                <div class="col-12">
+                    <%=appAudit.findings.matrix.result %><br/>
+                    <textarea name="result" id="result" placeholder="<%=appAudit.findings.matrix.result %>" rows="1"><%= Matrix.Result %></textarea>
+                </div>
+                <div class="col-12">
+                    <%=appAudit.findings.matrix.findingNumber %><br/>
+                    <textarea name="number" id="number" placeholder="<%=appAudit.findings.matrix.findingNumber %>" rows="1" style="width: 150px;"><%= Matrix.Number %></textarea>
+                </div>
+                <div class="col-12">
+                    <%=appAudit.findings.matrix.findingDescription %><br/>
+                    <textarea name="description" id="description" placeholder="<%=appAudit.findings.matrix.findingDescription %>" rows="18"><%= Matrix.Description %></textarea>
+                </div>
+                <div class="col-12">
+                    <%=appAudit.findings.matrix.recommendation %><br/>
+                    <textarea name="recommendation" id="recommendation" placeholder="<%=appAudit.findings.matrix.recommendation %>" rows="6"><%= Matrix.Recommendation %></textarea>
+                </div>
+                <div class="col-12">
+                    <%=appAudit.findings.matrix.referenceLegalAct %><br/>
+                    <textarea name="legalact" id="legalact" placeholder="<%=appAudit.findings.matrix.referenceLegalAct %>" rows="2"><%= Matrix.LegalAct %></textarea>
+                </div>
+                <div class="col-12">
+                    <%=appAudit.findings.matrix.referenceReport %><br/>
+                    <textarea name="report" id="report" placeholder="<%=appAudit.findings.matrix.referenceReport %>" rows="2"><%= Matrix.ReportReference %></textarea>
+                </div>
+                <div class="col-12">
+                    <ul class="actions">
+                        <% if (Matrix.FindingId != "(New)") { %>
+                            <li><a href="/generatedocs/docfindingMatrix?id=<%= Matrix.FindingId %>" class="button"><%=appButtons.generateDocument.name %></a></li>
+                        <% } %>
+                        <% if (source === "map") { %>
+                            <li><a href="/analytics/AuditMap" class="button"><%=appButtons.close.name %></a></li>
+                        <% } else { %>
+                            <li><a href="/findingaudit/auditfindings" class="button"><%=appButtons.close.name %></a></li>
+                        <% } %>
+                        <li><a href="/auditMatrices/findingMatrix?id=New&number=<%= Matrix.Number %>" class="button"><%=appButtons.findingCloseCreateFinding.name %></a></li>
+                        <% if(Matrix.Domains == ''){ %>
+                            <li><input type="submit" class="button alt" value="<%=appButtons.save.name %>" disabled/></li>
+                        <% } else { %>
+                            <li><input type="submit" class="button alt" value="<%=appButtons.save.name %>" /></li>
+                        <% } %>
+                    </ul>
+                </div>
+            </div>
+        </form>
+    </section>
+<!-- javascript is placed in the body section -->
+<script>
+        var Domains=[
+            <% let i=0 %>
+            <% Matrix.Domains.split("|").forEach(function(item) { -%>
+                <% if (i==0) { %>
+                    "<%= item %>"
+                <% } else { %>
+                    ,"<%= item %>"
+                <% } %>
+                <% i++ %>
+            <% }) -%>             
+        ];
+        var Areas=[
+            <% i=0 %>
+            <% Matrix.Areas.split("|").forEach(function(item) { -%>
+                <% if (i==0) { %>
+                    "<%= item %>"
+                <% } else { %>
+                    ,"<%= item %>"
+                <% } %>
+                <% i++ %>
+            <% }) -%>             
+        ];        
+        var Issues=[
+            <% i=0 %>
+            <% Matrix.Issues.split("|").forEach(function(item) { -%>
+                <% if (i==0) { %>
+                    "<%= item %>"
+                <% } else { %>
+                    ,"<%= item %>"
+                <% } %>
+                <% i++ %>
+            <% }) -%>             
+        ];
+
+    function RedoDomains(){
+        document.getElementById("domain").innerHTML = "<option></option>";
+        document.getElementById("area").innerHTML = "<option></option>";
+        document.getElementById("issue").innerHTML = "<option></option>";
+        //redo domain dropdown
+        var selOptions = "";
+        for (var j=0; j<Domains.length; j++) {
+            var items = Domains[j].split("#");
+            if (items[0].indexOf(document.getElementById("source").value) > -1){
+                selOptions += "<option value='" + items[0]+ "'>" + items[1] + "</option>";
+            }
+        }
+        document.getElementById("domain").innerHTML = selOptions;
+        RedoAreas();
+        RedoIssues();
+    }
+
+    function RedoAreas(){
+        document.getElementById("area").innerHTML = "<option></option>";
+        document.getElementById("issue").innerHTML = "<option></option>";    
+        //redo area dropdown
+        var selOptions = "";
+        for (var j=0; j<Areas.length; j++) {
+            var items = Areas[j].split("#");
+            if (items[0].indexOf(document.getElementById("domain").value) > -1){
+                selOptions += "<option value='" + items[0]+ "'>" + items[1] + "</option>";
+            }
+        }
+        document.getElementById("area").innerHTML = selOptions;
+        RedoIssues();
+    }
+
+    function RedoIssues(){
+        document.getElementById("issue").innerHTML = "<option></option>";            
+        //redo issue dropdown
+        var selOptions = "";
+        for (var j=0; j<Issues.length; j++) {
+            var items = Issues[j].split("#");
+            if (items[0].indexOf(document.getElementById("area").value) > -1){
+                selOptions += "<option value='" + items[0]+ "'>" + items[1] + "</option>";
+            }
+        }
+        document.getElementById("issue").innerHTML = selOptions;
+    }
+
+    </script>    

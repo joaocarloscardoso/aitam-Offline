@@ -1,0 +1,15 @@
+<h1>Global Risk Characterization</h1>
+<canvas id="chartjs-GRC" class="chartjs" width="undefined" height="undefined"></canvas>
+<script>new Chart(document.getElementById("chartjs-GRC"),
+    {"type":"doughnut",
+        "data":{"labels":["Low","Medium","High"],
+        "datasets":[
+        {
+            "label":"My First Dataset",
+            "data":[<%= GeneralRiskCatalog.wImportance %>],
+            "backgroundColor":["rgb(54, 162, 235)","rgb(255, 205, 86)", "rgb(255, 99, 132)"]
+        }
+        ]}
+    }
+);
+ </script>

@@ -1,0 +1,26 @@
+<h1>Risk areas identified</h1>
+<canvas id="chartjs-RAI" class="chartjs" width="undefined" height="undefined"></canvas>
+<script>new Chart(document.getElementById("chartjs-RAI"),
+    {"type":"polarArea",
+        "data":{"labels":[<%- '"' + catalog.risk_label.split('|').join('","') + '"' %>],
+        "datasets":[
+        {
+            "label":"My First Dataset",
+            "data":[
+            <% colRisk =  catalog.risk_label.split(" ").join("_").split("|") -%>
+            <% for (var i=0; i<colRisk.length; i++) { -%>
+                <% if (i == 0) { -%>
+                    <%= catalog.risk_data[colRisk[i]] %>
+                <% } else { %>
+                    ,<%= catalog.risk_data[colRisk[i]] %>
+                <% } %>
+            <% } -%>  
+            ],
+            "backgroundColor":["rgb(54, 162, 235)","rgb(255, 205, 86)", "rgb(255, 99, 132)",
+                "rgb(34, 177, 76)","rgb(255, 128, 0)", "rgb(0, 64, 128)", "rgb(128, 128, 128)"
+            ]
+        }
+        ]}
+    }
+);
+</script>
